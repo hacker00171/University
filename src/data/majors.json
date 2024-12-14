@@ -1,0 +1,88 @@
+{
+  "majors": [
+    {
+      "name": "Business, Management, and Law",
+      "graduates": 65800,
+      "employment": {
+        "during_study": 15,
+        "within_one_year": 10,
+        "after_one_year": 15,
+        "total_employment_rate": 60
+      },
+      "median_wage": 5100,
+      "average_waiting_time": 300
+    },
+    {
+      "name": "Arts and Humanities",
+      "graduates": 38400,
+      "employment": {
+        "during_study": 5,
+        "within_one_year": 25,
+        "after_one_year": 10,
+        "total_employment_rate": 45
+      },
+      "median_wage": 4800,
+      "average_waiting_time": 300
+    },
+    {
+      "name": "Natural Sciences, Mathematics and Statistics",
+      "graduates": 19700,
+      "employment": {
+        "during_study": 5,
+        "within_one_year": 25,
+        "after_one_year": 10,
+        "total_employment_rate": 45
+      },
+      "median_wage": 5500,
+      "average_waiting_time": 300
+    },
+    {
+      "name": "Health and Welfare",
+      "graduates": 18800,
+      "employment": {
+        "during_study": 10,
+        "within_one_year": 30,
+        "after_one_year": 30,
+        "total_employment_rate": 60
+      },
+      "median_wage": 6700,
+      "average_waiting_time": 200
+    },
+    {
+      "name": "Education",
+      "graduates": 14100,
+      "employment": {
+        "during_study": 10,
+        "within_one_year": 25,
+        "after_one_year": 15,
+        "total_employment_rate": 50
+      },
+      "median_wage": 5200,
+      "average_waiting_time": 300
+    },
+    {
+      "name": "Engineering, Manufacturing, and Construction",
+      "graduates": 16500,
+      "employment": {
+        "during_study": 10,
+        "within_one_year": 35,
+        "after_one_year": 15,
+        "total_employment_rate": 65
+      },
+      "median_wage": 6800,
+      "average_waiting_time": 200
+    },
+    {
+      "name": "Information and Communication Technology",
+      "graduates": 15200,
+      "employment": {
+        "during_study": 15,
+        "within_one_year": 30,
+        "after_one_year": 15,
+        "total_employment_rate": 60
+      },
+      "median_wage": 6300,
+      "average_waiting_time": 300
+    }
+  ]
+}

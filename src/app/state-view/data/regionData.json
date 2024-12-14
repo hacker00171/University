@@ -1,0 +1,1300 @@
+{
+  "regions": {
+    "Riyadh": {
+      "arabicName": "الرياض",
+      "englishName": "Riyadh",
+      "mapImage": "/maps/riyadh.png",
+      "universities": {
+        "King Saud University": {
+          "name": "جامعة الملك سعود",
+          "nameEn": "King Saud University",
+          "position": { "x": 45, "y": 40 },
+          "totalGraduates": 6783,
+          "employmentMetrics": {
+            "employedBeforeGraduation": 1200,
+            "employedAfterGraduation": 4583,
+            "overallEmploymentRate": 85.3,
+            "averageWaitingDays": 215
+          },
+          "averageSalary": 5400,
+          "averageSalaryForBachelorDegree": 7000,
+          "salaryMetrics": {
+            "averageSalary": 5400,
+            "averageSalaryByGender": {
+              "males": 5600,
+              "females": 5200
+            },
+            "salaryByQualification": {
+              "doctorate": 9500,
+              "masters": 7800,
+              "bachelor": 7000,
+              "associate": 4800,
+              "diploma": 4200
+            }
+          },
+          "labels": {
+            "ar": {
+              "graduates": "الخريجين",
+              "waitingTime": "متوسط مدة الانتظار",
+              "forJob": "للحصول على الوظيفة",
+              "days": "يوم",
+              "averageSalary": "متوسط الراتب",
+              "forGraduates": "للخريجين",
+              "riyal": "ريال",
+              "genderDistribution": "توزيع الخريجين حسب الجنس",
+              "males": "ذكور",
+              "females": "إناث",
+              "qualifications": "المؤهلات العلمية",
+              "specializations": "التخصصات",
+              "graduate": "خريج",
+              "forBachelorDegree": "لدرجة البكالوريوس",
+              "averageWagesAll": "متوسط الأجور للجميع",
+              "averageWaitingDaysAll": "متوسط أيام الانتظار لجميع الجامعات",
+              "employmentMetrics": {
+                "employedBeforeGraduation": "التوظيف قبل التخرج",
+                "employedAfterGraduation": "التوظيف بعد التخرج",
+                "overallEmploymentRate": "معدل التوظيف الإجمالي",
+                "employmentByGender": "معدل التوظيف حسب الجنس"
+              },
+              "salaryMetrics": {
+                "averageSalaryByGender": "متوسط الراتب حسب الجنس",
+                "salaryByQualification": "الراتب حسب المؤهل",
+                "doctorate": "دكتوراه",
+                "masters": "ماجستير",
+                "bachelor": "بكالوريوس",
+                "associate": "دبلوم مشارك",
+                "diploma": "دبلوم"
+              },
+              "specializationMetrics": {
+                "employmentRateBySpecialization": "معدل التوظيف حسب التخصص",
+                "genderDistributionBySpecialization": "توزيع الجنس حسب التخصص"
+              }
+            },
+            "en": {
+              "graduates": "Graduates",
+              "waitingTime": "Average Waiting Time",
+              "forJob": "from graduation to first job",
+              "days": "days",
+              "averageSalary": "Average Salary",
+              "forGraduates": "for Graduates",
+              "riyal": "SAR",
+              "genderDistribution": "Graduate Distribution by Gender",
+              "males": "Males",
+              "females": "Females",
+              "qualifications": "Number of graduates by academic qualifications",
+              "specializations": "Number of graduates by specialization",
+              "graduate": "graduate",
+              "forBachelorDegree": "for bachelor's degree",
+              "averageWagesAll": "Average wages all",
+              "averageWaitingDaysAll": "Average waiting days For all universities",
+              "employmentMetrics": {
+                "employedBeforeGraduation": "Employed Before Graduation",
+                "employedAfterGraduation": "Employed After Graduation",
+                "overallEmploymentRate": "Overall Employment Rate",
+                "employmentByGender": "Employment Rate by Gender"
+              },
+              "salaryMetrics": {
+                "averageSalaryByGender": "Average Salary by Gender",
+                "salaryByQualification": "Salary by Qualification",
+                "doctorate": "Doctorate",
+                "masters": "Masters",
+                "bachelor": "Bachelor",
+                "associate": "Associate Diploma",
+                "diploma": "Diploma"
+              },
+              "specializationMetrics": {
+                "employmentRateBySpecialization": "Employment Rate by Specialization",
+                "genderDistributionBySpecialization": "Gender Distribution by Specialization"
+              }
+            }
+          },
+          "genderDistribution": {
+            "males": 3540,
+            "females": 3143
+          },
+          "graduatesByQualification": {
+            "doctorate": {
+              "ar": "دكتوراه",
+              "en": "Doctorate",
+              "count": 146
+            },
+            "masters": {
+              "ar": "ماجستير",
+              "en": "Masters",
+              "count": 1068
+            },
+            "bachelor": {
+              "ar": "بكالوريوس",
+              "en": "Bachelor",
+              "count": 4785
+            },
+            "associate": {
+              "ar": "دبلوم مشارك",
+              "en": "Associate Diploma",
+              "count": 167
+            },
+            "diploma": {
+              "ar": "دبلوم متوسط",
+              "en": "Intermediate Diploma",
+              "count": 617
+            }
+          },
+          "graduatesBySpecialization": {
+            "business_management_law": {
+              "ar": "إدارة الأعمال",
+              "en": "Business Administration",
+              "count": 2334
+            },
+            "health_wellness": {
+              "ar": "الطب",
+              "en": "Medicine",
+              "count": 947
+            },
+            "engineering_manufacturing_construction": {
+              "ar": "الهندسة الميكانيكية",
+              "en": "Mechanical Engineering",
+              "count": 798
+            },
+            "information_communication_technology": {
+              "ar": "علوم الحاسوب",
+              "en": "Computer Science",
+              "count": 722
+            }
+          },
+          "specializationMetrics": {
+            "employmentRateBySpecialization": {
+              "business_management_law": 87.5,
+              "health_wellness": 92.3,
+              "engineering_manufacturing_construction": 89.1,
+              "information_communication_technology": 90.8
+            },
+            "genderDistributionBySpecialization": {
+              "business_management_law": {
+                "males": 1200,
+                "females": 1134
+              },
+              "health_wellness": {
+                "males": 400,
+                "females": 547
+              },
+              "engineering_manufacturing_construction": {
+                "males": 600,
+                "females": 198
+              },
+              "information_communication_technology": {
+                "males": 450,
+                "females": 272
+              }
+            }
+          }
+        },
+        "Saudi Electronic University": {
+          "name": "الجامعة السعودية الإلكترونية",
+          "nameEn": "Saudi Electronic University",
+          "position": { "x": 55, "y": 50 },
+          "totalGraduates": 35000,
+          "employmentMetrics": {
+            "employedBeforeGraduation": 1200,
+            "employedAfterGraduation": 4583,
+            "overallEmploymentRate": 85.3,
+            "averageWaitingDays": 150
+          },
+          "averageSalary": 9500,
+          "salaryMetrics": {
+            "averageSalary": 9500,
+            "averageSalaryByGender": {
+              "males": 9800,
+              "females": 9200
+            },
+            "salaryByQualification": {
+              "doctorate": 12000,
+              "masters": 10000,
+              "bachelor": 9000,
+              "associate": 6000,
+              "diploma": 5000
+            }
+          },
+          "labels": {
+            "ar": {
+              "graduates": "الخريجين",
+              "waitingTime": "متوسط مدة الانتظار",
+              "forJob": "للحصول على الوظيفة",
+              "days": "يوم",
+              "averageSalary": "متوسط الراتب",
+              "forGraduates": "للخريجين",
+              "riyal": "ريال",
+              "genderDistribution": "توزيع الخريجين حسب الجنس",
+              "males": "ذكور",
+              "females": "إناث",
+              "qualifications": "المؤهلات العلمية",
+              "specializations": "التخصصات",
+              "graduate": "خريج",
+              "forBachelorDegree": "لدرجة البكالوريوس",
+              "averageWagesAll": "متوسط الأجور للجميع",
+              "averageWaitingDaysAll": "متوسط أيام الانتظار لجميع الجامعات",
+              "employmentMetrics": {
+                "employedBeforeGraduation": "التوظيف قبل التخرج",
+                "employedAfterGraduation": "التوظيف بعد التخرج",
+                "overallEmploymentRate": "معدل التوظيف الإجمالي",
+                "employmentByGender": "معدل التوظيف حسب الجنس"
+              },
+              "salaryMetrics": {
+                "averageSalaryByGender": "متوسط الراتب حسب الجنس",
+                "salaryByQualification": "الراتب حسب المؤهل",
+                "doctorate": "دكتوراه",
+                "masters": "ماجستير",
+                "bachelor": "بكالوريوس",
+                "associate": "دبلوم مشارك",
+                "diploma": "دبلوم"
+              },
+              "specializationMetrics": {
+                "employmentRateBySpecialization": "معدل التوظيف حسب التخصص",
+                "genderDistributionBySpecialization": "توزيع الجنس حسب التخصص"
+              }
+            },
+            "en": {
+              "graduates": "Graduates",
+              "waitingTime": "Average Waiting Time",
+              "forJob": "for Employment",
+              "days": "days",
+              "averageSalary": "Average Salary",
+              "forGraduates": "for Graduates",
+              "riyal": "SAR",
+              "genderDistribution": "Graduate Distribution by Gender",
+              "males": "Males",
+              "females": "Females",
+              "qualifications": "Qualifications",
+              "specializations": "Specializations",
+              "graduate": "graduate",
+              "forBachelorDegree": "for bachelor's degree",
+              "averageWagesAll": "Average wages all",
+              "averageWaitingDaysAll": "Average waiting days For all universities",
+              "employmentMetrics": {
+                "employedBeforeGraduation": "Employed Before Graduation",
+                "employedAfterGraduation": "Employed After Graduation",
+                "overallEmploymentRate": "Overall Employment Rate",
+                "employmentByGender": "Employment Rate by Gender"
+              },
+              "salaryMetrics": {
+                "averageSalaryByGender": "Average Salary by Gender",
+                "salaryByQualification": "Salary by Qualification",
+                "doctorate": "Doctorate",
+                "masters": "Masters",
+                "bachelor": "Bachelor",
+                "associate": "Associate Diploma",
+                "diploma": "Diploma"
+              },
+              "specializationMetrics": {
+                "employmentRateBySpecialization": "Employment Rate by Specialization",
+                "genderDistributionBySpecialization": "Gender Distribution by Specialization"
+              }
+            }
+          },
+          "genderDistribution": {
+            "males": 55,
+            "females": 45
+          },
+          "graduatesByQualification": {
+            "doctorate": {
+              "ar": "دكتوراه",
+              "en": "Doctorate",
+              "count": 600
+            },
+            "masters": {
+              "ar": "ماجستير",
+              "en": "Masters",
+              "count": 3500
+            },
+            "bachelor": {
+              "ar": "بكالوريوس",
+              "en": "Bachelor",
+              "count": 28000
+            },
+            "associate": {
+              "ar": "دبلوم مشارك",
+              "en": "Associate Diploma",
+              "count": 1400
+            },
+            "diploma": {
+              "ar": "دبلوم متوسط",
+              "en": "Intermediate Diploma",
+              "count": 1500
+            }
+          },
+          "graduatesBySpecialization": {
+            "islamic_studies_and_law": {
+              "ar": "الدراسات الإسلامية والقانون",
+              "en": "Islamic Studies and Law",
+              "count": 15000
+            },
+            "business_and_management": {
+              "ar": "إدارة الأعمال والإدارة",
+              "en": "Business and Management",
+              "count": 8000
+            },
+            "education": {
+              "ar": "التعليم",
+              "en": "Education",
+              "count": 7000
+            },
+            "social_sciences": {
+              "ar": "العلوم الاجتماعية",
+              "en": "Social Sciences",
+              "count": 5000
+            }
+          },
+          "specializationMetrics": {
+            "employmentRateBySpecialization": {
+              "islamic_studies_and_law": 87.5,
+              "business_and_management": 92.3,
+              "education": 89.1,
+              "social_sciences": 90.8
+            },
+            "genderDistributionBySpecialization": {
+              "islamic_studies_and_law": {
+                "males": 1200,
+                "females": 1134
+              },
+              "business_and_management": {
+                "males": 400,
+                "females": 547
+              },
+              "education": {
+                "males": 600,
+                "females": 198
+              },
+              "social_sciences": {
+                "males": 450,
+                "females": 272
+              }
+            }
+          }
+        },
+        "Princess Nourah bint Abdulrahman University": {
+          "name": "جامعة الأميرة نورة بنت عبدالرحمن",
+          "nameEn": "Princess Nourah bint Abdulrahman University",
+          "position": { "x": 60, "y": 55 },
+          "totalGraduates": 32000,
+          "employmentMetrics": {
+            "employedBeforeGraduation": 1200,
+            "employedAfterGraduation": 4583,
+            "overallEmploymentRate": 85.3,
+            "averageWaitingDays": 230
+          },
+          "averageSalary": 5100,
+          "salaryMetrics": {
+            "averageSalary": 5100,
+            "averageSalaryByGender": {
+              "males": 5300,
+              "females": 4900
+            },
+            "salaryByQualification": {
+              "doctorate": 9000,
+              "masters": 7500,
+              "bachelor": 6500,
+              "associate": 4500,
+              "diploma": 3800
+            }
+          },
+          "labels": {
+            "ar": {
+              "graduates": "الخريجين",
+              "waitingTime": "متوسط مدة الانتظار",
+              "forJob": "للحصول على الوظيفة",
+              "days": "يوم",
+              "averageSalary": "متوسط الراتب",
+              "forGraduates": "للخريجين",
+              "riyal": "ريال",
+              "genderDistribution": "توزيع الخريجين حسب الجنس",
+              "males": "ذكور",
+              "females": "إناث",
+              "qualifications": "المؤهلات العلمية",
+              "specializations": "التخصصات",
+              "graduate": "خريج",
+              "forBachelorDegree": "لدرجة البكالوريوس",
+              "averageWagesAll": "متوسط الأجور للجميع",
+              "averageWaitingDaysAll": "متوسط أيام الانتظار لجميع الجامعات",
+              "employmentMetrics": {
+                "employedBeforeGraduation": "التوظيف قبل التخرج",
+                "employedAfterGraduation": "التوظيف بعد التخرج",
+                "overallEmploymentRate": "معدل التوظيف الإجمالي",
+                "employmentByGender": "معدل التوظيف حسب الجنس"
+              },
+              "salaryMetrics": {
+                "averageSalaryByGender": "متوسط الراتب حسب الجنس",
+                "salaryByQualification": "الراتب حسب المؤهل",
+                "doctorate": "دكتوراه",
+                "masters": "ماجستير",
+                "bachelor": "بكالوريوس",
+                "associate": "دبلوم مشارك",
+                "diploma": "دبلوم"
+              },
+              "specializationMetrics": {
+                "employmentRateBySpecialization": "معدل التوظيف حسب التخصص",
+                "genderDistributionBySpecialization": "توزيع الجنس حسب التخصص"
+              }
+            },
+            "en": {
+              "graduates": "Graduates",
+              "waitingTime": "Average Waiting Time",
+              "forJob": "for Employment",
+              "days": "days",
+              "averageSalary": "Average Salary",
+              "forGraduates": "for Graduates",
+              "riyal": "SAR",
+              "genderDistribution": "Graduate Distribution by Gender",
+              "males": "Males",
+              "females": "Females",
+              "qualifications": "Qualifications",
+              "specializations": "Specializations",
+              "graduate": "graduate",
+              "forBachelorDegree": "for bachelor's degree",
+              "averageWagesAll": "Average wages all",
+              "averageWaitingDaysAll": "Average waiting days For all universities",
+              "employmentMetrics": {
+                "employedBeforeGraduation": "Employed Before Graduation",
+                "employedAfterGraduation": "Employed After Graduation",
+                "overallEmploymentRate": "Overall Employment Rate",
+                "employmentByGender": "Employment Rate by Gender"
+              },
+              "salaryMetrics": {
+                "averageSalaryByGender": "Average Salary by Gender",
+                "salaryByQualification": "Salary by Qualification",
+                "doctorate": "Doctorate",
+                "masters": "Masters",
+                "bachelor": "Bachelor",
+                "associate": "Associate Diploma",
+                "diploma": "Diploma"
+              },
+              "specializationMetrics": {
+                "employmentRateBySpecialization": "Employment Rate by Specialization",
+                "genderDistributionBySpecialization": "Gender Distribution by Specialization"
+              }
+            }
+          },
+          "genderDistribution": {
+            "males": 0,
+            "females": 100
+          },
+          "graduatesByQualification": {
+            "doctorate": {
+              "ar": "دكتوراه",
+              "en": "Doctorate",
+              "count": 400
+            },
+            "masters": {
+              "ar": "ماجستير",
+              "en": "Masters",
+              "count": 3000
+            },
+            "bachelor": {
+              "ar": "بكالوريوس",
+              "en": "Bachelor",
+              "count": 26000
+            },
+            "associate": {
+              "ar": "دبلوم مشارك",
+              "en": "Associate Diploma",
+              "count": 1300
+            },
+            "diploma": {
+              "ar": "دبلوم متوسط",
+              "en": "Intermediate Diploma",
+              "count": 1300
+            }
+          },
+          "graduatesBySpecialization": {
+            "education_and_teaching": {
+              "ar": "التعليم والتدريس",
+              "en": "Education and Teaching",
+              "count": 12000
+            },
+            "health_sciences": {
+              "ar": "علوم الصحة",
+              "en": "Health Sciences",
+              "count": 8000
+            },
+            "arts_and_design": {
+              "ar": "الفنون والتصميم",
+              "en": "Arts and Design",
+              "count": 7000
+            },
+            "business_administration": {
+              "ar": "إدارة الأعمال",
+              "en": "Business Administration",
+              "count": 5000
+            }
+          },
+          "specializationMetrics": {
+            "employmentRateBySpecialization": {
+              "education_and_teaching": 87.5,
+              "health_sciences": 92.3,
+              "arts_and_design": 89.1,
+              "business_administration": 90.8
+            },
+            "genderDistributionBySpecialization": {
+              "education_and_teaching": {
+                "males": 1200,
+                "females": 1134
+              },
+              "health_sciences": {
+                "males": 400,
+                "females": 547
+              },
+              "arts_and_design": {
+                "males": 600,
+                "females": 198
+              },
+              "business_administration": {
+                "males": 450,
+                "females": 272
+              }
+            }
+          }
+        }
+      }
+    },
+    "Mecca": {
+      "arabicName": "مكة المكرمة",
+      "englishName": "Mecca",
+      "mapImage": "/maps/mecca.png",
+      "universities": {
+        "King Abdulaziz University": {
+          "name": "جامعة الملك عبد العزيز",
+          "nameEn": "King Abdulaziz University",
+          "position": { "x": 50, "y": 45 },
+          "totalGraduates": 42000,
+          "employmentMetrics": {
+            "employedBeforeGraduation": 1200,
+            "employedAfterGraduation": 4583,
+            "overallEmploymentRate": 85.3,
+            "averageWaitingDays": 200
+          },
+          "averageSalary": 7200,
+          "salaryMetrics": {
+            "averageSalary": 7200,
+            "averageSalaryByGender": {
+              "males": 7500,
+              "females": 6900
+            },
+            "salaryByQualification": {
+              "doctorate": 11000,
+              "masters": 9200,
+              "bachelor": 8200,
+              "associate": 5800,
+              "diploma": 4900
+            }
+          },
+          "labels": {
+            "ar": {
+              "graduates": "الخريجين",
+              "waitingTime": "متوسط مدة الانتظار",
+              "forJob": "للحصول على الوظيفة",
+              "days": "يوم",
+              "averageSalary": "متوسط الراتب",
+              "forGraduates": "للخريجين",
+              "riyal": "ريال",
+              "genderDistribution": "توزيع الخريجين حسب الجنس",
+              "males": "ذكور",
+              "females": "إناث",
+              "qualifications": "المؤهلات العلمية",
+              "specializations": "التخصصات",
+              "graduate": "خريج",
+              "forBachelorDegree": "لدرجة البكالوريوس",
+              "averageWagesAll": "متوسط الأجور للجميع",
+              "averageWaitingDaysAll": "متوسط أيام الانتظار لجميع الجامعات",
+              "employmentMetrics": {
+                "employedBeforeGraduation": "التوظيف قبل التخرج",
+                "employedAfterGraduation": "التوظيف بعد التخرج",
+                "overallEmploymentRate": "معدل التوظيف الإجمالي",
+                "employmentByGender": "معدل التوظيف حسب الجنس"
+              },
+              "salaryMetrics": {
+                "averageSalaryByGender": "متوسط الراتب حسب الجنس",
+                "salaryByQualification": "الراتب حسب المؤهل",
+                "doctorate": "دكتوراه",
+                "masters": "ماجستير",
+                "bachelor": "بكالوريوس",
+                "associate": "دبلوم مشارك",
+                "diploma": "دبلوم"
+              },
+              "specializationMetrics": {
+                "employmentRateBySpecialization": "معدل التوظيف حسب التخصص",
+                "genderDistributionBySpecialization": "توزيع الجنس حسب التخصص"
+              }
+            },
+            "en": {
+              "graduates": "Graduates",
+              "waitingTime": "Average Waiting Time",
+              "forJob": "for Employment",
+              "days": "days",
+              "averageSalary": "Average Salary",
+              "forGraduates": "for Graduates",
+              "riyal": "SAR",
+              "genderDistribution": "Graduate Distribution by Gender",
+              "males": "Males",
+              "females": "Females",
+              "qualifications": "Qualifications",
+              "specializations": "Specializations",
+              "graduate": "graduate",
+              "forBachelorDegree": "for bachelor's degree",
+              "averageWagesAll": "Average wages all",
+              "averageWaitingDaysAll": "Average waiting days For all universities",
+              "employmentMetrics": {
+                "employedBeforeGraduation": "Employed Before Graduation",
+                "employedAfterGraduation": "Employed After Graduation",
+                "overallEmploymentRate": "Overall Employment Rate",
+                "employmentByGender": "Employment Rate by Gender"
+              },
+              "salaryMetrics": {
+                "averageSalaryByGender": "Average Salary by Gender",
+                "salaryByQualification": "Salary by Qualification",
+                "doctorate": "Doctorate",
+                "masters": "Masters",
+                "bachelor": "Bachelor",
+                "associate": "Associate Diploma",
+                "diploma": "Diploma"
+              },
+              "specializationMetrics": {
+                "employmentRateBySpecialization": "Employment Rate by Specialization",
+                "genderDistributionBySpecialization": "Gender Distribution by Specialization"
+              }
+            }
+          },
+          "genderDistribution": {
+            "males": 58,
+            "females": 42
+          },
+          "graduatesByQualification": {
+            "doctorate": {
+              "ar": "دكتوراه",
+              "en": "Doctorate",
+              "count": 900
+            },
+            "masters": {
+              "ar": "ماجستير",
+              "en": "Masters",
+              "count": 4500
+            },
+            "bachelor": {
+              "ar": "بكالوريوس",
+              "en": "Bachelor",
+              "count": 33000
+            },
+            "associate": {
+              "ar": "دبلوم مشارك",
+              "en": "Associate Diploma",
+              "count": 2000
+            },
+            "diploma": {
+              "ar": "دبلوم متوسط",
+              "en": "Intermediate Diploma",
+              "count": 1600
+            }
+          },
+          "graduatesBySpecialization": {
+            "medicine_and_health_sciences": {
+              "ar": "الطب والعلوم الصحية",
+              "en": "Medicine and Health Sciences",
+              "count": 15000
+            },
+            "engineering": {
+              "ar": "الهندسة",
+              "en": "Engineering",
+              "count": 10000
+            },
+            "business_administration": {
+              "ar": "إدارة الأعمال",
+              "en": "Business Administration",
+              "count": 9000
+            },
+            "information_technology": {
+              "ar": "تقنية المعلومات",
+              "en": "Information Technology",
+              "count": 8000
+            }
+          },
+          "specializationMetrics": {
+            "employmentRateBySpecialization": {
+              "medicine_and_health_sciences": 87.5,
+              "engineering": 92.3,
+              "business_administration": 89.1,
+              "information_technology": 90.8
+            },
+            "genderDistributionBySpecialization": {
+              "medicine_and_health_sciences": {
+                "males": 1200,
+                "females": 1134
+              },
+              "engineering": {
+                "males": 400,
+                "females": 547
+              },
+              "business_administration": {
+                "males": 600,
+                "females": 198
+              },
+              "information_technology": {
+                "males": 450,
+                "females": 272
+              }
+            }
+          }
+        },
+        "Umm Al-Qura University": {
+          "name": "جامعة أم القرى",
+          "nameEn": "Umm Al-Qura University",
+          "position": { "x": 52, "y": 48 },
+          "totalGraduates": 38000,
+          "employmentMetrics": {
+            "employedBeforeGraduation": 1200,
+            "employedAfterGraduation": 4583,
+            "overallEmploymentRate": 85.3,
+            "averageWaitingDays": 225
+          },
+          "averageSalary": 6300,
+          "salaryMetrics": {
+            "averageSalary": 6300,
+            "averageSalaryByGender": {
+              "males": 6600,
+              "females": 6000
+            },
+            "salaryByQualification": {
+              "doctorate": 10000,
+              "masters": 8500,
+              "bachelor": 7500,
+              "associate": 5300,
+              "diploma": 4500
+            }
+          },
+          "labels": {
+            "ar": {
+              "graduates": "الخريجين",
+              "waitingTime": "متوسط مدة الانتظار",
+              "forJob": "للحصول على الوظيفة",
+              "days": "يوم",
+              "averageSalary": "متوسط الراتب",
+              "forGraduates": "للخريجين",
+              "riyal": "ريال",
+              "genderDistribution": "توزيع الخريجين حسب الجنس",
+              "males": "ذكور",
+              "females": "إناث",
+              "qualifications": "المؤهلات العلمية",
+              "specializations": "التخصصات",
+              "graduate": "خريج",
+              "forBachelorDegree": "لدرجة البكالوريوس",
+              "averageWagesAll": "متوسط الأجور للجميع",
+              "averageWaitingDaysAll": "متوسط أيام الانتظار لجميع الجامعات",
+              "employmentMetrics": {
+                "employedBeforeGraduation": "التوظيف قبل التخرج",
+                "employedAfterGraduation": "التوظيف بعد التخرج",
+                "overallEmploymentRate": "معدل التوظيف الإجمالي",
+                "employmentByGender": "معدل التوظيف حسب الجنس"
+              },
+              "salaryMetrics": {
+                "averageSalaryByGender": "متوسط الراتب حسب الجنس",
+                "salaryByQualification": "الراتب حسب المؤهل",
+                "doctorate": "دكتوراه",
+                "masters": "ماجستير",
+                "bachelor": "بكالوريوس",
+                "associate": "دبلوم مشارك",
+                "diploma": "دبلوم"
+              },
+              "specializationMetrics": {
+                "employmentRateBySpecialization": "معدل التوظيف حسب التخصص",
+                "genderDistributionBySpecialization": "توزيع الجنس حسب التخصص"
+              }
+            },
+            "en": {
+              "graduates": "Graduates",
+              "waitingTime": "Average Waiting Time",
+              "forJob": "for Employment",
+              "days": "days",
+              "averageSalary": "Average Salary",
+              "forGraduates": "for Graduates",
+              "riyal": "SAR",
+              "genderDistribution": "Graduate Distribution by Gender",
+              "males": "Males",
+              "females": "Females",
+              "qualifications": "Qualifications",
+              "specializations": "Specializations",
+              "graduate": "graduate",
+              "forBachelorDegree": "for bachelor's degree",
+              "averageWagesAll": "Average wages all",
+              "averageWaitingDaysAll": "Average waiting days For all universities",
+              "employmentMetrics": {
+                "employedBeforeGraduation": "Employed Before Graduation",
+                "employedAfterGraduation": "Employed After Graduation",
+                "overallEmploymentRate": "Overall Employment Rate",
+                "employmentByGender": "Employment Rate by Gender"
+              },
+              "salaryMetrics": {
+                "averageSalaryByGender": "Average Salary by Gender",
+                "salaryByQualification": "Salary by Qualification",
+                "doctorate": "Doctorate",
+                "masters": "Masters",
+                "bachelor": "Bachelor",
+                "associate": "Associate Diploma",
+                "diploma": "Diploma"
+              },
+              "specializationMetrics": {
+                "employmentRateBySpecialization": "Employment Rate by Specialization",
+                "genderDistributionBySpecialization": "Gender Distribution by Specialization"
+              }
+            }
+          },
+          "genderDistribution": {
+            "males": 52,
+            "females": 48
+          },
+          "graduatesByQualification": {
+            "doctorate": {
+              "ar": "دكتوراه",
+              "en": "Doctorate",
+              "count": 700
+            },
+            "masters": {
+              "ar": "ماجستير",
+              "en": "Masters",
+              "count": 3800
+            },
+            "bachelor": {
+              "ar": "بكالوريوس",
+              "en": "Bachelor",
+              "count": 30000
+            },
+            "associate": {
+              "ar": "دبلوم مشارك",
+              "en": "Associate Diploma",
+              "count": 1800
+            },
+            "diploma": {
+              "ar": "دبلوم متوسط",
+              "en": "Intermediate Diploma",
+              "count": 1700
+            }
+          },
+          "graduatesBySpecialization": {
+            "islamic_studies": {
+              "ar": "الدراسات الإسلامية",
+              "en": "Islamic Studies",
+              "count": 12000
+            },
+            "engineering": {
+              "ar": "الهندسة",
+              "en": "Engineering",
+              "count": 9000
+            },
+            "medicine": {
+              "ar": "الطب",
+              "en": "Medicine",
+              "count": 8000
+            },
+            "computer_science": {
+              "ar": "علوم الحاسوب",
+              "en": "Computer Science",
+              "count": 9000
+            }
+          },
+          "specializationMetrics": {
+            "employmentRateBySpecialization": {
+              "islamic_studies": 87.5,
+              "engineering": 92.3,
+              "medicine": 89.1,
+              "computer_science": 90.8
+            },
+            "genderDistributionBySpecialization": {
+              "islamic_studies": {
+                "males": 1200,
+                "females": 1134
+              },
+              "engineering": {
+                "males": 400,
+                "females": 547
+              },
+              "medicine": {
+                "males": 600,
+                "females": 198
+              },
+              "computer_science": {
+                "males": 450,
+                "females": 272
+              }
+            }
+          }
+        }
+      }
+    },
+    "Eastern Province": {
+      "arabicName": "المنطقة الشرقية",
+      "englishName": "Eastern Province",
+      "mapImage": "/maps/eastern.png",
+      "universities": {
+        "King Faisal University": {
+          "name": "جامعة الملك فيصل",
+          "nameEn": "King Faisal University",
+          "position": { "x": 48, "y": 42 },
+          "totalGraduates": 36000,
+          "employmentMetrics": {
+            "employedBeforeGraduation": 1200,
+            "employedAfterGraduation": 4583,
+            "overallEmploymentRate": 85.3,
+            "averageWaitingDays": 180
+          },
+          "averageSalary": 7200,
+          "salaryMetrics": {
+            "averageSalary": 7200,
+            "averageSalaryByGender": {
+              "males": 7500,
+              "females": 6900
+            },
+            "salaryByQualification": {
+              "doctorate": 11000,
+              "masters": 9200,
+              "bachelor": 8200,
+              "associate": 5800,
+              "diploma": 4900
+            }
+          },
+          "labels": {
+            "ar": {
+              "graduates": "الخريجين",
+              "waitingTime": "متوسط مدة الانتظار",
+              "forJob": "للحصول على الوظيفة",
+              "days": "يوم",
+              "averageSalary": "متوسط الراتب",
+              "forGraduates": "للخريجين",
+              "riyal": "ريال",
+              "genderDistribution": "توزيع الخريجين حسب الجنس",
+              "males": "ذكور",
+              "females": "إناث",
+              "qualifications": "المؤهلات العلمية",
+              "specializations": "التخصصات",
+              "graduate": "خريج",
+              "forBachelorDegree": "لدرجة البكالوريوس",
+              "averageWagesAll": "متوسط الأجور للجميع",
+              "averageWaitingDaysAll": "متوسط أيام الانتظار لجميع الجامعات",
+              "employmentMetrics": {
+                "employedBeforeGraduation": "التوظيف قبل التخرج",
+                "employedAfterGraduation": "التوظيف بعد التخرج",
+                "overallEmploymentRate": "معدل التوظيف الإجمالي",
+                "employmentByGender": "معدل التوظيف حسب الجنس"
+              },
+              "salaryMetrics": {
+                "averageSalaryByGender": "متوسط الراتب حسب الجنس",
+                "salaryByQualification": "الراتب حسب المؤهل",
+                "doctorate": "دكتوراه",
+                "masters": "ماجستير",
+                "bachelor": "بكالوريوس",
+                "associate": "دبلوم مشارك",
+                "diploma": "دبلوم"
+              },
+              "specializationMetrics": {
+                "employmentRateBySpecialization": "معدل التوظيف حسب التخصص",
+                "genderDistributionBySpecialization": "توزيع الجنس حسب التخصص"
+              }
+            },
+            "en": {
+              "graduates": "Graduates",
+              "waitingTime": "Average Waiting Time",
+              "forJob": "for Employment",
+              "days": "days",
+              "averageSalary": "Average Salary",
+              "forGraduates": "for Graduates",
+              "riyal": "SAR",
+              "genderDistribution": "Graduate Distribution by Gender",
+              "males": "Males",
+              "females": "Females",
+              "qualifications": "Qualifications",
+              "specializations": "Specializations",
+              "graduate": "graduate",
+              "forBachelorDegree": "for bachelor's degree",
+              "averageWagesAll": "Average wages all",
+              "averageWaitingDaysAll": "Average waiting days For all universities",
+              "employmentMetrics": {
+                "employedBeforeGraduation": "Employed Before Graduation",
+                "employedAfterGraduation": "Employed After Graduation",
+                "overallEmploymentRate": "Overall Employment Rate",
+                "employmentByGender": "Employment Rate by Gender"
+              },
+              "salaryMetrics": {
+                "averageSalaryByGender": "Average Salary by Gender",
+                "salaryByQualification": "Salary by Qualification",
+                "doctorate": "Doctorate",
+                "masters": "Masters",
+                "bachelor": "Bachelor",
+                "associate": "Associate Diploma",
+                "diploma": "Diploma"
+              },
+              "specializationMetrics": {
+                "employmentRateBySpecialization": "Employment Rate by Specialization",
+                "genderDistributionBySpecialization": "Gender Distribution by Specialization"
+              }
+            }
+          },
+          "genderDistribution": {
+            "males": 85,
+            "females": 15
+          },
+          "graduatesByQualification": {
+            "doctorate": {
+              "ar": "دكتوراه",
+              "en": "Doctorate",
+              "count": 800
+            },
+            "masters": {
+              "ar": "ماجستير",
+              "en": "Masters",
+              "count": 4200
+            },
+            "bachelor": {
+              "ar": "بكالوريوس",
+              "en": "Bachelor",
+              "count": 28000
+            },
+            "associate": {
+              "ar": "دبلوم مشارك",
+              "en": "Associate Diploma",
+              "count": 1500
+            },
+            "diploma": {
+              "ar": "دبلوم متوسط",
+              "en": "Intermediate Diploma",
+              "count": 1500
+            }
+          },
+          "graduatesBySpecialization": {
+            "petroleum": {
+              "ar": "هندسة البترول",
+              "en": "Petroleum Engineering",
+              "count": 12000
+            },
+            "chemical": {
+              "ar": "الهندسة الكيميائية",
+              "en": "Chemical Engineering",
+              "count": 8000
+            },
+            "computer": {
+              "ar": "علوم الحاسب",
+              "en": "Computer Science",
+              "count": 9000
+            },
+            "mechanical": {
+              "ar": "الهندسة الميكانيكية",
+              "en": "Mechanical Engineering",
+              "count": 7000
+            }
+          },
+          "specializationMetrics": {
+            "employmentRateBySpecialization": {
+              "petroleum": 87.5,
+              "chemical": 92.3,
+              "computer": 89.1,
+              "mechanical": 90.8
+            },
+            "genderDistributionBySpecialization": {
+              "petroleum": {
+                "males": 1200,
+                "females": 1134
+              },
+              "chemical": {
+                "males": 400,
+                "females": 547
+              },
+              "computer": {
+                "males": 600,
+                "females": 198
+              },
+              "mechanical": {
+                "males": 450,
+                "females": 272
+              }
+            }
+          }
+        },
+        "Imam Abdulrahman Bin Faisal University": {
+          "name": "جامعة الإمام عبد الرحمن بن فيصل",
+          "nameEn": "Imam Abdulrahman Bin Faisal University",
+          "position": { "x": 55, "y": 58 },
+          "totalGraduates": 30000,
+          "employmentMetrics": {
+            "employedBeforeGraduation": 1200,
+            "employedAfterGraduation": 4583,
+            "overallEmploymentRate": 85.3,
+            "averageWaitingDays": 210
+          },
+          "averageSalary": 6800,
+          "salaryMetrics": {
+            "averageSalary": 6800,
+            "averageSalaryByGender": {
+              "males": 7100,
+              "females": 6500
+            },
+            "salaryByQualification": {
+              "doctorate": 10500,
+              "masters": 8800,
+              "bachelor": 7800,
+              "associate": 5500,
+              "diploma": 4700
+            }
+          },
+          "labels": {
+            "ar": {
+              "graduates": "الخريجين",
+              "waitingTime": "متوسط مدة الانتظار",
+              "forJob": "للحصول على الوظيفة",
+              "days": "يوم",
+              "averageSalary": "متوسط الراتب",
+              "forGraduates": "للخريجين",
+              "riyal": "ريال",
+              "genderDistribution": "توزيع الخريجين حسب الجنس",
+              "males": "ذكور",
+              "females": "إناث",
+              "qualifications": "المؤهلات العلمية",
+              "specializations": "التخصصات",
+              "graduate": "خريج",
+              "forBachelorDegree": "لدرجة البكالوريوس",
+              "averageWagesAll": "متوسط الأجور للجميع",
+              "averageWaitingDaysAll": "متوسط أيام الانتظار لجميع الجامعات",
+              "employmentMetrics": {
+                "employedBeforeGraduation": "التوظيف قبل التخرج",
+                "employedAfterGraduation": "التوظيف بعد التخرج",
+                "overallEmploymentRate": "معدل التوظيف الإجمالي",
+                "employmentByGender": "معدل التوظيف حسب الجنس"
+              },
+              "salaryMetrics": {
+                "averageSalaryByGender": "متوسط الراتب حسب الجنس",
+                "salaryByQualification": "الراتب حسب المؤهل",
+                "doctorate": "دكتوراه",
+                "masters": "ماجستير",
+                "bachelor": "بكالوريوس",
+                "associate": "دبلوم مشارك",
+                "diploma": "دبلوم"
+              },
+              "specializationMetrics": {
+                "employmentRateBySpecialization": "معدل التوظيف حسب التخصص",
+                "genderDistributionBySpecialization": "توزيع الجنس حسب التخصص"
+              }
+            },
+            "en": {
+              "graduates": "Graduates",
+              "waitingTime": "Average Waiting Time",
+              "forJob": "for Employment",
+              "days": "days",
+              "averageSalary": "Average Salary",
+              "forGraduates": "for Graduates",
+              "riyal": "SAR",
+              "genderDistribution": "Graduate Distribution by Gender",
+              "males": "Males",
+              "females": "Females",
+              "qualifications": "Qualifications",
+              "specializations": "Specializations",
+              "graduate": "graduate",
+              "forBachelorDegree": "for bachelor's degree",
+              "averageWagesAll": "Average wages all",
+              "averageWaitingDaysAll": "Average waiting days For all universities",
+              "employmentMetrics": {
+                "employedBeforeGraduation": "Employed Before Graduation",
+                "employedAfterGraduation": "Employed After Graduation",
+                "overallEmploymentRate": "Overall Employment Rate",
+                "employmentByGender": "Employment Rate by Gender"
+              },
+              "salaryMetrics": {
+                "averageSalaryByGender": "Average Salary by Gender",
+                "salaryByQualification": "Salary by Qualification",
+                "doctorate": "Doctorate",
+                "masters": "Masters",
+                "bachelor": "Bachelor",
+                "associate": "Associate Diploma",
+                "diploma": "Diploma"
+              },
+              "specializationMetrics": {
+                "employmentRateBySpecialization": "Employment Rate by Specialization",
+                "genderDistributionBySpecialization": "Gender Distribution by Specialization"
+              }
+            }
+          },
+          "genderDistribution": {
+            "males": 60,
+            "females": 40
+          },
+          "graduatesByQualification": {
+            "doctorate": {
+              "ar": "دكتوراه",
+              "en": "Doctorate",
+              "count": 600
+            },
+            "masters": {
+              "ar": "ماجستير",
+              "en": "Masters",
+              "count": 3500
+            },
+            "bachelor": {
+              "ar": "بكالوريوس",
+              "en": "Bachelor",
+              "count": 23000
+            },
+            "associate": {
+              "ar": "دبلوم مشارك",
+              "en": "Associate Diploma",
+              "count": 1200
+            },
+            "diploma": {
+              "ar": "دبلوم متوسط",
+              "en": "Intermediate Diploma",
+              "count": 1700
+            }
+          },
+          "graduatesBySpecialization": {
+            "business_and_management": {
+              "ar": "إدارة الأعمال والإدارة",
+              "en": "Business and Management",
+              "count": 10000
+            },
+            "engineering": {
+              "ar": "الهندسة",
+              "en": "Engineering",
+              "count": 8000
+            },
+            "computer_science": {
+              "ar": "علوم الحاسوب",
+              "en": "Computer Science",
+              "count": 7000
+            },
+            "medicine": {
+              "ar": "الطب",
+              "en": "Medicine",
+              "count": 6000
+            }
+          },
+          "specializationMetrics": {
+            "employmentRateBySpecialization": {
+              "business_and_management": 87.5,
+              "engineering": 92.3,
+              "computer_science": 89.1,
+              "medicine": 90.8
+            },
+            "genderDistributionBySpecialization": {
+              "business_and_management": {
+                "males": 1200,
+                "females": 1134
+              },
+              "engineering": {
+                "males": 400,
+                "females": 547
+              },
+              "computer_science": {
+                "males": 600,
+                "females": 198
+              },
+              "medicine": {
+                "males": 450,
+                "females": 272
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
