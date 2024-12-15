@@ -1,0 +1,326 @@
+{
+  "overview": {
+    "totalStudents": 450000,
+    "totalInstitutions": 120,
+    "averageGPA": 3.5,
+    "graduationRate": 85,
+    "graduates_by_qualification": {
+      "Bachelors": 25000,
+      "Masters": 8000,
+      "PhD": 2000,
+      "Diploma": 15000
+    }
+  },
+  "employment": {
+    "employmentRate": 78
+  },
+  "states": {
+    "Eastern": {
+      "name": "Eastern",
+      "colleges": 15,
+      "students": 112000,
+      "literacyRate": 97.2,
+      "universities": [
+        {
+          "name": "King Fahd University of Petroleum and Minerals",
+          "students": 45000,
+          "graduates": 9500,
+          "employmentRate": 72
+        },
+        {
+          "name": "Imam Abdulrahman Bin Faisal University",
+          "students": 42000,
+          "graduates": 8500,
+          "employmentRate": 65
+        },
+        {
+          "name": "University of Hafr Al-Batin",
+          "students": 25000,
+          "graduates": 4000,
+          "employmentRate": 58
+        },
+        {
+          "name": "Saudi Electronic University - Eastern Branch",
+          "students": 18000,
+          "graduates": 3000,
+          "employmentRate": 63
+        },
+        {
+          "name": "Prince Mohammad Bin Fahd University",
+          "students": 15000,
+          "graduates": 2500,
+          "employmentRate": 69
+        },
+        {
+          "name": "Arab Open University - Eastern Branch",
+          "students": 12000,
+          "graduates": 1500,
+          "employmentRate": 55
+        },
+        {
+          "name": "King Faisal University",
+          "students": 6000,
+          "graduates": 1000,
+          "employmentRate": 61
+        }
+      ],
+      "statistics": {
+        "totalStudents": 112000,
+        "totalGraduates": 18000,
+        "averageEmploymentRate": 68.5
+      }
+    },
+    "Riyadh": {
+      "name": "Riyadh",
+      "colleges": 20,
+      "students": 145812,
+      "literacyRate": 97.5,
+      "universities": [
+        {
+          "name": "King Saud University",
+          "students": 61234,
+          "graduates": 12500,
+          "employmentRate": 75
+        },
+        {
+          "name": "Princess Nourah University",
+          "students": 45678,
+          "graduates": 9800,
+          "employmentRate": 68
+        },
+        {
+          "name": "Imam Mohammad Ibn Saud Islamic University",
+          "students": 38900,
+          "graduates": 8200,
+          "employmentRate": 70
+        }
+      ],
+      "statistics": {
+        "totalStudents": 145812,
+        "totalGraduates": 40000,
+        "averageEmploymentRate": 71
+      }
+    },
+    "Makkah": {
+      "name": "Makkah",
+      "colleges": 18,
+      "students": 101100,
+      "literacyRate": 96.5,
+      "universities": [
+        {
+          "name": "Umm Al-Qura University",
+          "students": 52340,
+          "graduates": 11200,
+          "employmentRate": 67
+        },
+        {
+          "name": "King Abdulaziz University",
+          "students": 48760,
+          "graduates": 10300,
+          "employmentRate": 71
+        }
+      ],
+      "statistics": {
+        "totalStudents": 101100,
+        "totalGraduates": 21500,
+        "averageEmploymentRate": 69
+      }
+    },
+    "Medina": {
+      "name": "Medina",
+      "colleges": 12,
+      "students": 49000,
+      "literacyRate": 96.2,
+      "universities": [
+        {
+          "name": "Islamic University of Medina",
+          "students": 25600,
+          "graduates": 4000,
+          "employmentRate": 62
+        },
+        {
+          "name": "Taibah University",
+          "students": 23400,
+          "graduates": 4000,
+          "employmentRate": 58
+        }
+      ],
+      "statistics": {
+        "totalStudents": 49000,
+        "totalGraduates": 8000,
+        "averageEmploymentRate": 60
+      }
+    },
+    "Qassim": {
+      "name": "Qassim",
+      "colleges": 10,
+      "students": 28900,
+      "literacyRate": 95.5,
+      "universities": [
+        {
+          "name": "Qassim University",
+          "students": 28900,
+          "graduates": 5000,
+          "employmentRate": 63
+        }
+      ],
+      "statistics": {
+        "totalStudents": 28900,
+        "totalGraduates": 5000,
+        "averageEmploymentRate": 63
+      }
+    },
+    "Asir": {
+      "name": "Asir",
+      "colleges": 8,
+      "students": 31200,
+      "literacyRate": 94.5,
+      "universities": [
+        {
+          "name": "King Khalid University",
+          "students": 31200,
+          "graduates": 7000,
+          "employmentRate": 57
+        }
+      ],
+      "statistics": {
+        "totalStudents": 31200,
+        "totalGraduates": 7000,
+        "averageEmploymentRate": 57
+      }
+    },
+    "Tabuk": {
+      "name": "Tabuk",
+      "colleges": 6,
+      "students": 19800,
+      "literacyRate": 93.5,
+      "universities": [
+        {
+          "name": "University of Tabuk",
+          "students": 19800,
+          "graduates": 3000,
+          "employmentRate": 52
+        }
+      ],
+      "statistics": {
+        "totalStudents": 19800,
+        "totalGraduates": 3000,
+        "averageEmploymentRate": 52
+      }
+    },
+    "Hail": {
+      "name": "Hail",
+      "colleges": 5,
+      "students": 18500,
+      "literacyRate": 92.5,
+      "universities": [
+        {
+          "name": "University of Hail",
+          "students": 18500,
+          "graduates": 2000,
+          "employmentRate": 48
+        }
+      ],
+      "statistics": {
+        "totalStudents": 18500,
+        "totalGraduates": 2000,
+        "averageEmploymentRate": 48
+      }
+    },
+    "Jazan": {
+      "name": "Jazan",
+      "colleges": 7,
+      "students": 24600,
+      "literacyRate": 93.2,
+      "universities": [
+        {
+          "name": "Jazan University",
+          "students": 24600,
+          "graduates": 5000,
+          "employmentRate": 54
+        }
+      ],
+      "statistics": {
+        "totalStudents": 24600,
+        "totalGraduates": 5000,
+        "averageEmploymentRate": 54
+      }
+    },
+    "Najran": {
+      "name": "Najran",
+      "colleges": 6,
+      "students": 21000,
+      "literacyRate": 92.2,
+      "universities": [
+        {
+          "name": "Najran University",
+          "students": 21000,
+          "graduates": 3000,
+          "employmentRate": 51
+        }
+      ],
+      "statistics": {
+        "totalStudents": 21000,
+        "totalGraduates": 3000,
+        "averageEmploymentRate": 51
+      }
+    },
+    "Al-Bahah": {
+      "name": "Al-Bahah",
+      "colleges": 5,
+      "students": 15400,
+      "literacyRate": 91.2,
+      "universities": [
+        {
+          "name": "Al-Bahah University",
+          "students": 15400,
+          "graduates": 2800,
+          "employmentRate": 51
+        }
+      ],
+      "statistics": {
+        "totalStudents": 15400,
+        "totalGraduates": 2800,
+        "averageEmploymentRate": 51
+      }
+    },
+    "Northern Borders": {
+      "name": "Northern Borders",
+      "colleges": 4,
+      "students": 12000,
+      "literacyRate": 90.2,
+      "universities": [
+        {
+          "name": "Northern Borders University",
+          "students": 12000,
+          "graduates": 2000,
+          "employmentRate": 50
+        }
+      ],
+      "statistics": {
+        "totalStudents": 12000,
+        "totalGraduates": 2000,
+        "averageEmploymentRate": 50
+      }
+    },
+    "Al-Jawf": {
+      "name": "Al-Jawf",
+      "colleges": 4,
+      "students": 11000,
+      "literacyRate": 89.2,
+      "universities": [
+        {
+          "name": "Al-Jouf University",
+          "students": 11000,
+          "graduates": 2000,
+          "employmentRate": 50
+        }
+      ],
+      "statistics": {
+        "totalStudents": 11000,
+        "totalGraduates": 2000,
+        "averageEmploymentRate": 50
+      }
+    }
+  }
+}

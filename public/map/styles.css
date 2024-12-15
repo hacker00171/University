@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1C2B7F;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.map-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.st0 {
+    fill: #162464;
+    stroke: #2D4393;
+    stroke-width: 0.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: fill 0.3s ease;
+    cursor: pointer;
+}
+
+.st0:hover {
+    fill: #00E1E2;
+}
+
+.state-label {
+    position: fixed;
+    padding: 16px;
+    background-color: rgba(21, 44, 112, 0.95);
+    color: #ffffff;
+    border-radius: 12px;
+    font-size: 15px;
+    line-height: 1.6;
+    pointer-events: none;
+    z-index: 1000;
+    display: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid #2D4393;
+    backdrop-filter: blur(8px);
+    min-width: 180px;
+    white-space: nowrap;
+}
+
+.state-label .font-bold {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.state-label.visible {
+    display: block;
+    opacity: 1;
+    transform: translateY(-40px);
+}
+
+.tooltip {
+    position: fixed;
+    display: none;
+    background: rgba(21, 44, 112, 0.95);
+    color: #ffffff;
+    padding: 16px;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    pointer-events: none;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    border: 1px solid #2D4393;
+    min-width: 180px;
+    white-space: nowrap;
+}
+
+/* Text styles */
+.st1 {
+    font-family: 'Arial', sans-serif;
+    fill: #ffffff;
+}
+
+.st2 {
+    font-size: 14px;
+    fill: #ffffff;
+}
+
+/* SVG specific styles */
+svg {
+    width: 100%;
+    height: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+/* Shadow layers */
+.shadow-layer {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 50%;
+    top: 50%;
+    transform-origin: center center;
+}
+
+.shadow-layer svg {
+    width: 100%;
+    height: 100%;
+}
+
+.layer-1 {
+    transform: translate(-50%, -50%) translateZ(-20px) translateY(20px) rotateX(20deg) rotateY(5deg);
+    opacity: 0.3;
+}
+
+.layer-1 path {
+    fill: #1a1a1a;
+    stroke: none;
+}
+
+.layer-2 {
+    transform: translate(-50%, -50%) translateZ(-40px) translateY(40px) rotateX(10deg) rotateY(5deg);
+    opacity: 0.2;
+}
+
+.layer-2 path {
+    fill: #000000;
+    stroke: none;
+}
+
+/* Main map */
+svg {
+    width: 90%;
+    height: 90%;
+    transform-style: preserve-3d;
+    transform: perspective(2000px) rotateX(20deg) rotateY(5deg) translateZ(20px);
+    position: relative;
+    z-index: 2;
+}
+
+path {
+    fill: #4883D4;
+    stroke: #e9a5a5;
+    stroke-width: 0.5;
+    transition: all 0.3s ease-out;
+    transform-style: preserve-3d;
+    transform: translateZ(0);
+    cursor: pointer;
+    position: relative;
+}
+
+path::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    transform: translateZ(-30px) translateY(30px);
+    filter: blur(20px);
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+path:hover {
+    fill: #64A1F4;
+    transform: translateZ(50px) scale(1.05);
+    z-index: 3;
+}
+
+path:hover::after {
+    transform: translateZ(-50px) translateY(50px);
+    opacity: 0.3;
+}

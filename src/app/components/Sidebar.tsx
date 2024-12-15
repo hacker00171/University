@@ -23,7 +23,7 @@ const navigationItems = [
     },
     { 
         name: 'Regions', 
-        href: '/region', 
+        href: '/region1', 
         icon: GlobeAltIcon,
         color: 'from-[#2CD9FF] to-[#14B8FF]'
     },

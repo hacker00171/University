@@ -1,0 +1,29 @@
+{
+  "states": {
+    "maharashtra": {
+      "name": "Maharashtra",
+      "universities": [
+        {
+          "name": "University of Mumbai",
+          "students": 500000,
+          "graduates": 100000,
+          "employmentRate": 85.5
+        },
+        {
+          "name": "Pune University",
+          "students": 400000,
+          "graduates": 80000,
+          "employmentRate": 88.2
+        }
+      ],
+      "colleges": 3500,
+      "students": 2500000,
+      "literacyRate": 82.3,
+      "statistics": {
+        "totalStudents": 2500000,
+        "totalGraduates": 500000,
+        "averageEmploymentRate": 86.8
+      }
+    }
+  }
+}
