@@ -11,18 +11,16 @@ import {
   ArrowsRightLeftIcon
 } from '@heroicons/react/24/outline';
 import { useSidebar } from '@/app/context/SidebarContext';
-import type { ComponentType } from 'react';
+import { ForwardRefExoticComponent, SVGProps, RefAttributes } from 'react';
 
 interface NavigationItem {
   name: string;
   href: string;
-  icon: ComponentType<IconProps>;
+  icon: ForwardRefExoticComponent<Omit<SVGProps<SVGSVGElement>, "ref"> & {
+    title?: string | undefined;
+    titleId?: string | undefined;
+  } & RefAttributes<SVGSVGElement>>;
   color: string;
-}
-
-interface IconProps {
-  className?: string;
-  'aria-hidden'?: boolean;
 }
 
 const navigationItems: NavigationItem[] = [
