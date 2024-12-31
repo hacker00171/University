@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
+import type { Metadata } from 'next'
+import './globals.css'
+import Sidebar from '@/components/layouts/Sidebar'
+import NetworkBackground from '@/components/layouts/NetworkBackground'
+
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import Sidebar from './components/Sidebar';
-import { MainContent } from './components/MainContent';
+import { MainContent } from '@/components/layouts/MainContent';
 import { SidebarProvider } from './context/SidebarContext';
-import NetworkBackground from './components/NetworkBackground';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,8 +18,27 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "UniGuide - University Dashboard",
+  title: "National Labor Observatory",
   description: "University Dashboard and Analytics",
+  icons: {
+    icon: [
+      {
+        url: "/logo/nlo logo symbol.png",
+        type: "image/png",
+        sizes: "32x32"
+      },
+      {
+        url: "/logo/nlo logo symbol.png",
+        type: "image/png",
+        sizes: "192x192"
+      }
+    ],
+    apple: {
+      url: "/logo/nlo logo symbol.png",
+      type: "image/png",
+      sizes: "180x180"
+    }
+  }
 };
 
 export default function RootLayout({

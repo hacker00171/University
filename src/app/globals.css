@@ -2,36 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --header-bg: #21265E;
+  --header-fg: #2AB1BB;
+  --table-accent: #0F1934;
+  --card: #0F1934;
+  --card-foreground: #FFFFFF;
+  --muted: #1F2937;
+  --muted-foreground: #9CA3AF;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --card: #0F1934;
+    --card-foreground: #FFFFFF;
+    --muted: #1F2937;
+    --muted-foreground: #9CA3AF;
+  }
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(to right, #a8b4e0, #7C8AC8, #313884);
-  min-height: 100vh;
-  min-width: 100vw;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
-html {
-  overflow-x: hidden;
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #1E2875;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #2CD9FF;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #14B8FF;
+  font-family: 'Neo Sans Arabic', Arial, Helvetica, sans-serif;
 }
 
 @layer base {
@@ -61,14 +52,6 @@ html {
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -95,22 +78,14 @@ html {
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
-/* @layer base {
+@layer base {
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
   }
-} */
+}

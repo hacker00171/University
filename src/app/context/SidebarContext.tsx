@@ -1,42 +1,19 @@
 "use client";
 
-import { createContext, useContext, useState, ReactNode, useEffect } from 'react';
+import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 interface SidebarContextType {
   isCollapsed: boolean;
-  toggleSidebar: () => void;
+  setIsCollapsed: (value: boolean) => void;
 }
 
 const SidebarContext = createContext<SidebarContextType | undefined>(undefined);
 
 export function SidebarProvider({ children }: { children: ReactNode }) {
-  const [isCollapsed, setIsCollapsed] = useState(false);
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    // Only run on client side
-    const savedState = localStorage.getItem('sidebarCollapsed');
-    if (savedState) {
-      setIsCollapsed(JSON.parse(savedState));
-    }
-    setIsLoaded(true);
-  }, []);
-
-  const toggleSidebar = () => {
-    setIsCollapsed(prev => {
-      const newState = !prev;
-      localStorage.setItem('sidebarCollapsed', JSON.stringify(newState));
-      return newState;
-    });
-  };
-
-  // Don't render children until initial state is loaded
-  if (!isLoaded) {
-    return null;
-  }
+  const [isCollapsed, setIsCollapsed] = useState(true);
 
   return (
-    <SidebarContext.Provider value={{ isCollapsed, toggleSidebar }}>
+    <SidebarContext.Provider value={{ isCollapsed, setIsCollapsed }}>
       {children}
     </SidebarContext.Provider>
   );
