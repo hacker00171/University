@@ -37,8 +37,8 @@ const navigationItems: NavigationItem[] = [
     color: 'from-[#2AB1BB] to-[#2E6BB2]'
   },
   {
-    name: 'Degree',
-    href: '/degree',
+    name: 'Education',
+    href: '/education',
     icon: AcademicCapIcon,
     color: 'from-[#2AB1BB] to-[#2E6BB2]'
   },

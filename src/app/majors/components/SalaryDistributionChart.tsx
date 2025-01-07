@@ -20,6 +20,8 @@ interface SalaryDistributionChartProps {
     percentage: number;
     median?: number;
   }>;
+  onBarClick?: (narrowMajor: string) => void;
+  onGeneralMajorSelect?: (generalMajor: string) => void;
 }
 
 interface CustomTooltipProps {
@@ -30,9 +32,19 @@ interface CustomTooltipProps {
   label?: string;
 }
 
+interface BarClickData {
+  originalData: {
+    generalMajor?: string;
+    narrowMajor?: string;
+    occupation?: string;
+  };
+}
+
 export default function SalaryDistributionChart({
   generalMajor,
-  data
+  data,
+  onBarClick,
+  onGeneralMajorSelect
 }: SalaryDistributionChartProps) {
   if (data.length === 0) {
     return (
@@ -42,42 +54,48 @@ export default function SalaryDistributionChart({
     );
   }
 
-  // Sort data by salary for better visualization
-  const sortedData = [...data]
+  const chartData = [...data]
     .sort((a, b) => b.salary - a.salary)
     .map(item => ({
-      name: item.occupation || item.narrowMajor || item.generalMajor || 'Unknown',
-      salary: item.salary || 0,
-      median: item.median || 0
-    }));
 
-  // Calculate median salary for the reference line
-  const medianSalary = sortedData[0]?.median || 0;
+      name: item.narrowMajor || item.generalMajor || item.name,
+      salary: item.salary,
+      median: item.median,
+      originalData: item // Keep the original data for click handling
+    }));
 
   const CustomTooltip = ({ active, payload, label }: CustomTooltipProps) => {
     if (active && payload && payload.length > 0) {
       return (
         <div className="bg-[#0a1230] border border-[#2e365f] rounded-md p-3">
           <p className="text-white mb-1">{label}</p>
-          <p className="text-gray-300">{`Salary: $${payload[0].value.toLocaleString()}`}</p>
-          <p className="text-[#f59e0b]">{`Median: $${medianSalary.toLocaleString()}`}</p>
+          <p className="text-gray-300">{`Salary: SAR ${payload[0].value.toLocaleString()}`}</p>
         </div>
       );
     }
     return null;
   };
 
+  const handleBarClick = (data: BarClickData) => {
+    const item = data.originalData;
+    if (!generalMajor && item.generalMajor && onGeneralMajorSelect) {
+      onGeneralMajorSelect(item.generalMajor);
+    } else if (generalMajor && item.narrowMajor && onBarClick) {
+      onBarClick(item.narrowMajor);
+    }
+  };
+
   return (
     <div className="h-[400px] bg-gradient-to-r from-[#1a2657] to-[#1a2657]/90 p-6 rounded-lg">
       <h3 className="text-white text-lg mb-4">
-        {generalMajor 
+        {generalMajor
           ? `Salary Distribution for ${data[0]?.narrowMajor || data[0]?.generalMajor || generalMajor}`
           : 'Overall Salary Distribution'
         }
       </h3>
       <ResponsiveContainer width="100%" height="90%">
         <BarChart
-          data={sortedData}
+          data={chartData}
           layout="vertical"
           margin={{
             top: 5,
@@ -90,18 +108,18 @@ export default function SalaryDistributionChart({
           <XAxis
             type="number"
             tick={{ fill: '#9ca3af' }}
-            tickFormatter={(value) => `$${value.toLocaleString()}`}
-            label={{ 
-              value: 'Salary', 
-              position: 'insideBottom', 
-              fill: '#9ca3af', 
-              offset: -10 
+            tickFormatter={(value) => `SAR ${value.toLocaleString()}`}
+            label={{
+              value: 'Salary',
+              position: 'insideBottom',
+              fill: '#9ca3af',
+              offset: -10
             }}
           />
           <YAxis
             type="category"
             dataKey="name"
-            tick={{ 
+            tick={{
               fill: '#9ca3af',
               fontSize: 12,
               width: 150,
@@ -110,36 +128,35 @@ export default function SalaryDistributionChart({
             width={180}
           />
           <Tooltip content={<CustomTooltip />} />
-          
-          {/* Salary bars */}
+
           <Bar
             dataKey="salary"
-            fill="#4f46e5"
+            fill="#a9267f"
             radius={[0, 4, 4, 0]}
             maxBarSize={25}
             label={{
               position: 'right',
               fill: '#9ca3af',
-              formatter: (value: number) => `$${value.toLocaleString()}`
+              formatter: (value: number) => `SAR ${value.toLocaleString()}`
             }}
+            onClick={handleBarClick}
+            cursor="pointer"
           />
 
-          {/* Median salary reference line */}
-          {medianSalary > 0 && (
-            <ReferenceLine
-              x={medianSalary}
-              stroke="#f59e0b"
-              strokeWidth={2}
-              strokeDasharray="5 5"
-              label={{
-                value: `Median: $${medianSalary.toLocaleString()}`,
-                fill: '#f59e0b',
-                position: 'top'
-              }}
-            />
-          )}
+          <ReferenceLine
+            x={chartData[0]?.median}
+            stroke="#2AB1BB"
+            strokeWidth={2}
+            label={{
+              value: `Median: SAR ${chartData[0]?.median?.toLocaleString()}`,
+              fill: '#2AB1BB',
+              position: 'top',
+              fontSize: 12,
+              fontWeight: 'bold'
+            }}
+          />
         </BarChart>
       </ResponsiveContainer>
     </div>
   );
-} 
+}

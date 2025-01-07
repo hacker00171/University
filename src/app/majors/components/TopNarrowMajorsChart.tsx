@@ -37,7 +37,7 @@ export default function TopNarrowMajorsChart({
 }: TopNarrowMajorsChartProps) {
   const chartData = useMemo(() => {
     return data.map(item => ({
-      name: item.narrowMajor,
+      name: item.narrowMajor || item.occupation || '',  
       value: item.value
     }))
     .sort((a, b) => b.value - a.value)
@@ -66,8 +66,8 @@ export default function TopNarrowMajorsChart({
         {!generalMajor 
           ? 'Top General Majors by Graduates'
           : narrowMajor 
-            ? `Top Most Popular Majors in ${narrowMajor}`
-            : 'Top Most Popular Narrow Major'
+            ? `Top Majors in ${narrowMajor}`
+            : `Top Narrow Majors in ${generalMajor}`
         }
       </h3>
       <ResponsiveContainer width="100%" height="90%">
@@ -84,8 +84,8 @@ export default function TopNarrowMajorsChart({
         >
           <defs>
             <linearGradient id="graduatesGradient" x1="1" y1="0" x2="0" y2="0">
-              <stop offset="0%" stopColor="#4f46e5" stopOpacity={1} />
-              <stop offset="100%" stopColor="#3730a3" stopOpacity={0.8} />
+              <stop offset="0%" stopColor="#47edb8" stopOpacity={1} />
+              <stop offset="100%" stopColor="#47edb8" stopOpacity={0.6} />
             </linearGradient>
           </defs>
           <CartesianGrid strokeDasharray="3 3" stroke="#2e365f" horizontal={false} />

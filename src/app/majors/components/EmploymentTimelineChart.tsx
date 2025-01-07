@@ -11,50 +11,79 @@ import {
   LabelList,
 } from 'recharts';
 
-interface WaitingPeriod {
-  period: string;
-  percentage: number;
-}
+// interface WaitingPeriods {
+//   beforeGraduation: { count: number; percentage: number };
+//   withinYear: { count: number; percentage: number };
+//   afterYear: { count: number; percentage: number };
+// }
 
 interface EmploymentTimeline {
   generalMajor?: string;
-  waitingPeriods: WaitingPeriod[];
+  averageTime: number;
+  quickEmploymentRate: number;
+  waitingPeriods: {
+    beforeGraduation: { count: number; percentage: number };
+    withinYear: { count: number; percentage: number };
+    afterYear: { count: number; percentage: number };
+  };
 }
 
 interface Props {
   generalMajor: string | null;
   data: EmploymentTimeline[];
+  onBarClick?: (narrowMajor: string) => void;
+  onGeneralMajorSelect?: (generalMajor: string) => void;
 }
 
-interface WaitingPeriodData {
+interface ChartData {
   name: string | undefined;
-  "0-3 months": number;
-  "3-6 months": number;
-  "6-9 months": number;
-  "9+ months": number;
-  [key: string]: string | number | undefined;
+  "Before Graduation": number;
+  "Within First Year": number;
+  "After First Year": number;
 }
 
-const EmploymentTimelineChart: React.FC<Props> = ({ data }) => {
-  const transformedData: WaitingPeriodData[] = data.map((item) => {
-    const defaultData: WaitingPeriodData = {
-      name: item.generalMajor,
-      "0-3 months": 0,
-      "3-6 months": 0,
-      "6-9 months": 0,
-      "9+ months": 0
+interface BarClickData {
+  payload: {
+    originalData?: {
+      generalMajor?: string;
+      narrowMajor?: string;
     };
+  };
+}
 
-    item.waitingPeriods.forEach(period => {
-      defaultData[period.period] = period.percentage;
-    });
+export default function EmploymentTimelineChart({ 
+  data,
+  generalMajor,
+  onBarClick,
+  onGeneralMajorSelect
+}: Props) {
+  if (data.length === 0) {
+    return (
+      <div className="bg-gradient-to-r from-[#1a2657] to-[#1a2657]/90 p-6 rounded-lg flex items-center justify-center h-[400px]">
+        <p className="text-gray-400">No employment timeline data available</p>
+      </div>
+    );
+  }
 
-    return defaultData;
-  });
+  const handleBarClick = (data: BarClickData) => {
+    if (!generalMajor && data.payload.originalData?.generalMajor && onGeneralMajorSelect) {
+      onGeneralMajorSelect(data.payload.originalData.generalMajor);
+    } else if (generalMajor && data.payload.originalData?.narrowMajor && onBarClick) {
+      onBarClick(data.payload.originalData.narrowMajor);
+    }
+  };
+
+  const transformedData: ChartData[] = data.map((item) => ({
+    name: item.generalMajor,
+    "Before Graduation": item.waitingPeriods.beforeGraduation.percentage,
+    "Within First Year": item.waitingPeriods.withinYear.percentage,
+    "After First Year": item.waitingPeriods.afterYear.percentage,
+    originalData: item // Keep original data for click handling
+  }));
 
   return (
     <div className="bg-gradient-to-r from-[#1a2657] to-[#1a2657]/90 p-6 rounded-lg">
-      <h3 className="text-white text-lg mb-4">Employment Timeline Analysis</h3>
+      <h3 className="text-white text-lg mb-4">Employment Timeline Distribution</h3>
       <div className="h-[400px]">
         <ResponsiveContainer width="100%" height="100%">
           <ComposedChart
@@ -90,46 +119,41 @@ const EmploymentTimelineChart: React.FC<Props> = ({ data }) => {
             />
             
             <Bar
-              dataKey="0-3 months"
-              fill="#4f46e5"
-              stackId="a"
-              name="0-3 months"
-              maxBarSize={30}
-            >
-              <LabelList dataKey="0-3 months" position="inside" fill="#fff" fontSize={12} />
-            </Bar>
-            <Bar
-              dataKey="3-6 months"
+              dataKey="Before Graduation"
               fill="#22c55e"
               stackId="a"
-              name="3-6 months"
+              name="Before Graduation"
               maxBarSize={30}
+              onClick={handleBarClick}
+              cursor="pointer"
             >
-              <LabelList dataKey="3-6 months" position="inside" fill="#fff" fontSize={12} />
+              <LabelList dataKey="Before Graduation" position="inside" fill="#fff" fontSize={12} />
             </Bar>
             <Bar
-              dataKey="6-9 months"
-              fill="#eab308"
+              dataKey="Within First Year"
+              fill="#f59e0b"
               stackId="a"
-              name="6-9 months"
+              name="Within First Year"
               maxBarSize={30}
+              onClick={handleBarClick}
+              cursor="pointer"
             >
-              <LabelList dataKey="6-9 months" position="inside" fill="#fff" fontSize={12} />
+              <LabelList dataKey="Within First Year" position="inside" fill="#fff" fontSize={12} />
             </Bar>
             <Bar
-              dataKey="9+ months"
+              dataKey="After First Year"
               fill="#ef4444"
               stackId="a"
-              name="9+ months"
+              name="After First Year"
               maxBarSize={30}
+              onClick={handleBarClick}
+              cursor="pointer"
             >
-              <LabelList dataKey="9+ months" position="inside" fill="#fff" fontSize={12} />
+              <LabelList dataKey="After First Year" position="inside" fill="#fff" fontSize={12} />
             </Bar>
           </ComposedChart>
         </ResponsiveContainer>
       </div>
     </div>
   );
-};
-
-export default EmploymentTimelineChart;
+}
