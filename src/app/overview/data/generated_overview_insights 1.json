@@ -1,55 +1,55 @@
 {
   "OverViewInsights": {
     "summaryCards": {
-      "totalGraduates": 478946,
+      "totalGraduates": 476898,
       "overallEmploymentRate": 49.7,
-      "averageSalary": 2654,
-      "averageTimeToEmployment": 495
+      "averageSalary": 6082,
+      "averageTimeToEmployment": 496
     },
     "topGeneralMajors": {
       "byGraduates": {
         "rankings": [
           {
             "generalMajor": "Business, administration and law",
-            "value": 179447,
+            "value": 178487,
             "male": {
-              "count": 87135,
+              "count": 86708,
               "percentage": 48.6
             },
             "female": {
-              "count": 92312,
+              "count": 91779,
               "percentage": 51.4
             }
           },
           {
             "generalMajor": "Arts and Humanities",
-            "value": 84344,
+            "value": 84331,
             "male": {
-              "count": 32579,
+              "count": 32572,
               "percentage": 38.6
             },
             "female": {
-              "count": 51765,
+              "count": 51759,
               "percentage": 61.4
             }
           },
           {
             "generalMajor": "Health and Welfare",
-            "value": 51290,
+            "value": 51268,
             "male": {
-              "count": 20937,
+              "count": 20927,
               "percentage": 40.8
             },
             "female": {
-              "count": 30351,
+              "count": 30341,
               "percentage": 59.2
             }
           },
           {
             "generalMajor": "Natural Sciences, Mathematics and Statistics",
-            "value": 40856,
+            "value": 40855,
             "male": {
-              "count": 13721,
+              "count": 13720,
               "percentage": 33.6
             },
             "female": {
@@ -59,14 +59,14 @@
           },
           {
             "generalMajor": "Communications and Information Technology",
-            "value": 33624,
+            "value": 33347,
             "male": {
-              "count": 12897,
-              "percentage": 38.4
+              "count": 12740,
+              "percentage": 38.2
             },
             "female": {
-              "count": 20727,
-              "percentage": 61.6
+              "count": 20607,
+              "percentage": 61.8
             }
           }
         ]
@@ -76,8 +76,8 @@
           {
             "generalMajor": "Engineering, manufacturing and construction",
             "value": 61.1,
-            "totalStudents": 30736,
-            "employedStudents": 18767
+            "totalStudents": 30643,
+            "employedStudents": 18714
           },
           {
             "generalMajor": "Agriculture, Forestry, Fisheries and Veterinary",
@@ -87,9 +87,9 @@
           },
           {
             "generalMajor": "Health and Welfare",
-            "value": 54.0,
-            "totalStudents": 51290,
-            "employedStudents": 27680
+            "value": 54,
+            "totalStudents": 51268,
+            "employedStudents": 27668
           },
           {
             "generalMajor": "Services",
@@ -99,33 +99,33 @@
           },
           {
             "generalMajor": "Business, administration and law",
-            "value": 50.5,
-            "totalStudents": 179447,
-            "employedStudents": 90666
+            "value": 50.6,
+            "totalStudents": 178487,
+            "employedStudents": 90238
           }
         ]
       },
       "byAverageSalary": {
         "rankings": [
           {
+            "generalMajor": "Business, administration and law",
+            "value": 2149.78
+          },
+          {
             "generalMajor": "Health and Welfare",
-            "value": 3818.28
+            "value": 1021.4
+          },
+          {
+            "generalMajor": "Arts and Humanities",
+            "value": 785.97
           },
           {
             "generalMajor": "Engineering, manufacturing and construction",
-            "value": 3707.63
+            "value": 670.85
           },
           {
             "generalMajor": "Communications and Information Technology",
-            "value": 3046.02
-          },
-          {
-            "generalMajor": "Agriculture, Forestry, Fisheries and Veterinary",
-            "value": 2852.62
-          },
-          {
-            "generalMajor": "Business, administration and law",
-            "value": 2462.54
+            "value": 490.58
           }
         ]
       },
@@ -139,9 +139,9 @@
           },
           {
             "generalMajor": "Engineering, manufacturing and construction",
-            "malePercentage": 87.6,
-            "femalePercentage": 12.4,
-            "genderGap": 75.2
+            "malePercentage": 87.5,
+            "femalePercentage": 12.5,
+            "genderGap": 75
           },
           {
             "generalMajor": "education",
@@ -151,9 +151,9 @@
           },
           {
             "generalMajor": "Generic Programs and Qualifications",
-            "malePercentage": 28.8,
-            "femalePercentage": 71.2,
-            "genderGap": -42.4
+            "malePercentage": 27.9,
+            "femalePercentage": 72.1,
+            "genderGap": -44.2
           },
           {
             "generalMajor": "Natural Sciences, Mathematics and Statistics",
@@ -166,296 +166,296 @@
     },
     "genderDistribution": {
       "male": {
-        "count": 22454,
-        "percentage": 52.3
+        "count": 214576,
+        "percentage": 45
       },
       "female": {
-        "count": 20471,
-        "percentage": 47.7
+        "count": 262322,
+        "percentage": 55
       }
     },
     "salaryDistribution": {
       "ranges": {
-        "0-2000": {
-          "count": 451,
-          "percentage": 0.9
+        "0-5000": {
+          "count": 21284,
+          "percentage": 44.1
         },
-        "2001-2500": {
-          "count": 297,
-          "percentage": 0.6
+        "5001-10000": {
+          "count": 13726,
+          "percentage": 28.4
         },
-        "2501-3000": {
-          "count": 194,
-          "percentage": 0.4
+        "10001-15000": {
+          "count": 5357,
+          "percentage": 11.1
         },
-        "3001+": {
-          "count": 47590,
-          "percentage": 98.1
+        "15001+": {
+          "count": 7909,
+          "percentage": 16.4
         }
       },
       "byGeneralMajor": [
         {
           "name": "Health and Welfare",
           "ranges": {
-            "0-2000": {
-              "count": 20,
-              "percentage": 0.6
+            "0-5000": {
+              "count": 1567,
+              "percentage": 44.3
             },
-            "2001-2500": {
-              "count": 24,
-              "percentage": 0.7
+            "5001-10000": {
+              "count": 793,
+              "percentage": 22.4
             },
-            "2501-3000": {
-              "count": 4,
-              "percentage": 0.1
+            "10001-15000": {
+              "count": 304,
+              "percentage": 8.6
             },
-            "3001+": {
-              "count": 3495,
-              "percentage": 98.6
+            "15001+": {
+              "count": 874,
+              "percentage": 24.7
             }
           },
-          "average": 29830.67
+          "average": 29855.16
         },
         {
           "name": "Engineering, manufacturing and construction",
           "ranges": {
-            "0-2000": {
-              "count": 17,
-              "percentage": 0.5
+            "0-5000": {
+              "count": 1062,
+              "percentage": 29.4
             },
-            "2001-2500": {
-              "count": 15,
-              "percentage": 0.4
+            "5001-10000": {
+              "count": 1236,
+              "percentage": 34.2
             },
-            "2501-3000": {
-              "count": 11,
-              "percentage": 0.3
+            "10001-15000": {
+              "count": 579,
+              "percentage": 16
             },
-            "3001+": {
-              "count": 3578,
-              "percentage": 98.8
+            "15001+": {
+              "count": 733,
+              "percentage": 20.3
             }
           },
-          "average": 19216.0
+          "average": 19217.58
         },
         {
           "name": "Business, administration and law",
           "ranges": {
-            "0-2000": {
-              "count": 147,
-              "percentage": 0.9
+            "0-5000": {
+              "count": 7045,
+              "percentage": 43.1
             },
-            "2001-2500": {
-              "count": 75,
-              "percentage": 0.5
+            "5001-10000": {
+              "count": 4418,
+              "percentage": 27
             },
-            "2501-3000": {
-              "count": 55,
-              "percentage": 0.3
+            "10001-15000": {
+              "count": 1833,
+              "percentage": 11.2
             },
-            "3001+": {
-              "count": 16198,
-              "percentage": 98.3
+            "15001+": {
+              "count": 3055,
+              "percentage": 18.7
             }
           },
-          "average": 13551.97
+          "average": 13596.58
         },
         {
           "name": "Communications and Information Technology",
           "ranges": {
-            "0-2000": {
-              "count": 38,
-              "percentage": 0.8
+            "0-5000": {
+              "count": 1894,
+              "percentage": 40.3
             },
-            "2001-2500": {
-              "count": 24,
-              "percentage": 0.5
+            "5001-10000": {
+              "count": 1433,
+              "percentage": 30.5
             },
-            "2501-3000": {
-              "count": 19,
-              "percentage": 0.4
+            "10001-15000": {
+              "count": 635,
+              "percentage": 13.5
             },
-            "3001+": {
-              "count": 4665,
-              "percentage": 98.3
+            "15001+": {
+              "count": 740,
+              "percentage": 15.7
             }
           },
-          "average": 10765.05
+          "average": 10789.63
         },
         {
           "name": "Arts and Humanities",
           "ranges": {
-            "0-2000": {
-              "count": 99,
-              "percentage": 1.2
+            "0-5000": {
+              "count": 3972,
+              "percentage": 47.3
             },
-            "2001-2500": {
-              "count": 61,
-              "percentage": 0.7
+            "5001-10000": {
+              "count": 2376,
+              "percentage": 28.3
             },
-            "2501-3000": {
-              "count": 36,
-              "percentage": 0.4
+            "10001-15000": {
+              "count": 881,
+              "percentage": 10.5
             },
-            "3001+": {
-              "count": 8197,
-              "percentage": 97.7
+            "15001+": {
+              "count": 1163,
+              "percentage": 13.9
             }
           },
-          "average": 9686.59
+          "average": 9685.47
         }
       ],
       "byEducationLevel": [
         {
-          "level": "fellowship",
+          "name": "fellowship",
           "ranges": {
-            "0-2000": {
+            "0-5000": {
               "count": 0,
-              "percentage": 0.0
+              "percentage": 0
             },
-            "2001-2500": {
-              "count": 0,
-              "percentage": 0.0
+            "5001-10000": {
+              "count": 2,
+              "percentage": 2.8
             },
-            "2501-3000": {
-              "count": 0,
-              "percentage": 0.0
+            "10001-15000": {
+              "count": 7,
+              "percentage": 9.7
             },
-            "3001+": {
-              "count": 72,
-              "percentage": 100.0
+            "15001+": {
+              "count": 63,
+              "percentage": 87.5
             }
           },
           "average": 34883.01
         },
         {
-          "level": "PhD (Doctoral)",
+          "name": "PhD (Doctoral)",
           "ranges": {
-            "0-2000": {
-              "count": 0,
-              "percentage": 0.0
+            "0-5000": {
+              "count": 12,
+              "percentage": 3.3
             },
-            "2001-2500": {
-              "count": 0,
-              "percentage": 0.0
+            "5001-10000": {
+              "count": 19,
+              "percentage": 5.2
             },
-            "2501-3000": {
-              "count": 0,
-              "percentage": 0.0
+            "10001-15000": {
+              "count": 119,
+              "percentage": 32.9
             },
-            "3001+": {
-              "count": 362,
-              "percentage": 100.0
+            "15001+": {
+              "count": 212,
+              "percentage": 58.6
             }
           },
           "average": 24717.32
         },
         {
-          "level": "Master's",
+          "name": "Master's",
           "ranges": {
-            "0-2000": {
-              "count": 41,
-              "percentage": 1.3
+            "0-5000": {
+              "count": 755,
+              "percentage": 24.4
             },
-            "2001-2500": {
-              "count": 14,
-              "percentage": 0.5
+            "5001-10000": {
+              "count": 958,
+              "percentage": 31
             },
-            "2501-3000": {
-              "count": 17,
-              "percentage": 0.5
+            "10001-15000": {
+              "count": 508,
+              "percentage": 16.4
             },
-            "3001+": {
-              "count": 3022,
-              "percentage": 97.7
+            "15001+": {
+              "count": 873,
+              "percentage": 28.2
             }
           },
           "average": 14220.37
         },
         {
-          "level": "Bachelor's",
+          "name": "Bachelor's",
           "ranges": {
-            "0-2000": {
-              "count": 340,
-              "percentage": 0.9
+            "0-5000": {
+              "count": 15880,
+              "percentage": 43
             },
-            "2001-2500": {
-              "count": 218,
-              "percentage": 0.6
+            "5001-10000": {
+              "count": 10626,
+              "percentage": 28.8
             },
-            "2501-3000": {
-              "count": 143,
-              "percentage": 0.4
+            "10001-15000": {
+              "count": 4195,
+              "percentage": 11.4
             },
-            "3001+": {
-              "count": 36246,
-              "percentage": 98.1
+            "15001+": {
+              "count": 6192,
+              "percentage": 16.8
             }
           },
-          "average": 14009.11
+          "average": 14015.52
         },
         {
-          "level": "Higher Diploma",
+          "name": "Higher Diploma",
           "ranges": {
-            "0-2000": {
-              "count": 15,
-              "percentage": 1.4
+            "0-5000": {
+              "count": 581,
+              "percentage": 55.8
             },
-            "2001-2500": {
-              "count": 7,
-              "percentage": 0.7
+            "5001-10000": {
+              "count": 277,
+              "percentage": 26.6
             },
-            "2501-3000": {
-              "count": 3,
-              "percentage": 0.3
+            "10001-15000": {
+              "count": 71,
+              "percentage": 6.8
             },
-            "3001+": {
-              "count": 1018,
-              "percentage": 97.6
+            "15001+": {
+              "count": 112,
+              "percentage": 10.8
             }
           },
-          "average": 8692.5
+          "average": 8633.94
         },
         {
-          "level": "Associate Diploma",
+          "name": "Associate Diploma",
           "ranges": {
-            "0-2000": {
-              "count": 41,
-              "percentage": 0.7
+            "0-5000": {
+              "count": 3125,
+              "percentage": 56.8
             },
-            "2001-2500": {
-              "count": 44,
-              "percentage": 0.8
+            "5001-10000": {
+              "count": 1561,
+              "percentage": 28.4
             },
-            "2501-3000": {
-              "count": 24,
-              "percentage": 0.4
+            "10001-15000": {
+              "count": 397,
+              "percentage": 7.2
             },
-            "3001+": {
-              "count": 5388,
-              "percentage": 98.0
+            "15001+": {
+              "count": 414,
+              "percentage": 7.5
             }
           },
           "average": 7297.05
         },
         {
-          "level": "Intermediate Diploma",
+          "name": "Intermediate Diploma",
           "ranges": {
-            "0-2000": {
-              "count": 14,
-              "percentage": 1.1
+            "0-5000": {
+              "count": 931,
+              "percentage": 70.7
             },
-            "2001-2500": {
-              "count": 13,
-              "percentage": 1.0
+            "5001-10000": {
+              "count": 283,
+              "percentage": 21.5
             },
-            "2501-3000": {
-              "count": 6,
-              "percentage": 0.5
+            "10001-15000": {
+              "count": 60,
+              "percentage": 4.6
             },
-            "3001+": {
-              "count": 1284,
-              "percentage": 97.5
+            "15001+": {
+              "count": 43,
+              "percentage": 3.3
             }
           },
           "average": 5544.92
@@ -464,168 +464,168 @@
     },
     "employmentTiming": {
       "preGraduation": {
-        "count": 27538,
-        "percentage": 20.5
+        "count": 27329,
+        "percentage": 11.5
       },
       "withinYear": {
-        "count": 83042,
-        "percentage": 61.9
+        "count": 163366,
+        "percentage": 68.9
       },
       "afterYear": {
-        "count": 23547,
-        "percentage": 17.6
+        "count": 46277,
+        "percentage": 19.5
       },
       "byGeneralMajor": [
         {
-          "name": "Business, administration and law",
+          "name": "Engineering, manufacturing and construction",
           "preGraduation": {
-            "count": 27538,
-            "percentage": 20.5
+            "count": 835,
+            "percentage": 4.5
           },
           "withinYear": {
-            "count": 83042,
-            "percentage": 61.9
+            "count": 15869,
+            "percentage": 84.8
           },
           "afterYear": {
-            "count": 23547,
-            "percentage": 17.6
+            "count": 2010,
+            "percentage": 10.7
           }
         },
         {
-          "name": "Generic Programs and Qualifications",
+          "name": "Agriculture, Forestry, Fisheries and Veterinary",
           "preGraduation": {
-            "count": 27538,
-            "percentage": 20.5
+            "count": 15,
+            "percentage": 6.1
           },
           "withinYear": {
-            "count": 83042,
-            "percentage": 61.9
+            "count": 195,
+            "percentage": 79.6
           },
           "afterYear": {
-            "count": 23547,
-            "percentage": 17.6
-          }
-        },
-        {
-          "name": "education",
-          "preGraduation": {
-            "count": 27538,
-            "percentage": 20.5
-          },
-          "withinYear": {
-            "count": 83042,
-            "percentage": 61.9
-          },
-          "afterYear": {
-            "count": 23547,
-            "percentage": 17.6
+            "count": 35,
+            "percentage": 14.3
           }
         },
         {
           "name": "Services",
           "preGraduation": {
-            "count": 27538,
-            "percentage": 20.5
+            "count": 376,
+            "percentage": 10.4
           },
           "withinYear": {
-            "count": 83042,
-            "percentage": 61.9
+            "count": 2691,
+            "percentage": 74.2
           },
           "afterYear": {
-            "count": 23547,
-            "percentage": 17.6
+            "count": 562,
+            "percentage": 15.5
           }
         },
         {
-          "name": "Health and Welfare",
+          "name": "Business, administration and law",
           "preGraduation": {
-            "count": 27538,
-            "percentage": 20.5
+            "count": 12848,
+            "percentage": 14.2
           },
           "withinYear": {
-            "count": 83042,
-            "percentage": 61.9
+            "count": 61673,
+            "percentage": 68.3
           },
           "afterYear": {
-            "count": 23547,
-            "percentage": 17.6
+            "count": 15717,
+            "percentage": 17.4
+          }
+        },
+        {
+          "name": "Generic Programs and Qualifications",
+          "preGraduation": {
+            "count": 158,
+            "percentage": 14
+          },
+          "withinYear": {
+            "count": 764,
+            "percentage": 67.6
+          },
+          "afterYear": {
+            "count": 209,
+            "percentage": 18.5
           }
         }
       ],
       "byEducationLevel": [
         {
-          "level": "Bachelor's",
+          "level": "fellowship",
           "preGraduation": {
-            "count": 27538,
-            "percentage": 20.5
+            "count": 110,
+            "percentage": 34.1
           },
           "withinYear": {
-            "count": 83042,
-            "percentage": 61.9
+            "count": 189,
+            "percentage": 58.5
           },
           "afterYear": {
-            "count": 23547,
-            "percentage": 17.6
-          }
-        },
-        {
-          "level": "Higher Diploma",
-          "preGraduation": {
-            "count": 27538,
-            "percentage": 20.5
-          },
-          "withinYear": {
-            "count": 83042,
-            "percentage": 61.9
-          },
-          "afterYear": {
-            "count": 23547,
-            "percentage": 17.6
+            "count": 24,
+            "percentage": 7.4
           }
         },
         {
           "level": "Associate Diploma",
           "preGraduation": {
-            "count": 27538,
-            "percentage": 20.5
+            "count": 1771,
+            "percentage": 9.3
           },
           "withinYear": {
-            "count": 83042,
-            "percentage": 61.9
+            "count": 14147,
+            "percentage": 74.2
           },
           "afterYear": {
-            "count": 23547,
-            "percentage": 17.6
-          }
-        },
-        {
-          "level": "Intermediate Diploma",
-          "preGraduation": {
-            "count": 27538,
-            "percentage": 20.5
-          },
-          "withinYear": {
-            "count": 83042,
-            "percentage": 61.9
-          },
-          "afterYear": {
-            "count": 23547,
-            "percentage": 17.6
+            "count": 3141,
+            "percentage": 16.5
           }
         },
         {
           "level": "PhD (Doctoral)",
           "preGraduation": {
-            "count": 27538,
-            "percentage": 20.5
+            "count": 387,
+            "percentage": 23.6
           },
           "withinYear": {
-            "count": 83042,
-            "percentage": 61.9
+            "count": 960,
+            "percentage": 58.6
           },
           "afterYear": {
-            "count": 23547,
-            "percentage": 17.6
+            "count": 292,
+            "percentage": 17.8
+          }
+        },
+        {
+          "level": "Intermediate Diploma",
+          "preGraduation": {
+            "count": 392,
+            "percentage": 10.6
+          },
+          "withinYear": {
+            "count": 2650,
+            "percentage": 71.4
+          },
+          "afterYear": {
+            "count": 667,
+            "percentage": 18
+          }
+        },
+        {
+          "level": "Master's",
+          "preGraduation": {
+            "count": 4643,
+            "percentage": 35
+          },
+          "withinYear": {
+            "count": 6228,
+            "percentage": 47
+          },
+          "afterYear": {
+            "count": 2394,
+            "percentage": 18
           }
         }
       ]
@@ -635,187 +635,47 @@
         "rankings": [
           {
             "occupation": "accountant",
-            "value": 19027,
-            "topMajors": [
-              {
-                "major": "Accounting",
-                "count": 8146
-              },
-              {
-                "major": "Business Administration",
-                "count": 1148
-              },
-              {
-                "major": "Financial Management",
-                "count": 903
-              },
-              {
-                "major": "Finance and Investment Management",
-                "count": 621
-              },
-              {
-                "major": "Islamic Studies",
-                "count": 593
-              }
-            ]
+            "value": 18981
           },
           {
             "occupation": "Administrative Assistant",
-            "value": 17398,
-            "topMajors": [
-              {
-                "major": "Business Administration",
-                "count": 2251
-              },
-              {
-                "major": "Human Resources",
-                "count": 935
-              },
-              {
-                "major": "Law",
-                "count": 875
-              },
-              {
-                "major": "Public Relations",
-                "count": 705
-              },
-              {
-                "major": "Accounting",
-                "count": 558
-              }
-            ]
+            "value": 17334
           },
           {
             "occupation": "sales representative",
-            "value": 12930,
-            "topMajors": [
-              {
-                "major": "Business Administration",
-                "count": 1382
-              },
-              {
-                "major": "Arabic Language and Literature",
-                "count": 574
-              },
-              {
-                "major": "Law",
-                "count": 540
-              },
-              {
-                "major": "Human Resources",
-                "count": 476
-              },
-              {
-                "major": "Marketing",
-                "count": 451
-              }
-            ]
+            "value": 12879
           },
           {
             "occupation": "vendor",
-            "value": 10929,
-            "topMajors": [
-              {
-                "major": "Business Administration",
-                "count": 899
-              },
-              {
-                "major": "Arabic Language and Literature",
-                "count": 580
-              },
-              {
-                "major": "Law",
-                "count": 521
-              },
-              {
-                "major": "Accounting",
-                "count": 446
-              },
-              {
-                "major": "Islamic Studies",
-                "count": 427
-              }
-            ]
+            "value": 10878
           },
           {
             "occupation": "Marketing Specialist",
-            "value": 8351,
-            "topMajors": [
-              {
-                "major": "Marketing",
-                "count": 1317
-              },
-              {
-                "major": "Advertising and Marketing Communication",
-                "count": 688
-              },
-              {
-                "major": "Business Administration",
-                "count": 682
-              },
-              {
-                "major": "Public Relations",
-                "count": 625
-              },
-              {
-                "major": "Media and Communication",
-                "count": 291
-              }
-            ]
+            "value": 8334
           }
         ]
       },
       "byAverageSalary": {
         "rankings": [
           {
-            "occupation": "Chief Medical Officer",
-            "value": 22500.0,
-            "topMajors": [
-              {
-                "major": "Health Services Administration",
-                "averageSalary": 22500.0
-              }
-            ]
+            "occupation": "accountant",
+            "value": 293.11
           },
           {
-            "occupation": "Company President",
-            "value": 20711.29,
-            "topMajors": [
-              {
-                "major": "Business Administration",
-                "averageSalary": 20711.29
-              }
-            ]
+            "occupation": "Administrative Assistant",
+            "value": 263.16
           },
           {
-            "occupation": "Director of Ceremonies",
-            "value": 19166.67,
-            "topMajors": [
-              {
-                "major": "Media and Communication",
-                "averageSalary": 19166.67
-              }
-            ]
+            "occupation": "general practitioner",
+            "value": 218.41
           },
           {
-            "occupation": "Gastroenterologist",
-            "value": 16875.0,
-            "topMajors": [
-              {
-                "major": "Gastrointestinal Surgery",
-                "averageSalary": 16875.0
-              }
-            ]
+            "occupation": "Nursing Specialist",
+            "value": 167.67
           },
           {
-            "occupation": "Animal Wealth Affairs Manager",
-            "value": 13425.5,
-            "topMajors": [
-              {
-                "major": "Animal Production and Breeding",
-                "averageSalary": 13425.5
-              }
-            ]
+            "occupation": "sales representative",
+            "value": 141.54
           }
         ]
       },
@@ -823,151 +683,33 @@
         "rankings": [
           {
             "occupation": "Precision Instrumentation Technician",
-            "malePercentage": 100.0,
-            "femalePercentage": 0.0,
-            "genderGap": 100.0,
-            "topMajors": [
-              {
-                "major": "Hajj and Umrah Management",
-                "malePercentage": 100.0,
-                "femalePercentage": 0.0,
-                "genderGap": 100.0
-              },
-              {
-                "major": "Sharia (Islamic Law)",
-                "malePercentage": 100.0,
-                "femalePercentage": 0.0,
-                "genderGap": 100.0
-              },
-              {
-                "major": "Political Science",
-                "malePercentage": 100.0,
-                "femalePercentage": 0.0,
-                "genderGap": 100.0
-              },
-              {
-                "major": "Mathematics",
-                "malePercentage": 100.0,
-                "femalePercentage": 0.0,
-                "genderGap": 100.0
-              },
-              {
-                "major": "Geography",
-                "malePercentage": 100.0,
-                "femalePercentage": 0.0,
-                "genderGap": 100.0
-              }
-            ]
+            "malePercentage": 100,
+            "femalePercentage": 0,
+            "genderGap": 100
           },
           {
-            "occupation": "Film and TV actor",
-            "malePercentage": 0.0,
-            "femalePercentage": 100.0,
-            "genderGap": 100.0,
-            "topMajors": [
-              {
-                "major": "Business Administration",
-                "malePercentage": 100.0,
-                "femalePercentage": 0.0,
-                "genderGap": 100.0
-              },
-              {
-                "major": "Law",
-                "malePercentage": 100.0,
-                "femalePercentage": 0.0,
-                "genderGap": 100.0
-              },
-              {
-                "major": "Islamic Studies",
-                "malePercentage": 100.0,
-                "femalePercentage": 0.0,
-                "genderGap": 100.0
-              }
-            ]
+            "occupation": "Cybersecurity Controls Evaluator",
+            "malePercentage": 0,
+            "femalePercentage": 100,
+            "genderGap": -100
           },
           {
-            "occupation": "Agricultural Equipment Operator",
-            "malePercentage": 100.0,
-            "femalePercentage": 0.0,
-            "genderGap": 100.0,
-            "topMajors": [
-              {
-                "major": "Business Administration",
-                "malePercentage": 100.0,
-                "femalePercentage": 0.0,
-                "genderGap": 100.0
-              },
-              {
-                "major": "Law",
-                "malePercentage": 100.0,
-                "femalePercentage": 0.0,
-                "genderGap": 100.0
-              }
-            ]
+            "occupation": "Imam of the mosque",
+            "malePercentage": 99.9,
+            "femalePercentage": 0.1,
+            "genderGap": 99.8
           },
           {
-            "occupation": "Crop farms",
-            "malePercentage": 0.0,
-            "femalePercentage": 100.0,
-            "genderGap": 100.0,
-            "topMajors": [
-              {
-                "major": "Business Administration",
-                "malePercentage": 100.0,
-                "femalePercentage": 0.0,
-                "genderGap": 100.0
-              },
-              {
-                "major": "Human Resources",
-                "malePercentage": 100.0,
-                "femalePercentage": 0.0,
-                "genderGap": 100.0
-              },
-              {
-                "major": "Islamic Creed (Aqeedah)",
-                "malePercentage": 100.0,
-                "femalePercentage": 0.0,
-                "genderGap": 100.0
-              }
-            ]
+            "occupation": "Car driver",
+            "malePercentage": 98.6,
+            "femalePercentage": 1.4,
+            "genderGap": 97.2
           },
           {
-            "occupation": "HVAC Technician",
-            "malePercentage": 100.0,
-            "femalePercentage": 0.0,
-            "genderGap": 100.0,
-            "topMajors": [
-              {
-                "major": "Business Administration",
-                "malePercentage": 100.0,
-                "femalePercentage": 0.0,
-                "genderGap": 100.0
-              },
-              {
-                "major": "Human Resources",
-                "malePercentage": 100.0,
-                "femalePercentage": 0.0,
-                "genderGap": 100.0
-              },
-              {
-                "major": "Management Information Systems",
-                "malePercentage": 100.0,
-                "femalePercentage": 0.0,
-                "genderGap": 100.0
-              },
-              {
-                "major": "Sharia (Islamic Law)",
-                "malePercentage": 100.0,
-                "femalePercentage": 0.0,
-                "genderGap": 100.0
-              },
-              {
-                "major": "Law",
-                "malePercentage": 100.0,
-                "femalePercentage": 0.0,
-                "genderGap": 100.0
-              }
-            ]
+            "occupation": "Chemical industry machine operator",
+            "malePercentage": 98.5,
+            "femalePercentage": 1.5,
+            "genderGap": 97
           }
         ]
       }

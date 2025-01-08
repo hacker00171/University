@@ -5,18 +5,12 @@ import React, { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { X, Users, Briefcase, DollarSign, Clock } from 'lucide-react'; // For close icon
 
-import mockData from './major_mock/mock_data_major.json';
+import mockDataRaw from './major_mock/mock_data_major.json';
+const mockData = mockDataRaw as MockData;
 import TopNarrowMajorsChart from './components/TopNarrowMajorsChart';
-import TopEmployableNarrowMajorsChart from './components/TopEmployableNarrowMajorsChart';
-import TopPaidNarrowMajorsChart from './components/TopPaidNarrowMajorsChart';
 import TopMajorsByPopularOccupationsChart from './components/TopMajorsByPopularOccupationsChart';
-import TopMajorsByMostEmployedOccupationChart from './components/TopMajorsByMostEmployedOccupationChart';
-import TopMajorsByHighestPaidOccupationChart from './components/TopMajorsByHighestPaidOccupationChart';
-import AllMajorsGenderDistributionChart from './components/AllMajorsGenderDistributionChart';
 import SalaryDistributionChart from './components/SalaryDistributionChart';
-import EmploymentTimingChart from './components/EmploymentTimingChart';
 import EmploymentTimelineChart from './components/EmploymentTimelineChart';
-// import GraduateDistributionTreeMap from './components/GraduateDistributionTreeMap';
 import TopMajorsGenderGapChart from './components/TopMajorsGenderGapChart';
 import TopOccupationsGenderGapChart from './components/TopOccupationsGenderGapChart';
 import GenderDistributionChart from './components/GenderDistributionChart';
@@ -28,6 +22,7 @@ interface MajorFilterOptions {
 }
 
 interface OverallBasicMetric {
+  name: string;
   generalMajor: string;
   graduates: number;
   graduatesPercentage: number;
@@ -37,6 +32,7 @@ interface OverallBasicMetric {
 }
 
 interface NarrowBasicMetric {
+  name: string;
   narrowMajor: string;
   graduates: number;
   graduatesPercentage: number;
@@ -66,7 +62,18 @@ interface GeneralMajor {
     topMajorsByOccupation?: TopMajorsByOccupation;
     genderDistribution: GenderDistribution;
     employmentTiming: EmploymentTiming;
-    employmentTimeline: EmploymentTimeline;
+    employmentTimeline: EmploymentTimeline[];
+    salaryDistribution: SalaryDistribution[];
+    topNarrowMajorsInsights?: {
+      byGenderGap: {
+        rankings: Array<{
+          name: string;
+          malePercentage: number;
+          femalePercentage: number;
+          genderGap: number;
+        }>;
+      };
+    };
   };
   byNarrowMajor?: {
     narrowMajors: Array<{
@@ -78,7 +85,18 @@ interface GeneralMajor {
         topMajorsByOccupation?: TopMajorsByOccupation;
         genderDistribution: GenderDistribution;
         employmentTiming: EmploymentTiming;
-        employmentTimeline: EmploymentTimeline;
+        employmentTimeline: EmploymentTimeline[];
+        salaryDistribution: SalaryDistribution[];
+        topMajorsInsights?: {
+          byGenderGap: {
+            rankings: Array<{
+              name: string;
+              malePercentage: number;
+              femalePercentage: number;
+              genderGap: number;
+            }>;
+          };
+        };
       };
     }>;
   };
@@ -88,6 +106,10 @@ interface OccupationMetrics {
   graduates: number;
   employmentRate: number;
   averageSalary: number;
+  genderDistribution?: {
+    male: { percentage: number };
+    female: { percentage: number };
+  };
 }
 
 interface MajorDistribution {
@@ -142,7 +164,20 @@ interface MajorsInsights {
     topMajorsByOccupation?: TopMajorsByOccupation;
     genderDistribution: GenderDistribution;
     employmentTiming: EmploymentTiming;
-    employmentTimeline: EmploymentTimeline;
+    employmentTimeline: EmploymentTimeline[];
+    salaryDistribution: SalaryDistribution[];
+    topGeneralMajorsInsights: {
+      byGenderGap: {
+        rankings: {
+          rankings: Array<{
+            generalMajor: string;
+            malePercentage: number;
+            femalePercentage: number;
+            genderGap: number;
+          }>;
+        };
+      };
+    };
   };
   byGeneralMajor: {
     generalMajors: GeneralMajor[];
@@ -188,201 +223,32 @@ interface EmploymentTiming {
 
 interface EmploymentTimeline {
   generalMajor: string;
+  name: string;
+  narrowMajor: string;
   averageTime: number;
   quickEmploymentRate: number;
-  waitingPeriods: Array<{
-    period: string;
-    percentage: number;
-  }>;
+  waitingPeriods: {
+    beforeGraduation: { count: number; percentage: number; };
+    withinYear: { count: number; percentage: number; };
+    afterYear: { count: number; percentage: number; };
+  };
 }
 
 
 const mockDataTyped = mockData as unknown as MockData;
 
-// Add this new component for the General Major buttons
-// const GeneralMajorButtons = ({ 
-//   generalMajors, 
-//   selectedMajor, 
-//   onSelect 
-// }: { 
-//   generalMajors: string[], 
-//   selectedMajor: string | null,
-//   onSelect: (major: string) => void 
-// }) => {
-//   return (
-//     <div className="flex flex-wrap gap-3 mb-6">
-//       {generalMajors.map((major) => (
-//         <button
-//           key={major}
-//           onClick={() => onSelect(major)}
-//           className={`px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-all duration-200
-//             ${selectedMajor === major 
-//               ? 'bg-gradient-to-r from-indigo-600 to-indigo-700 text-white shadow-lg shadow-indigo-500/25 border-2 border-indigo-400' 
-//               : 'bg-gradient-to-r from-[#1a2657] to-[#1a2657]/90 text-white/80 hover:bg-[#151d3b] hover:text-white hover:shadow-md border-2 border-transparent'
-//             }`}
-//         >
-//           {major}
-//         </button>
-//       ))}
-//       {selectedMajor && (
-//         <button
-//           onClick={() => onSelect('ALL_GENERAL_MAJORS')}
-//           className="px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-all duration-200
-//             bg-gradient-to-r from-red-600 to-red-700 text-white hover:shadow-md hover:from-red-700 hover:to-red-800"
-//         >
-//           Clear Selection
-//         </button>
-//       )}
-//     </div>
-//   );
-// };
-
-// First, add a function to get top 3 gender distributions
-// const getTopThreeGenderDistributions = (data: GenderDistribution[]) => {
-//   // Calculate gender gap for each major
-//   const withGenderGap = data.map(item => ({
-//     ...item,
-//     genderGap: Math.abs(item.male.percentage - item.female.percentage)
-//   }));
-
-//   // Sort by gender gap and take top 3
-//   return withGenderGap
-//     .sort((a, b) => b.genderGap - a.genderGap)
-//     .slice(0, 3);
-// };
-
-// Function to get top 3 majors by total graduates
-const getTopThreeByGraduates = (data: GenderDistribution[]) => {
-  return data
-    .sort((a, b) => b.male.count + b.female.count - (a.male.count + a.female.count))
-    .slice(0, 3);
-};
 
 // Add this interface for button position
 interface Position {
   x: number;
   y: number;
 }
-
-// Update the modal component to adjust position based on scroll
-const GenderDistributionModal = ({ 
-  isOpen, 
-  onClose, 
-  data, 
-  onSelectMajor,
-  buttonPosition 
-}: { 
-  isOpen: boolean;
-  onClose: () => void;
-  data: GenderDistribution[];
-  onSelectMajor: (major: string) => void;
-  buttonPosition: Position | null;
-}) => {
-  const [modalStyle, setModalStyle] = useState({ top: '0px' });
-
-  useEffect(() => {
-    if (isOpen && buttonPosition) {
-      const updateModalPosition = () => {
-        const scrollY = window.scrollY;
-        const viewportHeight = window.innerHeight;
-        const modalHeight = viewportHeight * 0.85; // 85vh
-        
-        // Position the modal higher up from the button
-        let topPosition = buttonPosition.y + scrollY - 500;
-        
-        // Ensure the modal doesn't go off screen
-        const maxTop = scrollY + (viewportHeight - modalHeight);
-        // Ensure it doesn't go above the viewport
-        topPosition = Math.max(scrollY + 20, Math.min(topPosition, maxTop));
-        
-        setModalStyle({ top: `${topPosition}px` });
-      };
-
-      updateModalPosition();
-      window.addEventListener('scroll', updateModalPosition);
-
-      return () => {
-        window.removeEventListener('scroll', updateModalPosition);
-      };
-    }
-  }, [isOpen, buttonPosition]);
-
-  if (!isOpen || !buttonPosition) return null;
-
-  return (
-    <div className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex justify-center" onClick={onClose}>
-      <div 
-        style={modalStyle}
-        className="absolute bg-gradient-to-br from-[#1f2e6a] to-[#162052] rounded-xl p-8 w-[90%] max-w-[1200px] h-[85vh] overflow-y-auto shadow-2xl border border-white/10"
-        onClick={e => e.stopPropagation()}
-      >
-        {/* Close button */}
-        <button 
-          onClick={onClose}
-          className="sticky top-0 right-4 float-right p-2 rounded-full hover:bg-white/10 text-white/60 hover:text-white transition-all duration-200 z-10"
-        >
-          <X size={24} />
-        </button>
-
-        {/* Grid of gender distribution cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {data
-            .filter(item => 
-              item.generalMajor && 
-              (item.male.count > 0 || item.female.count > 0) &&
-              item.male.count + item.female.count > 0
-            )
-            .map((item, index) => (
-              <div
-                key={index}
-                className="cursor-pointer"
-                onClick={() => {
-                  onSelectMajor(item.generalMajor || '');
-                  onClose();
-                }}
-              >
-                <div className="bg-gradient-to-r from-[#1a2657] to-[#1a2657]/90 p-6 rounded-lg">
-                  <h3 className="text-white/80 text-sm mb-3 truncate">{item.generalMajor}</h3>
-                  <AllMajorsGenderDistributionChart
-                    generalMajor={item.generalMajor ?? null}
-                    data={[item]}
-                  />
-                </div>
-              </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-};
-
-// Function to order all charts by total graduates
-// const orderChartsByGraduates = (data: GenderDistribution[]) => {
-//   return data.sort((a, b) => b.male.count + b.female.count - (a.male.count + a.female.count));
-// };
-
 // Add font classes at the top of the file
 const fontClasses = {
   heading: 'font-neosans-bold',
   subheading: 'font-neosans-medium',
   body: 'font-roboto'
 };
-
-// Create a custom SAR icon component
-// const SARIcon = () => (
-//   <svg 
-//     width="24" 
-//     height="24" 
-//     viewBox="0 0 24 24" 
-//     fill="none" 
-//     stroke="currentColor" 
-//     strokeWidth="2" 
-//     strokeLinecap="round" 
-//     strokeLinejoin="round"
-//   >
-//     <path d="M2 8h20M2 16h20M12 2v20M6 12h4a2 2 0 1 0 0-4H6v8h4a2 2 0 1 0 0-4" />
-//   </svg>
-// );
 
 export default function MajorsPage() {
   return (
@@ -400,15 +266,8 @@ function MajorsPageContent() {
   });
 
   // Add state for modal
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [buttonPosition, setButtonPosition] = useState<Position | null>(null);
-
-  // Move handleExpandClick inside the component
-  const handleExpandClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    setButtonPosition({ x: rect.left, y: rect.top });
-    setIsModalOpen(true);
-  };
+  // const [isModalOpen, setIsModalOpen] = useState(false);
+  // const [buttonPosition, setButtonPosition] = useState<Position | null>(null);
 
   const searchParams = useSearchParams();
 
@@ -517,10 +376,6 @@ function MajorsPageContent() {
   // Read URL parameters and set initial filter state
   useEffect(() => {
     const generalMajor = searchParams.get('generalMajor');
-    console.log(generalMajor)
-  // const generalMajor = "Health and Welfare";
-    // console.log('@@@@@@@@@@@@@@@@@@@@@@@@@@@')
-    // console.log('General Major:', generalMajor);
     if (generalMajor) {
       setFilters(prev => ({
         ...prev,
@@ -531,7 +386,6 @@ function MajorsPageContent() {
 
   useEffect(() => {
     const occupation = searchParams.get('occupation');
-    console.log('Occupation:', occupation);
     if (occupation) {
       setFilters(prev => ({
         ...prev,
@@ -542,7 +396,6 @@ function MajorsPageContent() {
 
   useEffect(() => {
     const gender = searchParams.get('gender');
-    // console.log('Gender:', gender);
     if (gender) {
       setFilters(prev => ({
         ...prev,
@@ -572,31 +425,9 @@ function MajorsPageContent() {
   }, [searchParams]);
 
   // Get general majors from the mock data
-  const generalMajors = mockData.majorsInsights.overall.basicMetrics.map(
-    item => item.generalMajor
-  );
-
-  // Get narrow majors based on selected general major
-  // const getNarrowMajors = (generalMajor: string | null) => {
-  //   if (!generalMajor) return [];
-  //   const majorData = mockData.majorsInsights.byGeneralMajor.generalMajors.find(
-  //     item => item.name === generalMajor
-  //   );
-  //   return majorData?.byNarrowMajor?.narrowMajors?.map(item => item.name) || [];
-  // };
-
-  // Get specific majors based on selected narrow major
-  // const getSpecificMajors = (generalMajor: string | null, narrowMajor: string | null) => {
-  //   if (!generalMajor || !narrowMajor) return [];
-  //   const majorData = mockData.majorsInsights.byGeneralMajor.generalMajors.find(
-  //     item => item.name === generalMajor
-  //   );
-  //   const narrowMajorData = majorData?.byNarrowMajor.narrowMajors.find(
-  //     item => item.name === narrowMajor
-  //   );
-  //   return narrowMajorData?.overall.basicMetrics.map(item => item.occupation) || [];
-  // };
-
+  const generalMajors = mockData.majorsInsights.overall.basicMetrics
+    .filter((item): item is OverallBasicMetric => 'generalMajor' in item)
+    .map(item => item.generalMajor);
   // Filter change handlers
   const handleGeneralMajorChange = (value: string) => {
     setFilters(({
@@ -606,35 +437,18 @@ function MajorsPageContent() {
     }));
   };
 
-  // const handleNarrowMajorChange = (value: string) => {
-  //   setFilters(prev => ({
-  //     ...prev,
-  //     narrowMajor: value === 'ALL_NARROW_MAJORS' ? null : value,
-  //     specificMajor: null  // Reset specific major when narrow major changes
-  //   }));
-  // };
-
-  // const handleSpecificMajorChange = (value: string) => {
-  //   setFilters(prev => ({
-  //     ...prev,
-  //     specificMajor: value === 'ALL_SPECIFIC_MAJORS' ? null : value
-  //   }));
-  // };
 
   // Force a re-render when filters change
   useEffect(() => {
     // This will trigger a re-render of all components that depend on filters
   }, [filters.generalMajor, filters.narrowMajor]);
 
-  // const narrowMajors = getNarrowMajors(filters.generalMajor);
-  // const specificMajors = getSpecificMajors(filters.generalMajor, filters.narrowMajor);
-
   // Add this function to get narrow majors data for the chart
   const getTopNarrowMajorsData = (generalMajor: string | null, narrowMajor: string | null) => {
     if (!generalMajor) {
       // Case 1: All General Majors - use majorsInsights/overall/basicMetrics
       return mockDataTyped.majorsInsights.overall.basicMetrics
-        .sort((a, b) => b.graduates - a.graduates)
+        .toSorted((a, b) => b.graduates - a.graduates)
         .slice(0, 5)
         .map(item => ({
           narrowMajor: 'generalMajor' in item ? item.generalMajor : item.narrowMajor || '',
@@ -649,11 +463,12 @@ function MajorsPageContent() {
 
     if (!narrowMajor) {
       // Case 2: Specific General Major - use majorsInsights/byGeneralMajor/generalMajors/overall/basicMetrics
-      return generalMajorData.overall.basicMetrics
-        .sort((a, b) => b.graduates - a.graduates)
+      const sortedMetrics = generalMajorData.overall.basicMetrics
+        .toSorted((a, b) => b.graduates - a.graduates);
+      return sortedMetrics
         .slice(0, 5)
         .map(item => ({
-          narrowMajor: 'narrowMajor' in item ? item.narrowMajor : '',
+          narrowMajor: 'narrowMajor' in item ? item.narrowMajor : item.generalMajor || '',
           value: item.graduates
         }));
     }
@@ -665,7 +480,7 @@ function MajorsPageContent() {
     if (!narrowMajorData?.overall?.basicMetrics) return [];
 
     return narrowMajorData.overall.basicMetrics
-      .sort((a, b) => b.graduates - a.graduates)
+      .toSorted((a, b) => b.graduates - a.graduates)
       .slice(0, 5)
       .map(item => ({
         narrowMajor: item.name || '',
@@ -673,99 +488,12 @@ function MajorsPageContent() {
     }));
   };
 
-  // Add this function next to your other data fetching functions
-  const getTopEmployableNarrowMajorsData = (generalMajor: string | null, narrowMajor: string | null) => {
-    if (!generalMajor) {
-      // Case 1: All General Majors - use majorsInsights/overall/basicMetrics
-      return mockDataTyped.majorsInsights.overall.basicMetrics
-        .sort((a, b) => b.employmentRate - a.employmentRate)
-        .slice(0, 5)
-        .map(item => ({
-          narrowMajor: 'generalMajor' in item ? item.generalMajor : item.narrowMajor || '',
-          value: item.employmentRate
-      }));
-    }
-    
-    const generalMajorData = mockDataTyped.majorsInsights.byGeneralMajor.generalMajors.find(
-      item => item.name === generalMajor
-    );
-    if (!generalMajorData) return [];
-
-    if (!narrowMajor) {
-      // Case 2: Specific General Major - use majorsInsights/byGeneralMajor/generalMajors/overall/basicMetrics
-      return generalMajorData.overall.basicMetrics
-        .sort((a, b) => b.employmentRate - a.employmentRate)
-        .slice(0, 5)
-        .map(item => ({
-          narrowMajor: 'narrowMajor' in item ? item.narrowMajor : '',
-          value: item.employmentRate
-        }));
-    }
-
-    // Case 3: Narrow Major - use majorsInsights/byGeneralMajor/generalMajors/byNarrowMajor/narrowMajors/overall/basicMetrics
-    const narrowMajorData = generalMajorData.byNarrowMajor?.narrowMajors.find(
-      item => item.name === narrowMajor
-    );
-    if (!narrowMajorData?.overall?.basicMetrics) return [];
-
-    return narrowMajorData.overall.basicMetrics
-      .sort((a, b) => b.employmentRate - a.employmentRate)
-      .slice(0, 5)
-      .map(item => ({
-        narrowMajor: item.name || '',
-        value: item.employmentRate
-    }));
-  };
-
-  // Add this function with your other data fetching functions
-  const getTopPaidNarrowMajorsData = (generalMajor: string | null, narrowMajor: string | null) => {
-    if (!generalMajor) {
-      // Case 1: All General Majors - use majorsInsights/overall/basicMetrics
-      return mockDataTyped.majorsInsights.overall.basicMetrics
-        .sort((a, b) => b.averageSalary - a.averageSalary)
-        .slice(0, 5)
-        .map(item => ({
-          narrowMajor: 'generalMajor' in item ? item.generalMajor : item.narrowMajor || '',
-          value: item.averageSalary
-      }));
-    }
-    
-    const generalMajorData = mockDataTyped.majorsInsights.byGeneralMajor.generalMajors.find(
-      item => item.name === generalMajor
-    );
-    if (!generalMajorData) return [];
-
-    if (!narrowMajor) {
-      // Case 2: Specific General Major - use majorsInsights/byGeneralMajor/generalMajors/overall/basicMetrics
-      return generalMajorData.overall.basicMetrics
-        .sort((a, b) => b.averageSalary - a.averageSalary)
-        .slice(0, 5)
-        .map(item => ({
-          narrowMajor: 'narrowMajor' in item ? item.narrowMajor : '',
-          value: item.averageSalary
-        }));
-    }
-
-    // Case 3: Narrow Major - use majorsInsights/byGeneralMajor/generalMajors/byNarrowMajor/narrowMajors/overall/basicMetrics
-    const narrowMajorData = generalMajorData.byNarrowMajor?.narrowMajors.find(
-      item => item.name === narrowMajor
-    );
-    if (!narrowMajorData?.overall?.basicMetrics) return [];
-
-    return narrowMajorData.overall.basicMetrics
-      .sort((a, b) => b.averageSalary - a.averageSalary)
-      .slice(0, 5)
-      .map(item => ({
-        narrowMajor: item.name || '',
-        value: item.averageSalary
-    }));
-  };
 
   // Update the getTopMajorsByPopularOccupationsData function with correct data mapping
   const getTopMajorsByPopularOccupationsData = (generalMajor: string | null, narrowMajor: string | null) => {
     if (!generalMajor) {
       // Case 1: All General Majors - use majorsInsights/overall/topMajorsByOccupation
-      const occupations = mockDataTyped.majorsInsights.overall.topMajorsByOccupation?.occupations || [];
+      const occupations = mockData.majorsInsights.overall.topMajorsByOccupation?.occupations || [];
       const totalGraduates = occupations.reduce((sum: number, curr: Occupation) => sum + curr.metrics.graduates, 0);
       
       return occupations.map((occupation: Occupation) => ({
@@ -777,7 +505,7 @@ function MajorsPageContent() {
       }));
     }
 
-    const generalMajorData = mockDataTyped.majorsInsights.byGeneralMajor.generalMajors.find(
+    const generalMajorData = mockData.majorsInsights.byGeneralMajor.generalMajors.find(
       item => item.name === generalMajor
     );
     if (!generalMajorData) return [];
@@ -814,119 +542,6 @@ function MajorsPageContent() {
     }));
   };
 
-  // Update the getTopMajorsByMostEmployedOccupation function with correct data mapping
-  const getTopMajorsByMostEmployedOccupation = (generalMajor: string | null, narrowMajor: string | null) => {
-    if (!generalMajor) {
-      // Case 1: All General Majors - use majorsInsights/overall/topMajorsByOccupation
-      const occupations = mockDataTyped.majorsInsights.overall.topMajorsByOccupation?.occupations || [];
-      if (occupations.length === 0) return [];
-
-      return occupations
-        .sort((a, b) => b.metrics.employmentRate - a.metrics.employmentRate)
-        .slice(0, 5)
-        .map(occupation => ({
-          major: occupation.name,
-          employmentRate: occupation.metrics.employmentRate,
-          occupation: occupation.name
-        }));
-    }
-
-    const generalMajorData = mockDataTyped.majorsInsights.byGeneralMajor.generalMajors.find(
-      item => item.name === generalMajor
-    );
-    if (!generalMajorData) return [];
-
-    if (!narrowMajor) {
-      // Case 2: Specific General Major - use majorsInsights/byGeneralMajor/generalMajors/overall/topMajorsByOccupation
-      const occupations = generalMajorData.overall.topMajorsByOccupation?.occupations || [];
-      if (occupations.length === 0) return [];
-
-      return occupations
-        .sort((a, b) => b.metrics.employmentRate - a.metrics.employmentRate)
-        .slice(0, 5)
-        .map(occupation => ({
-          major: occupation.name,
-          employmentRate: occupation.metrics.employmentRate,
-          occupation: occupation.name
-        }));
-    }
-
-    // Case 3: Narrow Major - use majorsInsights/byGeneralMajor/generalMajors/byNarrowMajor/narrowMajors/overall/topMajorsByOccupation
-    const narrowMajorData = generalMajorData.byNarrowMajor?.narrowMajors.find(
-      item => item.name === narrowMajor
-    );
-    if (!narrowMajorData?.overall?.topMajorsByOccupation?.occupations) return [];
-
-    const occupations = narrowMajorData.overall.topMajorsByOccupation.occupations;
-    return occupations
-      .sort((a, b) => b.metrics.employmentRate - a.metrics.employmentRate)
-      .slice(0, 5)
-      .map(occupation => ({
-        major: occupation.name,
-        employmentRate: occupation.metrics.employmentRate,
-        occupation: occupation.name
-      }));
-  };
-
-  // Update the getTopMajorsByHighestPaidOccupation function with correct data mapping
-  const getTopMajorsByHighestPaidOccupation = (generalMajor: string | null, narrowMajor: string | null) => {
-    if (!generalMajor) {
-      // Case 1: All General Majors - use majorsInsights/overall/topMajorsByOccupation
-      const occupations = mockDataTyped.majorsInsights.overall.topMajorsByOccupation?.occupations || [];
-      if (occupations.length === 0) return [];
-
-      return occupations
-        .sort((a, b) => b.metrics.averageSalary - a.metrics.averageSalary)
-        .slice(0, 5)
-        .map(occupation => ({
-          major: occupation.name,
-          graduates: occupation.metrics.graduates,
-          employmentRate: occupation.metrics.employmentRate,
-          averageSalary: occupation.metrics.averageSalary,
-          occupation: occupation.name
-        }));
-    }
-
-    const generalMajorData = mockDataTyped.majorsInsights.byGeneralMajor.generalMajors.find(
-      item => item.name === generalMajor
-    );
-    if (!generalMajorData) return [];
-
-    if (!narrowMajor) {
-      // Case 2: Specific General Major - use majorsInsights/byGeneralMajor/generalMajors/overall/topMajorsByOccupation
-      const occupations = generalMajorData.overall.topMajorsByOccupation?.occupations || [];
-      if (occupations.length === 0) return [];
-
-      return occupations
-        .sort((a, b) => b.metrics.averageSalary - a.metrics.averageSalary)
-        .slice(0, 5)
-        .map(occupation => ({
-          major: occupation.name,
-          graduates: occupation.metrics.graduates,
-          employmentRate: occupation.metrics.employmentRate,
-          averageSalary: occupation.metrics.averageSalary,
-          occupation: occupation.name
-        }));
-    }
-
-    // Case 3: Narrow Major - use majorsInsights/byGeneralMajor/generalMajors/byNarrowMajor/narrowMajors/overall/topMajorsByOccupation
-    const narrowMajorData = generalMajorData.byNarrowMajor?.narrowMajors.find(
-      item => item.name === narrowMajor
-    );
-    if (!narrowMajorData?.overall?.topMajorsByOccupation?.occupations) return [];
-
-    const occupations = narrowMajorData.overall.topMajorsByOccupation.occupations;
-    return occupations
-      .sort((a, b) => b.metrics.averageSalary - a.metrics.averageSalary)
-      .slice(0, 5)
-      .map(occupation => ({
-        major: occupation.name,
-        graduates: occupation.metrics.graduates,
-        employmentRate: occupation.metrics.employmentRate,
-        averageSalary: occupation.metrics.averageSalary,
-        occupation: occupation.name
-      }));
-  };
 
   // Update the data fetching functions to handle all filter cases
   
@@ -934,16 +549,17 @@ function MajorsPageContent() {
   // Update the getGenderDistributionData function
   const getGenderDistributionData = (): GenderDistribution[] => {
     const { generalMajor, narrowMajor } = filters;
+    const genderData = mockDataTyped.majorsInsights.overall.genderDistribution;
 
     // Case 1: No general major selected
     if (!generalMajor) {
-      return mockDataTyped.majorsInsights.overall.genderDistribution;
+      return Array.isArray(genderData) ? genderData : [genderData];
     }
 
     // Case 2: General major selected
-    // Extract from majorsInsights/overall/genderDistribution list
-    const overallGenderData = mockDataTyped.majorsInsights.overall.genderDistribution;
-    const selectedGeneralMajorData = overallGenderData.find(
+    if (!Array.isArray(genderData)) return [];
+    
+    const selectedGeneralMajorData = genderData.find(
       item => item.generalMajor === generalMajor
     );
 
@@ -955,23 +571,22 @@ function MajorsPageContent() {
     }
 
     // Case 3: Both general and narrow major selected
-    // Find the general major first
     const generalMajorData = mockDataTyped.majorsInsights.byGeneralMajor.generalMajors
       .find(major => major.name === generalMajor);
 
     if (!generalMajorData) return [];
 
-    // Find the narrow major in the general major's genderDistribution
-    const narrowMajorDataList = generalMajorData.overall.genderDistribution;
-    const narrowMajorData = narrowMajorDataList.find(
+    const genderDistribution = generalMajorData.overall.genderDistribution;
+    if (!Array.isArray(genderDistribution)) return [];
+
+    const narrowMajorData = genderDistribution.find(
       major => major.narrowMajor === narrowMajor
     );
 
     if (!narrowMajorData) return [];
 
-    // Return the data in the format expected by the chart
     return [{
-      generalMajor, // Keep the generalMajor for the chart to find
+      generalMajor,
       narrowMajor,
       male: narrowMajorData.male,
       female: narrowMajorData.female
@@ -984,7 +599,9 @@ function MajorsPageContent() {
 
     // Case 1: No general major selected
     if (!generalMajor) {
-      return mockData.majorsInsights.overall.salaryDistribution;
+      const sortedData = mockData.majorsInsights.overall.salaryDistribution
+        .toSorted((a, b) => b.percentage - a.percentage);
+      return sortedData.slice(0, 5);
     }
 
     // Find the general major data
@@ -995,7 +612,9 @@ function MajorsPageContent() {
 
     // Case 2: General major selected, but no narrow major
     if (!narrowMajor) {
-      return generalMajorData.overall.salaryDistribution;
+      const sortedData = generalMajorData.overall.salaryDistribution
+        .toSorted((a, b) => b.percentage - a.percentage);
+      return sortedData.slice(0, 5);
     }
 
     // Case 3: Both general and narrow major selected
@@ -1004,39 +623,9 @@ function MajorsPageContent() {
 
     if (!narrowMajorData) return [];
 
-    return narrowMajorData.overall.salaryDistribution;
-  };
-
-  // Update the getEmploymentTimingData function
-  const getEmploymentTimingData = (filters: MajorFilterOptions): EmploymentTiming[] => {
-    const { generalMajor, narrowMajor } = filters;
-
-    // Case 1: No general major selected
-    if (!generalMajor) {
-      return mockData.majorsInsights.overall.employmentTiming;
-    }
-
-    // Find the general major data
-    const generalMajorData = mockData.majorsInsights.byGeneralMajor.generalMajors
-      .find(major => major.name === generalMajor);
-
-    if (!generalMajorData) return [];
-
-    // Case 2: General major selected, but no narrow major
-    if (!narrowMajor) {
-      return generalMajorData.overall.employmentTiming.map(item => ({
-        ...item,
-        generalMajor: item.narrowMajor
-      }));
-    }
-
-    // Case 3: Both general and narrow major selected
-    const narrowMajorData = generalMajorData.byNarrowMajor?.narrowMajors
-      .find(major => major.name === narrowMajor);
-
-    if (!narrowMajorData) return [];
-
-    return narrowMajorData.overall.employmentTiming;
+    const sortedData = narrowMajorData.overall.salaryDistribution
+      .toSorted((a, b) => b.percentage - a.percentage);
+    return sortedData.slice(0, 5);
   };
 
   // Function to get employment timeline data based on selected filters
@@ -1045,7 +634,8 @@ function MajorsPageContent() {
 
     // Case 1: No general major selected
     if (!generalMajor) {
-      return mockData.majorsInsights.overall.employmentTimeline;
+      // Limit to top 5 entries from overall timeline
+      return mockData.majorsInsights.overall.employmentTimeline.slice(0, 5);
     }
 
     // Find the general major data
@@ -1056,10 +646,12 @@ function MajorsPageContent() {
 
     // Case 2: General major selected, but no narrow major
     if (!narrowMajor) {
-      return generalMajorData.overall.employmentTimeline.map(item => ({
-        ...item,
-        generalMajor: item.narrowMajor // Use narrowMajor as the label for each timeline entry
-      }));
+      return generalMajorData.overall.employmentTimeline
+        .map(item => ({
+          ...item,
+          generalMajor: item.narrowMajor
+        }))
+        .slice(0, 5);
     }
 
     // Case 3: Both general and narrow major selected
@@ -1068,11 +660,13 @@ function MajorsPageContent() {
 
     if (!narrowMajorData?.overall?.employmentTimeline) return [];
 
-    // Return all employment timeline entries for the selected narrow major
-    return narrowMajorData.overall.employmentTimeline.map(item => ({
-      ...item,
-      generalMajor: item.name || narrowMajor
-    }));
+    // Return top 5 employment timeline entries for the selected narrow major
+    return narrowMajorData.overall.employmentTimeline
+      .map(item => ({
+        ...item,
+        generalMajor: item.name || narrowMajor
+      }))
+      .slice(0, 5); // Limit to top 5 entries
   };
 
   // Add these functions with the other data fetching functions
@@ -1132,18 +726,6 @@ function MajorsPageContent() {
     })) || [];
   };
 
-  // Add this function to get the overview metrics data
-  // const getOverviewMetrics = () => {
-  //   if (filters.generalMajor) {
-  //     const majorData = mockData.majorsInsights.byGeneralMajor.generalMajors.find(
-  //       major => major.name === filters.generalMajor
-  //     );
-  //     if (!majorData) return mockData.majorsInsights.overall.basicMetrics[0];
-  //     return majorData.overall.basicMetrics[0];
-  //   }
-  //   return mockData.majorsInsights.overall.basicMetrics[0];
-  // };
-
   // Function to get top majors by gender gap based on selected filters
   const getTopMajorsGenderGap = (filters: MajorFilterOptions) => {
     const { generalMajor, narrowMajor } = filters;
@@ -1179,14 +761,15 @@ function MajorsPageContent() {
 
     // Case 1: No general major selected
     if (!generalMajor) {
-      return mockData.majorsInsights.totalMetrics;
+      return mockData.majorsInsights.overall.basicMetrics[0];  // Use first basic metric instead of totalMetrics
     }
 
     // Case 2: General major selected, but no narrow major
     if (!narrowMajor) {
-      // Extract the selected general major from the basicMetrics list
       const selectedMajorMetrics = mockData.majorsInsights.overall.basicMetrics
-        .find(major => major.generalMajor === generalMajor);
+        .find((major): major is OverallBasicMetric => 
+          'generalMajor' in major && major.generalMajor === generalMajor
+        );
       
       if (!selectedMajorMetrics) return null;
       return selectedMajorMetrics;
@@ -1201,7 +784,9 @@ function MajorsPageContent() {
 
     // Extract the selected narrow major from basicMetrics list
     const selectedNarrowMajorMetrics = generalMajorData.overall.basicMetrics
-      .find(major => major.narrowMajor === narrowMajor);
+      .find((major): major is NarrowBasicMetric => 
+        'narrowMajor' in major && major.narrowMajor === narrowMajor
+      );
 
     return selectedNarrowMajorMetrics || null;
   };
@@ -1310,40 +895,9 @@ function MajorsPageContent() {
         </div>
       </div>
 
-      {!filters.generalMajor && (
-        <div className="flex justify-between items-center mb-4">
-          <h2 className={`${fontClasses.heading} text-white text-xl mb-4`}>Gender Distribution By All Majors</h2>
-          <button
-            onClick={handleExpandClick}
-            className={`${fontClasses.body} text-white/60 hover:text-white/90 transition-colors`}
-          >
-            View All
-          </button>
-        </div>
-      )}
       
       {/* Gender Distribution and Gender Gap Section */}
       <div className="mt-8">
-        {/* Top 3 Gender Distribution Charts - Only show when no general major is selected */}
-        {!filters.generalMajor && (
-          <div className="grid grid-cols-3 gap-4 w-full mb-8">
-            {getTopThreeByGraduates(getGenderDistributionData())
-              .filter(data => data.generalMajor && (data.male.count > 0 || data.female.count > 0)) // Filter out empty data
-              .map((data, index) => (
-                <div key={index} className="cursor-pointer" onClick={() => handleGeneralMajorChange(data.generalMajor || '')}>
-                  <div className="bg-gradient-to-r from-[#1a2657] to-[#1a2657]/90 p-6 rounded-lg">
-                    <h3 className={`${fontClasses.subheading} text-white/80 text-sm mb-3 truncate`}>
-                      {data.generalMajor}
-                    </h3>
-                    <AllMajorsGenderDistributionChart 
-                      generalMajor={data.generalMajor ?? null}
-                      data={[data]}
-                    />
-                  </div>
-                </div>
-            ))}
-          </div>
-        )}
 
         {/* Three Chart Layout - Always show */}
        
@@ -1455,11 +1009,9 @@ function MajorsPageContent() {
 
       {/* Top General Majors Insights Section */}
       <div id="general-majors-insights" className="mt-8">        
-        <h2 className={`${fontClasses.heading} text-white text-xl mb-4`} />
-      <div id="general-majors-insights" className="mt-8">        
-        <h2 className="text-white text-xl font-semibold mb-4">
-          {filters.narrowMajor ? 'Top Majors Insights' : filters.generalMajor ? 'Top Narrow Majors Insights' : 'Top General Majors Insights'}
-        </h2>        
+        <h2 className={`${fontClasses.heading} text-white text-xl mb-4`}>Major Insights</h2>
+        <div id="general-majors-insights" className="mt-8">        
+
         <div className="space-y-4">
           <div className="grid grid-cols-3 gap-4 w-full">
             <TopNarrowMajorsChart 
@@ -1476,120 +1028,39 @@ function MajorsPageContent() {
                 handleGeneralMajorChange(generalMajor);
               }}
             />
-
-            <TopEmployableNarrowMajorsChart 
-              generalMajor={filters.generalMajor}
-              narrowMajor={filters.narrowMajor}
-              data={getTopEmployableNarrowMajorsData(filters.generalMajor, filters.narrowMajor)}
-              onBarClick={(narrowMajor) => {
-                setFilters(prev => ({
-                  ...prev,
-                  narrowMajor: narrowMajor
-                }));
-              }}
-              onGeneralMajorSelect={(generalMajor) => {
-                handleGeneralMajorChange(generalMajor);
-              }}
-            />
-            <TopPaidNarrowMajorsChart 
-              generalMajor={filters.generalMajor}
-              narrowMajor={filters.narrowMajor}
-              data={getTopPaidNarrowMajorsData(filters.generalMajor, filters.narrowMajor)}
-              onBarClick={(narrowMajor) => {
-                setFilters(prev => ({
-                  ...prev,
-                  narrowMajor: narrowMajor
-                }));
-              }}
-              onGeneralMajorSelect={(generalMajor) => {
-                handleGeneralMajorChange(generalMajor);
-              }}
-            />
-          </div>
-
-          <div className="grid grid-cols-2 gap-4 w-full">
-            {/* <TopPaidNarrowMajorsChart 
-              generalMajor={filters.generalMajor}
-              narrowMajor={filters.narrowMajor}
-              data={getTopPaidNarrowMajorsData(filters.generalMajor, filters.narrowMajor)}
-              onBarClick={(narrowMajor) => {
-                setFilters(prev => ({
-                  ...prev,
-                  narrowMajor: narrowMajor
-                }));
-              }}
-              onGeneralMajorSelect={(generalMajor) => {
-                handleGeneralMajorChange(generalMajor);
-              }}
-            /> */}
-            {/* <TopMajorsGenderGapChart 
-              generalMajor={filters.generalMajor}
-              data={getTopMajorsGenderGapData()}
-            /> */}
-          </div>        
-        </div>
-      </div>
-
-      {/* Second group of charts - Top Major Occupations */}
-      <div id="occupations-insights" className="mt-8">
-        <h2 className={`${fontClasses.heading} text-white text-xl mb-4`}>Top Occupations Insights</h2>
-        <div className="space-y-4">
-          <div className="grid grid-cols-3 gap-4 w-full">
             <TopMajorsByPopularOccupationsChart 
               generalMajor={filters.generalMajor}
               narrowMajor={filters.narrowMajor}
               data={getTopMajorsByPopularOccupationsData(filters.generalMajor, filters.narrowMajor)}
             />
-
-            <TopMajorsByMostEmployedOccupationChart 
-              generalMajor={filters.generalMajor}
-              data={getTopMajorsByMostEmployedOccupation(filters.generalMajor, filters.narrowMajor)}
-            />
-            <TopMajorsByHighestPaidOccupationChart 
-              generalMajor={filters.generalMajor}
-              data={getTopMajorsByHighestPaidOccupation(filters.generalMajor, filters.narrowMajor)}
-            />
+            <SalaryDistributionChart 
+            generalMajor={filters.generalMajor}
+            data={getSalaryDistributionData()}
+            onBarClick={(narrowMajor) => {
+              setFilters(prev => ({
+                ...prev,
+                narrowMajor: narrowMajor
+              }));
+            }}
+            onGeneralMajorSelect={(generalMajor) => {
+              setFilters(prev => ({
+                ...prev,
+                generalMajor: generalMajor,
+                narrowMajor: null,
+                specificMajor: null
+              }));
+            }}
+          />
           </div>
 
           <div className="grid grid-cols-2 gap-4 w-full">
-            {/* <TopMajorsByHighestPaidOccupationChart 
-              generalMajor={filters.generalMajor}
-              data={getTopMajorsByHighestPaidOccupation(filters.generalMajor, filters.narrowMajor)}
-            /> */}
-            {/* <TopOccupationsGenderGapChart 
-              generalMajor={filters.generalMajor}
-              data={getTopOccupationsGenderGapData(filters)}
-            /> */}
-          </div>
+            
+          </div>        
         </div>
       </div>
 
-      {/* Employment Timing Distribution Section */}
-      <div id="timing-insights" className="mt-8">
-        <div className="grid grid-cols-2 gap-4 w-full">
-          <div>
-            <h3 className={`${fontClasses.subheading} text-white text-lg mb-4`}>Employment Timing Distribution</h3>
-            <EmploymentTimingChart 
-              generalMajor={filters.generalMajor}
-              data={getEmploymentTimingData(filters)}
-              onBarClick={(narrowMajor) => {
-                setFilters(prev => ({
-                  ...prev,
-                  narrowMajor: narrowMajor
-                }));
-              }}
-              onGeneralMajorSelect={(generalMajor) => {
-                setFilters(prev => ({
-                  ...prev,
-                  generalMajor: generalMajor,
-                  narrowMajor: null,
-                  specificMajor: null
-                }));
-              }}
-            />
-          </div>
-          <div>
-            <h3 className={`${fontClasses.subheading} text-white text-lg mb-4`}>Employment Timeline Analysis</h3>
+      <div className="grid grid-cols-2 gap-4 w-300px">
+            {/* <h3 className={`${fontClasses.subheading} text-white text-lg mb-4`}>Employment Timeline Analysis</h3> */}
             <EmploymentTimelineChart 
               generalMajor={filters.generalMajor}
               data={getEmploymentTimelineData(filters)}
@@ -1609,54 +1080,6 @@ function MajorsPageContent() {
               }}
             />
           </div>
-        </div>
-      </div>
-
-      {/* Salary and Gender Distribution Section */}
-      <div id="salary-insights" className="mt-8">
-        <div className="grid grid-cols-2 gap-4">
-          <div>
-        <h2 className={`${fontClasses.heading} text-white text-xl mb-4`}>Salary Distribution</h2>
-          <SalaryDistributionChart 
-            generalMajor={filters.generalMajor}
-            data={getSalaryDistributionData()}
-            onBarClick={(narrowMajor) => {
-              setFilters(prev => ({
-                ...prev,
-                narrowMajor: narrowMajor
-              }));
-            }}
-            onGeneralMajorSelect={(generalMajor) => {
-              setFilters(prev => ({
-                ...prev,
-                generalMajor: generalMajor,
-                narrowMajor: null,
-                specificMajor: null
-              }));
-            }}
-          />
-        </div>
-          {/* <div>
-            <h2 className="text-white text-xl font-semibold mb-4">Gender Distribution</h2>
-            <AllMajorsGenderDistributionChart 
-              generalMajor={filters.generalMajor}
-              data={getGenderDistributionData()}
-            />
-      </div> */}
-        </div>
-      </div>
-
-      {/* Add the modal component */}
-      <GenderDistributionModal
-        isOpen={isModalOpen}
-        onClose={() => {
-          setIsModalOpen(false);
-          setButtonPosition(null);
-        }}
-        data={getGenderDistributionData()}
-        onSelectMajor={handleGeneralMajorChange}
-        buttonPosition={buttonPosition}
-      />
     </div>
     </div>
   );}

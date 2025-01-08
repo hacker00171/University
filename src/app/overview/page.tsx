@@ -540,7 +540,7 @@ export default function OverviewPage() {
                       {/* Engineering {mockData.OverViewInsights.overall.genderDistribution.find(m => m.generalMajor === "Engineering, manufacturing and construction")?.male.percentage}% male */}
                     </span>
                     <span className="text-[14px] px-1.5 py-0.5 rounded-full bg-[#4A90E2]/20 text-[#4A90E2]">
-                      Agriculture{97}% male{/* Agriculture {mockData.OverViewInsights.overall.genderDistribution.find(m => m.generalMajor === "Agriculture, forestry, fisheries and veterinary")?.male.percentage}% male */}
+                      Agriculture  {97}% male{/* Agriculture {mockData.OverViewInsights.overall.genderDistribution.find(m => m.generalMajor === "Agriculture, forestry, fisheries and veterinary")?.male.percentage}% male */}
                     </span>
     
                   </div>
@@ -553,16 +553,16 @@ export default function OverviewPage() {
               <div className="flex flex-row justify-center gap-8">
                
                 
-                  <FaBook className="text-[#ac4863] text-lg" />
+                  <FaBook className="text-pink-500 text-lg" />
                   <div className="flex flex-col items-center text-center gap-2">
-                  <p className="text-sm font-roboto text-white">Education & care fields are female-dominated</p>
+                  <p className="text-sm font-roboto text-white">Education & Generic Programs fields are female-dominated</p>
                   <div className="flex flex-row items-center gap-4">
-                    <span className="text-[14px] px-1.5 py-0.5 rounded-full bg-[#ac4863]/20 text-[#ac4863]">
+                    <span className="text-[14px] px-1.5 py-0.5 rounded-full bg-pink-500/20 text-pink-500">
                       Education {97}% female
                       {/* Education {mockData.OverViewInsights.overall.genderDistribution.find(m => m.generalMajor === "education")?.female.percentage}% female */}
                     </span>
-                    <span className="text-[14px] px-1.5 py-0.5 rounded-full bg-[#ac4863]/20 text-[#ac4863]">
-                      Health  {87}% female {/* Health {mockData.OverViewInsights.overall.genderDistribution.find(m => m.generalMajor === "Health and Welfare")?.female.percentage}% female */}
+                    <span className="text-[14px] px-1.5 py-0.5 rounded-full bg-pink-500/20 text-pink-500">
+                      Generic Programs  {87}% female {/* Health {mockData.OverViewInsights.overall.genderDistribution.find(m => m.generalMajor === "Health and Welfare")?.female.percentage}% female */}
                     </span>
                   </div>
                 </div>
@@ -577,12 +577,12 @@ export default function OverviewPage() {
                   
                   <p className="text-sm font-roboto text-white">Rising female presence in key fields</p>
                   <div className="flex flex-row items-center gap-4">
-                    <span className="text-[14px] px-1.5 py-0.5 rounded-full bg-[#FFD700]/20 text-[#FFD700]">
-                      Sciences {97}% female
+                    {/* <span className="text-[14px] px-1.5 py-0.5 rounded-full bg-[#FFD700]/20 text-[#FFD700]"> */}
+                      {/* Sciences {97}% female */}
                       {/* Sciences {mockData.OverViewInsights.overall.genderDistribution.find(m => m.generalMajor === "Natural Sciences, Mathematics and Statistics")?.female.percentage}% female */}
-                    </span>
+                    {/* </span> */}
                     <span className="text-[14px] px-1.5 py-0.5 rounded-full bg-[#FFD700]/20 text-[#FFD700]">
-                      Business {87}% female {/* Business {mockData.OverViewInsights.overall.genderDistribution.find(m => m.generalMajor === "Business, administration and law")?.female.percentage}% female */}
+                      CyberSecurity controls Evaluator {100}% female {/* Business {mockData.OverViewInsights.overall.genderDistribution.find(m => m.generalMajor === "Business, administration and law")?.female.percentage}% female */}
                     </span>
                   </div>
                 </div>
@@ -832,7 +832,7 @@ export default function OverviewPage() {
                     dataKey="occupation"
                     type="category"
                     width={120}
-                    tick={{ fill: '#fff', fontSize: 12, fontFamily: 'Roboto' }}
+                    tick={{ fill: '#fff', fontSize: 12, fontFamily: 'Roboto', offset: 40 }}
                   />
                   <Tooltip content={({ active, payload }) => {
                     if (active && payload && payload.length) {
@@ -898,7 +898,7 @@ export default function OverviewPage() {
                     name="Female"
                     stackId="b"
                     label={{
-                      position: 'inside',
+                      position: 'insideLeft',
                       fill: '#fff',
                       fontSize: 10,
                       fontFamily: 'Roboto',
@@ -952,8 +952,8 @@ export default function OverviewPage() {
                   <TrendingUp className="h-5 w-5 text-[#00A9B5]" />
                   <span className="text-xs text-[#00A9B5] bg-[#00A9B5]/20 rounded-full px-2 py-0.5">Salary</span>
                 </div>
-                <h4 className="text-lg font-bold text-white">3,818</h4>
-                <p className="text-xs text-gray-300">Health & Welfare</p>
+                <h4 className="text-lg font-bold text-white">2,149 SAR</h4>
+                <p className="text-xs text-gray-300">Business Administration and Law</p>
                 <div className="mt-1 flex items-center text-green-400">
                   <ArrowUpCircle className="h-3 w-3 mr-1" />
                   <span className="text-xs">Top Sector</span>
@@ -988,8 +988,8 @@ export default function OverviewPage() {
                   <span className="text-xs text-[#00A9B5] bg-[#00A9B5]/20 rounded-full px-2 py-0.5">Outcomes</span>
                 </div>
                 <ul className="space-y-1">
-                  <li className="text-xs text-gray-300">• Health leads (3,818)</li>
-                  <li className="text-xs text-gray-300">• Engineering (3,707)</li>
+                  <li className="text-xs text-gray-300">• Health leads (1.021 SAR)</li>
+                  <li className="text-xs text-gray-300">• Engineering (670 SAR)</li>
                   <li className="text-xs text-gray-300">• STEM highest employed</li>
                 </ul>
               </div>
@@ -1682,9 +1682,15 @@ export default function OverviewPage() {
             <ResponsiveContainer width="100%" height="100%">
               <BarChart
                 data={mockData.OverViewInsights.employmentTiming.byGeneralMajor}
+                // onClick={(data) => {
+                //   if (data && data.activePayload?.[0]?.payload) {
+                //     handleTimingClick(data.activePayload[0].payload.timing);
+                //   }
+                // }}
                 onClick={(data) => {
-                  if (data && data.activePayload?.[0]?.payload) {
-                    handleTimingClick(data.activePayload[0].payload.timing);
+                  console.log(data)
+                  if (data && data.activeLabel) {
+                    handleTimingClick(data.activeLabel);
                   }
                 }}
                 // onClick={(data) => handleTimingClick(data.name)}
@@ -2042,9 +2048,9 @@ export default function OverviewPage() {
                 <BarChart
                   data={mockData.OverViewInsights.salaryDistribution.byGeneralMajor}
                   layout="vertical"
-                  margin={{ top:10, right: 20, left: 20, bottom: 20 }}
-                  barGap={0}
-                  // barsize={12}
+                  margin={{ top:0, right: 0, left: 0, bottom: 0 }}
+                  barGap={8}
+                  // barsize={8}
                   onClick={(data) => {
                     if (data && data.activePayload?.[0]?.payload) {
                       handleSalaryClick(data.activePayload[0].payload.salary);
@@ -2106,58 +2112,59 @@ export default function OverviewPage() {
                       <div style={{ display: 'flex', gap: '5px', paddingLeft: '0px' }}>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                           <div style={{ width: '20px', height: '20px', backgroundColor: '#1F5B62', borderRadius: '4px' }}></div>
-                          <span style={{ color: '#fff', fontSize: '14px', fontFamily: 'Roboto' }}>0-2000</span>
+                          <span style={{ color: '#fff', fontSize: '14px', fontFamily: 'Roboto' }}>0-5000</span>
                         </div>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                           <div style={{ width: '20px', height: '20px', backgroundColor: '#777586', borderRadius: '4px' }}></div>
-                          <span style={{ color: '#fff', fontSize: '14px', fontFamily: 'Roboto' }}>2001-2500</span>
+                          <span style={{ color: '#fff', fontSize: '14px', fontFamily: 'Roboto' }}>5001-10000</span>
                         </div>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                           <div style={{ width: '20px', height: '20px', backgroundColor: '#0F75BC', borderRadius: '4px' }}></div>
-                          <span style={{ color: '#fff', fontSize: '14px', fontFamily: 'Roboto' }}>2501-3000</span>
+                          <span style={{ color: '#fff', fontSize: '14px', fontFamily: 'Roboto' }}>10001-15000</span>
                         </div>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                           <div style={{ width: '20px', height: '20px', backgroundColor: '#ab4e52', borderRadius: '4px' }}></div>
-                          <span style={{ color: '#fff', fontSize: '14px', fontFamily: 'Roboto' }}>3001+</span>
+                          <span style={{ color: '#fff', fontSize: '14px', fontFamily: 'Roboto' }}>15001+</span>
                         </div>
                       </div>
                     )}
                   />
                   <Bar 
-                    dataKey="ranges.0-2000.percentage" 
-                    name="0-2000"
+                    dataKey="ranges.0-5000.percentage" 
+                    name="0-5000"
                     // stackId="salary"
                     fill="#1F5B62"
                     barSize={10}
+                    // barGap={100}
                   >
-                    <LabelList dataKey="ranges.0-2000.percentage" position="right" fill="#fff" formatter={(value: number) => `${value}%`} fontSize={8} fontFamily="Roboto" />
+                    <LabelList dataKey="ranges.0-5000.percentage" position="right" fill="#fff" formatter={(value: number) => `${value}%`} fontSize={8} fontFamily="Roboto" />
                   </Bar>
                   <Bar 
-                    dataKey="ranges.2001-2500.percentage" 
-                    name="2001-2500"
+                    dataKey="ranges.5001-10000.percentage" 
+                    name="5001-10000"
                     // stackId="salary"
                     fill="#777586"
                     barSize={10}
                   >
-                    <LabelList dataKey="ranges.2001-2500.percentage" position="right" fill="#fff" formatter={(value: number) => `${value}%`} fontSize={8} fontFamily="Roboto" />
+                    <LabelList dataKey="ranges.5001-10000.percentage" position="right" fill="#fff" formatter={(value: number) => `${value}%`} fontSize={8} fontFamily="Roboto" />
                   </Bar>
                   <Bar 
-                    dataKey="ranges.2501-3000.percentage" 
-                    name="2501-3000"
+                    dataKey="ranges.10001-15000.percentage" 
+                    name="10001-15000"
                     // stackId="salary"
                     fill="#0F75BC"
                     barSize={10}
                   >
-                    <LabelList dataKey="ranges.2501-3000.percentage" position="right" fill="#fff" formatter={(value: number) => `${value}%`} fontSize={8} fontFamily="Roboto" />
+                    <LabelList dataKey="ranges.10001-15000.percentage" position="right" fill="#fff" formatter={(value: number) => `${value}%`} fontSize={8} fontFamily="Roboto" />
                   </Bar>
                   <Bar 
-                    dataKey="ranges.3001+.percentage" 
-                    name="3001+"
+                    dataKey="ranges.15001+.percentage" 
+                    name="15001+"
                     // stackId="salary"
                     fill="#ab4e52"
                     barSize={10}
                   >
-                     <LabelList dataKey="ranges.3001+.percentage" position="inside" fill="#fff" formatter={(value: number) => `${value}%`} fontSize={8} fontFamily="Roboto" />
+                     <LabelList dataKey="ranges.15001+.percentage" position="inside" fill="#fff" formatter={(value: number) => `${value}%`} fontSize={8} fontFamily="Roboto" />
                     {/* <LabelList dataKey="ranges.15001+.percentage" position="center" fill="#fff" formatter={(value: LabelListProps) => value.value > 5 ? `${value.value}%` : ''} fontSize={12} /> */}
                   </Bar>
                 </BarChart>
@@ -2178,9 +2185,9 @@ export default function OverviewPage() {
                 <BarChart
                   data={mockData.OverViewInsights.salaryDistribution.byEducationLevel}
                   layout="vertical"
-                  margin={{ top: 10, right: 20, left: 20, bottom: 20 }}
+                  margin={{ top: 0, right: 0, left: -10, bottom: 0 }}
                   barGap={4}
-                  barSize={12}
+                  barSize={16}
                   onClick={(data) => {
                     if (data && data.activePayload?.[0]?.payload) {
                       handleSalaryClick(data.activePayload[0].payload.salary);
@@ -2197,7 +2204,7 @@ export default function OverviewPage() {
                     tickFormatter={(value) => `${value}%`}
                   />
                   <YAxis 
-                    dataKey="level" 
+                    dataKey="name" 
                     type="category"
                     width={150}
                     tick={{ fill: '#fff', fontSize: 12, fontFamily: 'Roboto' }}
@@ -2241,58 +2248,58 @@ export default function OverviewPage() {
                       <div style={{ display: 'flex', gap: '5px', paddingLeft: '0px' }}>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                           <div style={{ width: '20px', height: '20px', backgroundColor: '#0F75BC', borderRadius: '4px' }}></div>
-                          <span style={{ color: '#fff', fontSize: '14px', fontFamily: 'Roboto' }}>0-2000</span>
+                          <span style={{ color: '#fff', fontSize: '14px', fontFamily: 'Roboto' }}>0-5000</span>
                         </div>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                           <div style={{ width: '20px', height: '20px', backgroundColor: '#45B7A9', borderRadius: '4px' }}></div>
-                          <span style={{ color: '#fff', fontSize: '14px', fontFamily: 'Roboto' }}>2001-2500</span>
+                          <span style={{ color: '#fff', fontSize: '14px', fontFamily: 'Roboto' }}>5001-10000</span>
                         </div>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                           <div style={{ width: '20px', height: '20px', backgroundColor: '#777586', borderRadius: '4px' }}></div>
-                          <span style={{ color: '#fff', fontSize: '14px', fontFamily: 'Roboto' }}>2501-3000</span>
+                          <span style={{ color: '#fff', fontSize: '14px', fontFamily: 'Roboto' }}>10001-15000</span>
                         </div>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                           <div style={{ width: '20px', height: '20px', backgroundColor: '#FF9F9F', borderRadius: '4px' }}></div>
-                          <span style={{ color: '#fff', fontSize: '14px', fontFamily: 'Roboto' }}>3001+</span>
+                          <span style={{ color: '#fff', fontSize: '14px', fontFamily: 'Roboto' }}>15001+</span>
                         </div>
                       </div>
                     )}
                   />
                   <Bar 
-                    dataKey="ranges.0-2000.percentage" 
-                    name="0-2000"
+                    dataKey="ranges.0-5000.percentage" 
+                    name="0-5000"
                     stackId="salary"
                     fill="#0F75BC"
-                    barSize={10}
+                    barSize={16}
                   >
-                    <LabelList dataKey="ranges.0-2000.percentage" position="center" fill="#fff" formatter={(value: number) => value > 5 ? `${value}%` : ''} fontSize={10} fontFamily="Roboto" />
+                    <LabelList dataKey="ranges.0-5000.percentage" position="center" fill="#fff" formatter={(value: number) => value > 5 ? `${value}%` : ''} fontSize={10} fontFamily="Roboto" />
                   </Bar>
                   <Bar 
-                    dataKey="ranges.2001-2500.percentage" 
-                    name="2001-2500"
+                    dataKey="ranges.5001-10000.percentage" 
+                    name="5001-10000"
                     stackId="salary"
                     fill="#45B7A9"
-                    barSize={10}
+                    barSize={16}
                   >
-                    <LabelList dataKey="ranges.2001-2500.percentage" position="center" fill="#fff" formatter={(value: number) => value > 5 ? `${value}%` : ''} fontSize={10} fontFamily="Roboto" />
+                    <LabelList dataKey="ranges.5001-10000.percentage" position="center" fill="#fff" formatter={(value: number) => value > 5 ? `${value}%` : ''} fontSize={10} fontFamily="Roboto" />
                   </Bar>
                   <Bar 
-                    dataKey="ranges.2501-3000.percentage" 
-                    name="2501-3000"
+                    dataKey="ranges.10001-15000.percentage" 
+                    name="10001-15000"
                     stackId="salary"
                     fill="#777586"
-                    barSize={10}
+                    barSize={16}
                   >
-                    <LabelList dataKey="ranges.2501-3000.percentage" position="center" fill="#fff" formatter={(value: number) => value > 5 ? `${value}%` : ''} fontSize={10} fontFamily="Roboto" />
+                    <LabelList dataKey="ranges.10001-15000.percentage" position="center" fill="#fff" formatter={(value: number) => value > 5 ? `${value}%` : ''} fontSize={10} fontFamily="Roboto" />
                   </Bar>
                   <Bar 
-                    dataKey="ranges.3001+.percentage" 
-                    name="3001+"
+                    dataKey="ranges.15001+.percentage" 
+                    name="15001+"
                     stackId="salary"
                     fill="#FF9F9F"
-                    barSize={10}
+                    barSize={16}
                   >
-                    <LabelList dataKey="ranges.3001+.percentage" position="center" fill="#fff" formatter={(value: number) => value > 5 ? `${value}%` : ''} fontSize={10} fontFamily="Roboto" />
+                    <LabelList dataKey="ranges.15001+.percentage" position="center" fill="#fff" formatter={(value: number) => value > 5 ? `${value}%` : ''} fontSize={10} fontFamily="Roboto" />
                   </Bar>
                 </BarChart>
               </ResponsiveContainer>
