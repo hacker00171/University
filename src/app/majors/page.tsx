@@ -182,7 +182,7 @@ export default function SecondPage() {
                     }}
                   >
                     <span className="text-sm text-white/90 ml-1">
-                      before gudurate
+                      before graduate
                     </span>
                     <span className="text-lg font-bold text-white">
                       {
