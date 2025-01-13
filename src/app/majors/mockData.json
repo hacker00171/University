@@ -1,0 +1,74 @@
+{
+    "overview": {
+      "totalGraduates": "179,447",
+      "employmentRate": "50.5%",
+      "averageSalary": "2,463",
+      "timeToEmployment": {
+        "total": "165",
+        "beforeGraduate": "50",
+        "withinFirstYear": "75",
+        "afterFirstYear": "32"
+      }
+    },
+    "topOccupations": [
+      {
+        "title": "Administrative Assistant",
+        "salary": "2,463"
+      },
+      {
+        "title": "Vendor",
+        "salary": "2,400"
+      },
+      {
+        "title": "Accountant",
+        "salary": "2,400"
+      },
+      {
+        "title": "Sales Representative",
+        "salary": "2,000"
+      },
+      {
+        "title": "Data Entry",
+        "salary": "2,100"
+      }
+    ],
+    "degrees": [
+      {
+        "name": "Bachelor's",
+        "count": "654",
+        "malePercentage": 45,
+        "femalePercentage": 55
+      },
+      {
+        "name": "Associate Diploma",
+        "count": "604",
+        "malePercentage": 40,
+        "femalePercentage": 60
+      },
+      {
+        "name": "Master's",
+        "count": "504",
+        "malePercentage": 35,
+        "femalePercentage": 65
+      },
+      {
+        "name": "Higher Diploma",
+        "count": "604",
+        "malePercentage": 42,
+        "femalePercentage": 58
+      },
+      {
+        "name": "Intermediate Diploma",
+        "count": "544"
+      },
+      {
+        "name": "PhD (Doctoral)",
+        "count": "404"
+      },
+      {
+        "name": "Fellowship",
+        "count": "300"
+      }
+    ]
+  }
+  
