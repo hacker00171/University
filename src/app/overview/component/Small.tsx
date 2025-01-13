@@ -48,7 +48,7 @@ const SmallCircles: FC<SmallCirclesProps> = ({ animate, onSelect }) => {
     {
       icon: FaGraduationCap,
       text: "Education",
-      majorKey: "education",
+      majorKey: "Education",
       position: { angle: -82, radius: 200, offsetX: 0, offsetY: 0, rotate: 10 },
     },
     {
@@ -192,7 +192,7 @@ const SmallCircles: FC<SmallCirclesProps> = ({ animate, onSelect }) => {
             <div
               className={`w-[100px] h-[100px] chat-bubble ${bubbleDirection} small-circle border border-[#ffff] rounded-full ${
                 activeCircle === index ? "small-circle-glow" : ""
-              } ${GradientDirection}`}
+              } ${GradientDirection} cursor-pointer hover:scale-110 transition-transform duration-300`}
               style={{
                 transform: `rotate(${rotation}deg)`,
                 animationDelay: `${index * 100}ms`,

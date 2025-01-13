@@ -15,10 +15,22 @@
       "employmentRate": 49.7,
       "averageSalary": 6082,
       "timeToEmployment": {
-        "overall": 103,
-        "beforeGraduation": 0,
-        "withinFirstYear": 80,
-        "afterFirstYear": 244
+        "overall": {
+          "days": 103,
+          "percentage": 49.7
+        },
+        "beforeGraduation": {
+          "days": 0,
+          "percentage": 11.53
+        },
+        "withinFirstYear": {
+          "days": 80,
+          "percentage": 68.94
+        },
+        "afterFirstYear": {
+          "days": 244,
+          "percentage": 19.53
+        }
       },
       "educationLevelInsights": [
         {
@@ -83,10 +95,22 @@
           "employmentRate": 50.6,
           "averageSalary": 5826,
           "timeToEmployment": {
-            "overall": 98,
-            "beforeGraduation": 0,
-            "withinFirstYear": 80,
-            "afterFirstYear": 245
+            "overall": {
+              "days": 98,
+              "percentage": 50.6
+            },
+            "beforeGraduation": {
+              "days": 0,
+              "percentage": 14.24
+            },
+            "withinFirstYear": {
+              "days": 80,
+              "percentage": 68.34
+            },
+            "afterFirstYear": {
+              "days": 245,
+              "percentage": 17.42
+            }
           },
           "educationLevelInsights": [
             {
@@ -143,10 +167,22 @@
           "employmentRate": 45.4,
           "averageSalary": 4919,
           "timeToEmployment": {
-            "overall": 104,
-            "beforeGraduation": 0,
-            "withinFirstYear": 82,
-            "afterFirstYear": 245
+            "overall": {
+              "days": 104,
+              "percentage": 45.4
+            },
+            "beforeGraduation": {
+              "days": 0,
+              "percentage": 12.16
+            },
+            "withinFirstYear": {
+              "days": 82,
+              "percentage": 68.35
+            },
+            "afterFirstYear": {
+              "days": 245,
+              "percentage": 19.49
+            }
           },
           "educationLevelInsights": [
             {
@@ -203,10 +239,22 @@
           "employmentRate": 54.0,
           "averageSalary": 8424,
           "timeToEmployment": {
-            "overall": 123,
-            "beforeGraduation": 0,
-            "withinFirstYear": 77,
-            "afterFirstYear": 244
+            "overall": {
+              "days": 123,
+              "percentage": 54.0
+            },
+            "beforeGraduation": {
+              "days": 0,
+              "percentage": 8.42
+            },
+            "withinFirstYear": {
+              "days": 77,
+              "percentage": 60.34
+            },
+            "afterFirstYear": {
+              "days": 244,
+              "percentage": 31.24
+            }
           },
           "educationLevelInsights": [
             {
@@ -269,10 +317,22 @@
           "employmentRate": 44.0,
           "averageSalary": 4883,
           "timeToEmployment": {
-            "overall": 108,
-            "beforeGraduation": 0,
-            "withinFirstYear": 82,
-            "afterFirstYear": 242
+            "overall": {
+              "days": 108,
+              "percentage": 44.0
+            },
+            "beforeGraduation": {
+              "days": 0,
+              "percentage": 8.37
+            },
+            "withinFirstYear": {
+              "days": 82,
+              "percentage": 71.2
+            },
+            "afterFirstYear": {
+              "days": 242,
+              "percentage": 20.44
+            }
           },
           "educationLevelInsights": [
             {
@@ -335,10 +395,22 @@
           "employmentRate": 49.9,
           "averageSalary": 6676,
           "timeToEmployment": {
-            "overall": 105,
-            "beforeGraduation": 0,
-            "withinFirstYear": 80,
-            "afterFirstYear": 239
+            "overall": {
+              "days": 105,
+              "percentage": 49.9
+            },
+            "beforeGraduation": {
+              "days": 0,
+              "percentage": 7.81
+            },
+            "withinFirstYear": {
+              "days": 80,
+              "percentage": 72.81
+            },
+            "afterFirstYear": {
+              "days": 239,
+              "percentage": 19.37
+            }
           },
           "educationLevelInsights": [
             {
@@ -395,10 +467,22 @@
           "employmentRate": 61.1,
           "averageSalary": 7820,
           "timeToEmployment": {
-            "overall": 88,
-            "beforeGraduation": 0,
-            "withinFirstYear": 74,
-            "afterFirstYear": 234
+            "overall": {
+              "days": 88,
+              "percentage": 61.1
+            },
+            "beforeGraduation": {
+              "days": 0,
+              "percentage": 4.46
+            },
+            "withinFirstYear": {
+              "days": 74,
+              "percentage": 84.8
+            },
+            "afterFirstYear": {
+              "days": 234,
+              "percentage": 10.74
+            }
           },
           "educationLevelInsights": [
             {
@@ -449,10 +533,22 @@
           "employmentRate": 50.1,
           "averageSalary": 5128,
           "timeToEmployment": {
-            "overall": 105,
-            "beforeGraduation": 0,
-            "withinFirstYear": 84,
-            "afterFirstYear": 245
+            "overall": {
+              "days": 105,
+              "percentage": 50.1
+            },
+            "beforeGraduation": {
+              "days": 0,
+              "percentage": 13.25
+            },
+            "withinFirstYear": {
+              "days": 84,
+              "percentage": 66.65
+            },
+            "afterFirstYear": {
+              "days": 245,
+              "percentage": 20.1
+            }
           },
           "educationLevelInsights": [
             {
@@ -503,10 +599,22 @@
           "employmentRate": 43.9,
           "averageSalary": 5173,
           "timeToEmployment": {
-            "overall": 106,
-            "beforeGraduation": 0,
-            "withinFirstYear": 81,
-            "afterFirstYear": 252
+            "overall": {
+              "days": 106,
+              "percentage": 43.9
+            },
+            "beforeGraduation": {
+              "days": 0,
+              "percentage": 16.42
+            },
+            "withinFirstYear": {
+              "days": 81,
+              "percentage": 61.27
+            },
+            "afterFirstYear": {
+              "days": 252,
+              "percentage": 22.31
+            }
           },
           "educationLevelInsights": [
             {
@@ -563,10 +671,22 @@
           "employmentRate": 52.3,
           "averageSalary": 5172,
           "timeToEmployment": {
-            "overall": 96,
-            "beforeGraduation": 0,
-            "withinFirstYear": 79,
-            "afterFirstYear": 239
+            "overall": {
+              "days": 96,
+              "percentage": 52.3
+            },
+            "beforeGraduation": {
+              "days": 0,
+              "percentage": 10.36
+            },
+            "withinFirstYear": {
+              "days": 79,
+              "percentage": 74.15
+            },
+            "afterFirstYear": {
+              "days": 239,
+              "percentage": 15.49
+            }
           },
           "educationLevelInsights": [
             {
@@ -617,10 +737,22 @@
           "employmentRate": 38.9,
           "averageSalary": 5262,
           "timeToEmployment": {
-            "overall": 97,
-            "beforeGraduation": 0,
-            "withinFirstYear": 78,
-            "afterFirstYear": 242
+            "overall": {
+              "days": 97,
+              "percentage": 38.9
+            },
+            "beforeGraduation": {
+              "days": 0,
+              "percentage": 13.97
+            },
+            "withinFirstYear": {
+              "days": 78,
+              "percentage": 67.55
+            },
+            "afterFirstYear": {
+              "days": 242,
+              "percentage": 18.48
+            }
           },
           "educationLevelInsights": [
             {
@@ -671,10 +803,22 @@
           "employmentRate": 60.3,
           "averageSalary": 6131,
           "timeToEmployment": {
-            "overall": 95,
-            "beforeGraduation": 0,
-            "withinFirstYear": 76,
-            "afterFirstYear": 240
+            "overall": {
+              "days": 95,
+              "percentage": 60.3
+            },
+            "beforeGraduation": {
+              "days": 0,
+              "percentage": 6.12
+            },
+            "withinFirstYear": {
+              "days": 76,
+              "percentage": 79.59
+            },
+            "afterFirstYear": {
+              "days": 240,
+              "percentage": 14.29
+            }
           },
           "educationLevelInsights": [
             {
@@ -725,10 +869,22 @@
               "employmentRate": 50.6,
               "averageSalary": 5826,
               "timeToEmployment": {
-                "overall": 98,
-                "beforeGraduation": 0,
-                "withinFirstYear": 80,
-                "afterFirstYear": 245
+                "overall": {
+                  "days": 98,
+                  "percentage": 50.6
+                },
+                "beforeGraduation": {
+                  "days": 0,
+                  "percentage": 14.24
+                },
+                "withinFirstYear": {
+                  "days": 80,
+                  "percentage": 68.34
+                },
+                "afterFirstYear": {
+                  "days": 245,
+                  "percentage": 17.42
+                }
               },
               "educationLevelInsights": [
                 {
@@ -776,15 +932,15 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 9817,
-                    "percentage": 7.1
+                    "percentage": 14.1
                   },
                   "withinFirstYear": {
                     "count": 47645,
-                    "percentage": 34.7
+                    "percentage": 68.7
                   },
                   "afterFirstYear": {
                     "count": 11922,
-                    "percentage": 8.7
+                    "percentage": 17.2
                   }
                 }
               },
@@ -794,15 +950,15 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 2998,
-                    "percentage": 7.3
+                    "percentage": 14.4
                   },
                   "withinFirstYear": {
                     "count": 13999,
-                    "percentage": 34.2
+                    "percentage": 67.4
                   },
                   "afterFirstYear": {
                     "count": 3777,
-                    "percentage": 9.2
+                    "percentage": 18.2
                   }
                 }
               },
@@ -812,15 +968,15 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 33,
-                    "percentage": 23.7
+                    "percentage": 41.2
                   },
                   "withinFirstYear": {
                     "count": 29,
-                    "percentage": 20.9
+                    "percentage": 36.2
                   },
                   "afterFirstYear": {
                     "count": 18,
-                    "percentage": 12.9
+                    "percentage": 22.5
                   }
                 }
               }
@@ -873,10 +1029,22 @@
                     "employmentRate": 50.5,
                     "averageSalary": 5988,
                     "timeToEmployment": {
-                      "overall": 97,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 80,
-                      "afterFirstYear": 244
+                      "overall": {
+                        "days": 97,
+                        "percentage": 50.5
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 14.15
+                      },
+                      "withinFirstYear": {
+                        "days": 80,
+                        "percentage": 68.67
+                      },
+                      "afterFirstYear": {
+                        "days": 244,
+                        "percentage": 17.18
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -924,15 +1092,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 4523,
-                          "percentage": 10.9
+                          "percentage": 23.0
                         },
                         "withinFirstYear": {
                           "count": 11762,
-                          "percentage": 28.3
+                          "percentage": 59.9
                         },
                         "afterFirstYear": {
                           "count": 3356,
-                          "percentage": 8.1
+                          "percentage": 17.1
                         }
                       }
                     },
@@ -942,15 +1110,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 1012,
-                          "percentage": 4.9
+                          "percentage": 9.0
                         },
                         "withinFirstYear": {
                           "count": 8554,
-                          "percentage": 41.1
+                          "percentage": 76.3
                         },
                         "afterFirstYear": {
                           "count": 1639,
-                          "percentage": 7.9
+                          "percentage": 14.6
                         }
                       }
                     },
@@ -960,15 +1128,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 829,
-                          "percentage": 5.9
+                          "percentage": 11.5
                         },
                         "withinFirstYear": {
                           "count": 5186,
-                          "percentage": 36.8
+                          "percentage": 71.9
                         },
                         "afterFirstYear": {
                           "count": 1197,
-                          "percentage": 8.5
+                          "percentage": 16.6
                         }
                       }
                     },
@@ -978,15 +1146,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 534,
-                          "percentage": 5.3
+                          "percentage": 9.8
                         },
                         "withinFirstYear": {
                           "count": 3769,
-                          "percentage": 37.6
+                          "percentage": 68.8
                         },
                         "afterFirstYear": {
                           "count": 1173,
-                          "percentage": 11.7
+                          "percentage": 21.4
                         }
                       }
                     },
@@ -996,15 +1164,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 439,
-                          "percentage": 4.8
+                          "percentage": 9.8
                         },
                         "withinFirstYear": {
                           "count": 3298,
-                          "percentage": 36.2
+                          "percentage": 73.9
                         },
                         "afterFirstYear": {
                           "count": 726,
-                          "percentage": 8.0
+                          "percentage": 16.3
                         }
                       }
                     }
@@ -1056,10 +1224,22 @@
                     "employmentRate": 50.8,
                     "averageSalary": 5231,
                     "timeToEmployment": {
-                      "overall": 100,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 82,
-                      "afterFirstYear": 245
+                      "overall": {
+                        "days": 100,
+                        "percentage": 50.8
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 14.43
+                      },
+                      "withinFirstYear": {
+                        "days": 82,
+                        "percentage": 67.39
+                      },
+                      "afterFirstYear": {
+                        "days": 245,
+                        "percentage": 18.18
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -1107,15 +1287,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 1647,
-                          "percentage": 6.6
+                          "percentage": 12.7
                         },
                         "withinFirstYear": {
                           "count": 8904,
-                          "percentage": 35.6
+                          "percentage": 68.6
                         },
                         "afterFirstYear": {
                           "count": 2431,
-                          "percentage": 9.7
+                          "percentage": 18.7
                         }
                       }
                     },
@@ -1125,15 +1305,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 1234,
-                          "percentage": 8.3
+                          "percentage": 17.2
                         },
                         "withinFirstYear": {
                           "count": 4701,
-                          "percentage": 31.7
+                          "percentage": 65.4
                         },
                         "afterFirstYear": {
                           "count": 1252,
-                          "percentage": 8.4
+                          "percentage": 17.4
                         }
                       }
                     },
@@ -1143,15 +1323,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 76,
-                          "percentage": 10.8
+                          "percentage": 19.4
                         },
                         "withinFirstYear": {
                           "count": 258,
-                          "percentage": 36.7
+                          "percentage": 65.8
                         },
                         "afterFirstYear": {
                           "count": 58,
-                          "percentage": 8.3
+                          "percentage": 14.8
                         }
                       }
                     },
@@ -1161,15 +1341,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 19,
-                          "percentage": 10.7
+                          "percentage": 20.9
                         },
                         "withinFirstYear": {
                           "count": 64,
-                          "percentage": 36.0
+                          "percentage": 70.3
                         },
                         "afterFirstYear": {
                           "count": 8,
-                          "percentage": 4.5
+                          "percentage": 8.8
                         }
                       }
                     },
@@ -1179,15 +1359,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 15,
-                          "percentage": 8.9
+                          "percentage": 15.3
                         },
                         "withinFirstYear": {
                           "count": 59,
-                          "percentage": 34.9
+                          "percentage": 60.2
                         },
                         "afterFirstYear": {
                           "count": 24,
-                          "percentage": 14.2
+                          "percentage": 24.5
                         }
                       }
                     }
@@ -1239,10 +1419,22 @@
                     "employmentRate": 57.6,
                     "averageSalary": 25132,
                     "timeToEmployment": {
-                      "overall": 90,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 96,
-                      "afterFirstYear": 247
+                      "overall": {
+                        "days": 90,
+                        "percentage": 57.6
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 41.25
+                      },
+                      "withinFirstYear": {
+                        "days": 96,
+                        "percentage": 36.25
+                      },
+                      "afterFirstYear": {
+                        "days": 247,
+                        "percentage": 22.5
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -1260,15 +1452,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 33,
-                          "percentage": 23.7
+                          "percentage": 41.2
                         },
                         "withinFirstYear": {
                           "count": 29,
-                          "percentage": 20.9
+                          "percentage": 36.2
                         },
                         "afterFirstYear": {
                           "count": 18,
-                          "percentage": 12.9
+                          "percentage": 22.5
                         }
                       }
                     }
@@ -1323,10 +1515,22 @@
               "employmentRate": 38.9,
               "averageSalary": 5262,
               "timeToEmployment": {
-                "overall": 97,
-                "beforeGraduation": 0,
-                "withinFirstYear": 78,
-                "afterFirstYear": 242
+                "overall": {
+                  "days": 97,
+                  "percentage": 38.9
+                },
+                "beforeGraduation": {
+                  "days": 0,
+                  "percentage": 13.97
+                },
+                "withinFirstYear": {
+                  "days": 78,
+                  "percentage": 67.55
+                },
+                "afterFirstYear": {
+                  "days": 242,
+                  "percentage": 18.48
+                }
               },
               "educationLevelInsights": [
                 {
@@ -1368,15 +1572,15 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 73,
-                    "percentage": 2.7
+                    "percentage": 7.2
                   },
                   "withinFirstYear": {
                     "count": 745,
-                    "percentage": 28.0
+                    "percentage": 73.4
                   },
                   "afterFirstYear": {
                     "count": 197,
-                    "percentage": 7.4
+                    "percentage": 19.4
                   }
                 }
               },
@@ -1386,15 +1590,15 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 85,
-                    "percentage": 35.1
+                    "percentage": 73.3
                   },
                   "withinFirstYear": {
                     "count": 19,
-                    "percentage": 7.9
+                    "percentage": 16.4
                   },
                   "afterFirstYear": {
                     "count": 12,
-                    "percentage": 5.0
+                    "percentage": 10.3
                   }
                 }
               }
@@ -1447,10 +1651,22 @@
                     "employmentRate": 38.1,
                     "averageSalary": 5154,
                     "timeToEmployment": {
-                      "overall": 104,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 78,
-                      "afterFirstYear": 243
+                      "overall": {
+                        "days": 104,
+                        "percentage": 38.1
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 7.19
+                      },
+                      "withinFirstYear": {
+                        "days": 78,
+                        "percentage": 73.4
+                      },
+                      "afterFirstYear": {
+                        "days": 243,
+                        "percentage": 19.41
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -1486,15 +1702,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 72,
-                          "percentage": 2.8
+                          "percentage": 7.4
                         },
                         "withinFirstYear": {
                           "count": 709,
-                          "percentage": 27.4
+                          "percentage": 73.1
                         },
                         "afterFirstYear": {
                           "count": 189,
-                          "percentage": 7.3
+                          "percentage": 19.5
                         }
                       }
                     },
@@ -1508,11 +1724,11 @@
                         },
                         "withinFirstYear": {
                           "count": 36,
-                          "percentage": 50.0
+                          "percentage": 81.8
                         },
                         "afterFirstYear": {
                           "count": 8,
-                          "percentage": 11.1
+                          "percentage": 18.2
                         }
                       }
                     },
@@ -1522,7 +1738,7 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 1,
-                          "percentage": 25.0
+                          "percentage": 100.0
                         },
                         "withinFirstYear": {
                           "count": 0,
@@ -1582,10 +1798,22 @@
                     "employmentRate": 47.9,
                     "averageSalary": 8581,
                     "timeToEmployment": {
-                      "overall": 34,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 60,
-                      "afterFirstYear": 233
+                      "overall": {
+                        "days": 34,
+                        "percentage": 47.9
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 73.28
+                      },
+                      "withinFirstYear": {
+                        "days": 60,
+                        "percentage": 16.38
+                      },
+                      "afterFirstYear": {
+                        "days": 233,
+                        "percentage": 10.34
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -1609,15 +1837,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 85,
-                          "percentage": 35.1
+                          "percentage": 73.3
                         },
                         "withinFirstYear": {
                           "count": 19,
-                          "percentage": 7.9
+                          "percentage": 16.4
                         },
                         "afterFirstYear": {
                           "count": 12,
-                          "percentage": 5.0
+                          "percentage": 10.3
                         }
                       }
                     }
@@ -1672,10 +1900,22 @@
               "employmentRate": 43.9,
               "averageSalary": 5173,
               "timeToEmployment": {
-                "overall": 106,
-                "beforeGraduation": 0,
-                "withinFirstYear": 81,
-                "afterFirstYear": 252
+                "overall": {
+                  "days": 106,
+                  "percentage": 43.9
+                },
+                "beforeGraduation": {
+                  "days": 0,
+                  "percentage": 16.42
+                },
+                "withinFirstYear": {
+                  "days": 81,
+                  "percentage": 61.27
+                },
+                "afterFirstYear": {
+                  "days": 252,
+                  "percentage": 22.31
+                }
               },
               "educationLevelInsights": [
                 {
@@ -1723,15 +1963,15 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 1718,
-                    "percentage": 7.2
+                    "percentage": 16.4
                   },
                   "withinFirstYear": {
                     "count": 6410,
-                    "percentage": 26.9
+                    "percentage": 61.3
                   },
                   "afterFirstYear": {
                     "count": 2334,
-                    "percentage": 9.8
+                    "percentage": 22.3
                   }
                 }
               }
@@ -1784,10 +2024,22 @@
                     "employmentRate": 43.9,
                     "averageSalary": 5173,
                     "timeToEmployment": {
-                      "overall": 106,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 81,
-                      "afterFirstYear": 252
+                      "overall": {
+                        "days": 106,
+                        "percentage": 43.9
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 16.42
+                      },
+                      "withinFirstYear": {
+                        "days": 81,
+                        "percentage": 61.27
+                      },
+                      "afterFirstYear": {
+                        "days": 252,
+                        "percentage": 22.31
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -1835,15 +2087,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 149,
-                          "percentage": 2.2
+                          "percentage": 5.6
                         },
                         "withinFirstYear": {
                           "count": 1947,
-                          "percentage": 29.2
+                          "percentage": 72.8
                         },
                         "afterFirstYear": {
                           "count": 578,
-                          "percentage": 8.7
+                          "percentage": 21.6
                         }
                       }
                     },
@@ -1853,15 +2105,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 554,
-                          "percentage": 13.6
+                          "percentage": 33.1
                         },
                         "withinFirstYear": {
                           "count": 669,
-                          "percentage": 16.4
+                          "percentage": 39.9
                         },
                         "afterFirstYear": {
                           "count": 453,
-                          "percentage": 11.1
+                          "percentage": 27.0
                         }
                       }
                     },
@@ -1871,15 +2123,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 186,
-                          "percentage": 4.8
+                          "percentage": 10.5
                         },
                         "withinFirstYear": {
                           "count": 1183,
-                          "percentage": 30.3
+                          "percentage": 66.8
                         },
                         "afterFirstYear": {
                           "count": 402,
-                          "percentage": 10.3
+                          "percentage": 22.7
                         }
                       }
                     },
@@ -1889,15 +2141,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 37,
-                          "percentage": 3.5
+                          "percentage": 7.1
                         },
                         "withinFirstYear": {
                           "count": 358,
-                          "percentage": 33.8
+                          "percentage": 68.6
                         },
                         "afterFirstYear": {
                           "count": 127,
-                          "percentage": 12.0
+                          "percentage": 24.3
                         }
                       }
                     },
@@ -1907,15 +2159,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 89,
-                          "percentage": 9.9
+                          "percentage": 18.9
                         },
                         "withinFirstYear": {
                           "count": 314,
-                          "percentage": 35.0
+                          "percentage": 66.5
                         },
                         "afterFirstYear": {
                           "count": 69,
-                          "percentage": 7.7
+                          "percentage": 14.6
                         }
                       }
                     }
@@ -1970,10 +2222,22 @@
               "employmentRate": 52.3,
               "averageSalary": 5172,
               "timeToEmployment": {
-                "overall": 96,
-                "beforeGraduation": 0,
-                "withinFirstYear": 79,
-                "afterFirstYear": 239
+                "overall": {
+                  "days": 96,
+                  "percentage": 52.3
+                },
+                "beforeGraduation": {
+                  "days": 0,
+                  "percentage": 10.36
+                },
+                "withinFirstYear": {
+                  "days": 79,
+                  "percentage": 74.15
+                },
+                "afterFirstYear": {
+                  "days": 239,
+                  "percentage": 15.49
+                }
               },
               "educationLevelInsights": [
                 {
@@ -2015,15 +2279,15 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 317,
-                    "percentage": 5.4
+                    "percentage": 10.3
                   },
                   "withinFirstYear": {
                     "count": 2300,
-                    "percentage": 39.2
+                    "percentage": 74.5
                   },
                   "afterFirstYear": {
                     "count": 470,
-                    "percentage": 8.0
+                    "percentage": 15.2
                   }
                 }
               },
@@ -2033,15 +2297,15 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 39,
-                    "percentage": 5.7
+                    "percentage": 11.8
                   },
                   "withinFirstYear": {
                     "count": 225,
-                    "percentage": 32.6
+                    "percentage": 68.2
                   },
                   "afterFirstYear": {
                     "count": 66,
-                    "percentage": 9.6
+                    "percentage": 20.0
                   }
                 }
               },
@@ -2051,15 +2315,15 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 18,
-                    "percentage": 5.5
+                    "percentage": 9.2
                   },
                   "withinFirstYear": {
                     "count": 152,
-                    "percentage": 46.8
+                    "percentage": 77.6
                   },
                   "afterFirstYear": {
                     "count": 26,
-                    "percentage": 8.0
+                    "percentage": 13.3
                   }
                 }
               },
@@ -2069,11 +2333,11 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 2,
-                    "percentage": 3.3
+                    "percentage": 12.5
                   },
                   "withinFirstYear": {
                     "count": 14,
-                    "percentage": 23.3
+                    "percentage": 87.5
                   },
                   "afterFirstYear": {
                     "count": 0,
@@ -2130,10 +2394,22 @@
                     "employmentRate": 52.6,
                     "averageSalary": 4920,
                     "timeToEmployment": {
-                      "overall": 94,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 77,
-                      "afterFirstYear": 237
+                      "overall": {
+                        "days": 94,
+                        "percentage": 52.6
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 10.27
+                      },
+                      "withinFirstYear": {
+                        "days": 77,
+                        "percentage": 74.51
+                      },
+                      "afterFirstYear": {
+                        "days": 237,
+                        "percentage": 15.23
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -2175,15 +2451,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 52,
-                          "percentage": 3.6
+                          "percentage": 6.9
                         },
                         "withinFirstYear": {
                           "count": 592,
-                          "percentage": 40.5
+                          "percentage": 78.1
                         },
                         "afterFirstYear": {
                           "count": 114,
-                          "percentage": 7.8
+                          "percentage": 15.0
                         }
                       }
                     },
@@ -2193,15 +2469,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 69,
-                          "percentage": 4.9
+                          "percentage": 8.4
                         },
                         "withinFirstYear": {
                           "count": 642,
-                          "percentage": 45.2
+                          "percentage": 77.8
                         },
                         "afterFirstYear": {
                           "count": 114,
-                          "percentage": 8.0
+                          "percentage": 13.8
                         }
                       }
                     },
@@ -2211,15 +2487,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 40,
-                          "percentage": 5.6
+                          "percentage": 9.8
                         },
                         "withinFirstYear": {
                           "count": 320,
-                          "percentage": 44.6
+                          "percentage": 78.2
                         },
                         "afterFirstYear": {
                           "count": 49,
-                          "percentage": 6.8
+                          "percentage": 12.0
                         }
                       }
                     },
@@ -2229,15 +2505,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 89,
-                          "percentage": 13.7
+                          "percentage": 32.2
                         },
                         "withinFirstYear": {
                           "count": 131,
-                          "percentage": 20.2
+                          "percentage": 47.5
                         },
                         "afterFirstYear": {
                           "count": 56,
-                          "percentage": 8.6
+                          "percentage": 20.3
                         }
                       }
                     },
@@ -2247,15 +2523,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 31,
-                          "percentage": 5.3
+                          "percentage": 9.3
                         },
                         "withinFirstYear": {
                           "count": 243,
-                          "percentage": 41.9
+                          "percentage": 73.2
                         },
                         "afterFirstYear": {
                           "count": 58,
-                          "percentage": 10.0
+                          "percentage": 17.5
                         }
                       }
                     }
@@ -2307,10 +2583,22 @@
                     "employmentRate": 47.8,
                     "averageSalary": 5053,
                     "timeToEmployment": {
-                      "overall": 108,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 84,
-                      "afterFirstYear": 255
+                      "overall": {
+                        "days": 108,
+                        "percentage": 47.8
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 11.82
+                      },
+                      "withinFirstYear": {
+                        "days": 84,
+                        "percentage": 68.18
+                      },
+                      "afterFirstYear": {
+                        "days": 255,
+                        "percentage": 20.0
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -2340,15 +2628,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 39,
-                          "percentage": 5.7
+                          "percentage": 11.8
                         },
                         "withinFirstYear": {
                           "count": 225,
-                          "percentage": 32.6
+                          "percentage": 68.2
                         },
                         "afterFirstYear": {
                           "count": 66,
-                          "percentage": 9.6
+                          "percentage": 20.0
                         }
                       }
                     }
@@ -2400,10 +2688,22 @@
                     "employmentRate": 60.3,
                     "averageSalary": 8366,
                     "timeToEmployment": {
-                      "overall": 108,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 99,
-                      "afterFirstYear": 232
+                      "overall": {
+                        "days": 108,
+                        "percentage": 60.3
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 9.18
+                      },
+                      "withinFirstYear": {
+                        "days": 99,
+                        "percentage": 77.55
+                      },
+                      "afterFirstYear": {
+                        "days": 232,
+                        "percentage": 13.27
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -2421,15 +2721,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 6,
-                          "percentage": 3.6
+                          "percentage": 5.9
                         },
                         "withinFirstYear": {
                           "count": 78,
-                          "percentage": 46.7
+                          "percentage": 76.5
                         },
                         "afterFirstYear": {
                           "count": 18,
-                          "percentage": 10.8
+                          "percentage": 17.6
                         }
                       }
                     },
@@ -2439,15 +2739,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 12,
-                          "percentage": 7.6
+                          "percentage": 12.8
                         },
                         "withinFirstYear": {
                           "count": 74,
-                          "percentage": 46.8
+                          "percentage": 78.7
                         },
                         "afterFirstYear": {
                           "count": 8,
-                          "percentage": 5.1
+                          "percentage": 8.5
                         }
                       }
                     }
@@ -2499,10 +2799,22 @@
                     "employmentRate": 26.7,
                     "averageSalary": 16473,
                     "timeToEmployment": {
-                      "overall": 77,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 88,
-                      "afterFirstYear": 0
+                      "overall": {
+                        "days": 77,
+                        "percentage": 26.7
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 12.5
+                      },
+                      "withinFirstYear": {
+                        "days": 88,
+                        "percentage": 87.5
+                      },
+                      "afterFirstYear": {
+                        "days": 0,
+                        "percentage": 0.0
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -2532,11 +2844,11 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 1,
-                          "percentage": 3.4
+                          "percentage": 20.0
                         },
                         "withinFirstYear": {
                           "count": 4,
-                          "percentage": 13.8
+                          "percentage": 80.0
                         },
                         "afterFirstYear": {
                           "count": 0,
@@ -2550,11 +2862,11 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 1,
-                          "percentage": 3.7
+                          "percentage": 11.1
                         },
                         "withinFirstYear": {
                           "count": 8,
-                          "percentage": 29.6
+                          "percentage": 88.9
                         },
                         "afterFirstYear": {
                           "count": 0,
@@ -2572,7 +2884,7 @@
                         },
                         "withinFirstYear": {
                           "count": 2,
-                          "percentage": 50.0
+                          "percentage": 100.0
                         },
                         "afterFirstYear": {
                           "count": 0,
@@ -2626,10 +2938,22 @@
               "employmentRate": 54.0,
               "averageSalary": 8424,
               "timeToEmployment": {
-                "overall": 123,
-                "beforeGraduation": 0,
-                "withinFirstYear": 77,
-                "afterFirstYear": 244
+                "overall": {
+                  "days": 123,
+                  "percentage": 54.0
+                },
+                "beforeGraduation": {
+                  "days": 0,
+                  "percentage": 8.42
+                },
+                "withinFirstYear": {
+                  "days": 77,
+                  "percentage": 60.34
+                },
+                "afterFirstYear": {
+                  "days": 244,
+                  "percentage": 31.24
+                }
               },
               "educationLevelInsights": [
                 {
@@ -2683,15 +3007,15 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 1826,
-                    "percentage": 4.3
+                    "percentage": 7.9
                   },
                   "withinFirstYear": {
                     "count": 13496,
-                    "percentage": 31.9
+                    "percentage": 58.3
                   },
                   "afterFirstYear": {
                     "count": 7833,
-                    "percentage": 18.5
+                    "percentage": 33.8
                   }
                 }
               },
@@ -2701,15 +3025,15 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 467,
-                    "percentage": 5.3
+                    "percentage": 10.6
                   },
                   "withinFirstYear": {
                     "count": 3140,
-                    "percentage": 35.8
+                    "percentage": 71.2
                   },
                   "afterFirstYear": {
                     "count": 802,
-                    "percentage": 9.2
+                    "percentage": 18.2
                   }
                 }
               },
@@ -2719,15 +3043,15 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 37,
-                    "percentage": 20.0
+                    "percentage": 35.6
                   },
                   "withinFirstYear": {
                     "count": 59,
-                    "percentage": 31.9
+                    "percentage": 56.7
                   },
                   "afterFirstYear": {
                     "count": 8,
-                    "percentage": 4.3
+                    "percentage": 7.7
                   }
                 }
               }
@@ -2780,10 +3104,22 @@
                     "employmentRate": 50.3,
                     "averageSalary": 4673,
                     "timeToEmployment": {
-                      "overall": 102,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 82,
-                      "afterFirstYear": 237
+                      "overall": {
+                        "days": 102,
+                        "percentage": 50.3
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 10.59
+                      },
+                      "withinFirstYear": {
+                        "days": 82,
+                        "percentage": 71.22
+                      },
+                      "afterFirstYear": {
+                        "days": 237,
+                        "percentage": 18.19
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -2819,15 +3155,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 467,
-                          "percentage": 5.4
+                          "percentage": 10.7
                         },
                         "withinFirstYear": {
                           "count": 3128,
-                          "percentage": 35.9
+                          "percentage": 71.4
                         },
                         "afterFirstYear": {
                           "count": 786,
-                          "percentage": 9.0
+                          "percentage": 17.9
                         }
                       }
                     },
@@ -2841,11 +3177,11 @@
                         },
                         "withinFirstYear": {
                           "count": 12,
-                          "percentage": 20.3
+                          "percentage": 42.9
                         },
                         "afterFirstYear": {
                           "count": 16,
-                          "percentage": 27.1
+                          "percentage": 57.1
                         }
                       }
                     }
@@ -2897,10 +3233,22 @@
                     "employmentRate": 54.7,
                     "averageSalary": 9106,
                     "timeToEmployment": {
-                      "overall": 127,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 76,
-                      "afterFirstYear": 245
+                      "overall": {
+                        "days": 127,
+                        "percentage": 54.7
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 7.89
+                      },
+                      "withinFirstYear": {
+                        "days": 76,
+                        "percentage": 58.29
+                      },
+                      "afterFirstYear": {
+                        "days": 245,
+                        "percentage": 33.83
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -2954,15 +3302,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 219,
-                          "percentage": 2.5
+                          "percentage": 4.4
                         },
                         "withinFirstYear": {
                           "count": 2656,
-                          "percentage": 30.2
+                          "percentage": 53.7
                         },
                         "afterFirstYear": {
                           "count": 2069,
-                          "percentage": 23.5
+                          "percentage": 41.8
                         }
                       }
                     },
@@ -2972,15 +3320,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 265,
-                          "percentage": 3.1
+                          "percentage": 5.2
                         },
                         "withinFirstYear": {
                           "count": 2966,
-                          "percentage": 34.3
+                          "percentage": 58.5
                         },
                         "afterFirstYear": {
                           "count": 1835,
-                          "percentage": 21.2
+                          "percentage": 36.2
                         }
                       }
                     },
@@ -2990,15 +3338,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 85,
-                          "percentage": 2.2
+                          "percentage": 3.7
                         },
                         "withinFirstYear": {
                           "count": 1896,
-                          "percentage": 49.7
+                          "percentage": 81.4
                         },
                         "afterFirstYear": {
                           "count": 347,
-                          "percentage": 9.1
+                          "percentage": 14.9
                         }
                       }
                     },
@@ -3008,15 +3356,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 156,
-                          "percentage": 4.9
+                          "percentage": 10.2
                         },
                         "withinFirstYear": {
                           "count": 878,
-                          "percentage": 27.5
+                          "percentage": 57.5
                         },
                         "afterFirstYear": {
                           "count": 494,
-                          "percentage": 15.5
+                          "percentage": 32.3
                         }
                       }
                     },
@@ -3026,15 +3374,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 112,
-                          "percentage": 3.9
+                          "percentage": 7.9
                         },
                         "withinFirstYear": {
                           "count": 667,
-                          "percentage": 23.2
+                          "percentage": 46.8
                         },
                         "afterFirstYear": {
                           "count": 647,
-                          "percentage": 22.5
+                          "percentage": 45.4
                         }
                       }
                     }
@@ -3086,10 +3434,22 @@
                     "employmentRate": 56.2,
                     "averageSalary": 11370,
                     "timeToEmployment": {
-                      "overall": 67,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 82,
-                      "afterFirstYear": 258
+                      "overall": {
+                        "days": 67,
+                        "percentage": 56.2
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 35.58
+                      },
+                      "withinFirstYear": {
+                        "days": 82,
+                        "percentage": 56.73
+                      },
+                      "afterFirstYear": {
+                        "days": 258,
+                        "percentage": 7.69
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -3113,15 +3473,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 37,
-                          "percentage": 20.0
+                          "percentage": 35.6
                         },
                         "withinFirstYear": {
                           "count": 59,
-                          "percentage": 31.9
+                          "percentage": 56.7
                         },
                         "afterFirstYear": {
                           "count": 8,
-                          "percentage": 4.3
+                          "percentage": 7.7
                         }
                       }
                     }
@@ -3176,10 +3536,22 @@
               "employmentRate": 50.1,
               "averageSalary": 5128,
               "timeToEmployment": {
-                "overall": 105,
-                "beforeGraduation": 0,
-                "withinFirstYear": 84,
-                "afterFirstYear": 245
+                "overall": {
+                  "days": 105,
+                  "percentage": 50.1
+                },
+                "beforeGraduation": {
+                  "days": 0,
+                  "percentage": 13.25
+                },
+                "withinFirstYear": {
+                  "days": 84,
+                  "percentage": 66.65
+                },
+                "afterFirstYear": {
+                  "days": 245,
+                  "percentage": 20.1
+                }
               },
               "educationLevelInsights": [
                 {
@@ -3221,15 +3593,15 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 1117,
-                    "percentage": 6.8
+                    "percentage": 13.6
                   },
                   "withinFirstYear": {
                     "count": 5465,
-                    "percentage": 33.3
+                    "percentage": 66.4
                   },
                   "afterFirstYear": {
                     "count": 1647,
-                    "percentage": 10.0
+                    "percentage": 20.0
                   }
                 }
               },
@@ -3239,15 +3611,15 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 469,
-                    "percentage": 6.3
+                    "percentage": 12.6
                   },
                   "withinFirstYear": {
                     "count": 2510,
-                    "percentage": 33.7
+                    "percentage": 67.2
                   },
                   "afterFirstYear": {
                     "count": 758,
-                    "percentage": 10.2
+                    "percentage": 20.3
                   }
                 }
               }
@@ -3300,10 +3672,22 @@
                     "employmentRate": 50.2,
                     "averageSalary": 5200,
                     "timeToEmployment": {
-                      "overall": 106,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 85,
-                      "afterFirstYear": 243
+                      "overall": {
+                        "days": 106,
+                        "percentage": 50.2
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 12.55
+                      },
+                      "withinFirstYear": {
+                        "days": 85,
+                        "percentage": 67.17
+                      },
+                      "afterFirstYear": {
+                        "days": 243,
+                        "percentage": 20.28
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -3339,15 +3723,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 375,
-                          "percentage": 7.5
+                          "percentage": 14.9
                         },
                         "withinFirstYear": {
                           "count": 1616,
-                          "percentage": 32.1
+                          "percentage": 64.3
                         },
                         "afterFirstYear": {
                           "count": 524,
-                          "percentage": 10.4
+                          "percentage": 20.8
                         }
                       }
                     },
@@ -3357,15 +3741,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 68,
-                          "percentage": 3.6
+                          "percentage": 7.3
                         },
                         "withinFirstYear": {
                           "count": 680,
-                          "percentage": 35.6
+                          "percentage": 72.8
                         },
                         "afterFirstYear": {
                           "count": 186,
-                          "percentage": 9.7
+                          "percentage": 19.9
                         }
                       }
                     },
@@ -3375,15 +3759,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 9,
-                          "percentage": 4.9
+                          "percentage": 8.4
                         },
                         "withinFirstYear": {
                           "count": 86,
-                          "percentage": 46.7
+                          "percentage": 80.4
                         },
                         "afterFirstYear": {
                           "count": 12,
-                          "percentage": 6.5
+                          "percentage": 11.2
                         }
                       }
                     },
@@ -3393,15 +3777,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 5,
-                          "percentage": 3.0
+                          "percentage": 5.2
                         },
                         "withinFirstYear": {
                           "count": 82,
-                          "percentage": 49.4
+                          "percentage": 84.5
                         },
                         "afterFirstYear": {
                           "count": 10,
-                          "percentage": 6.0
+                          "percentage": 10.3
                         }
                       }
                     },
@@ -3411,15 +3795,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 12,
-                          "percentage": 8.1
+                          "percentage": 14.3
                         },
                         "withinFirstYear": {
                           "count": 46,
-                          "percentage": 30.9
+                          "percentage": 54.8
                         },
                         "afterFirstYear": {
                           "count": 26,
-                          "percentage": 17.4
+                          "percentage": 31.0
                         }
                       }
                     }
@@ -3471,10 +3855,22 @@
                     "employmentRate": 50.1,
                     "averageSalary": 5096,
                     "timeToEmployment": {
-                      "overall": 104,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 83,
-                      "afterFirstYear": 245
+                      "overall": {
+                        "days": 104,
+                        "percentage": 50.1
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 13.57
+                      },
+                      "withinFirstYear": {
+                        "days": 83,
+                        "percentage": 66.41
+                      },
+                      "afterFirstYear": {
+                        "days": 245,
+                        "percentage": 20.01
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -3516,15 +3912,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 400,
-                          "percentage": 5.4
+                          "percentage": 10.8
                         },
                         "withinFirstYear": {
                           "count": 2464,
-                          "percentage": 33.2
+                          "percentage": 66.8
                         },
                         "afterFirstYear": {
                           "count": 824,
-                          "percentage": 11.1
+                          "percentage": 22.3
                         }
                       }
                     },
@@ -3534,15 +3930,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 221,
-                          "percentage": 5.8
+                          "percentage": 11.4
                         },
                         "withinFirstYear": {
                           "count": 1323,
-                          "percentage": 34.8
+                          "percentage": 68.4
                         },
                         "afterFirstYear": {
                           "count": 389,
-                          "percentage": 10.2
+                          "percentage": 20.1
                         }
                       }
                     },
@@ -3552,15 +3948,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 220,
-                          "percentage": 6.7
+                          "percentage": 13.4
                         },
                         "withinFirstYear": {
                           "count": 1132,
-                          "percentage": 34.5
+                          "percentage": 68.7
                         },
                         "afterFirstYear": {
                           "count": 295,
-                          "percentage": 9.0
+                          "percentage": 17.9
                         }
                       }
                     },
@@ -3570,15 +3966,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 80,
-                          "percentage": 11.3
+                          "percentage": 21.2
                         },
                         "withinFirstYear": {
                           "count": 256,
-                          "percentage": 36.1
+                          "percentage": 67.7
                         },
                         "afterFirstYear": {
                           "count": 42,
-                          "percentage": 5.9
+                          "percentage": 11.1
                         }
                       }
                     },
@@ -3588,15 +3984,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 102,
-                          "percentage": 18.4
+                          "percentage": 40.6
                         },
                         "withinFirstYear": {
                           "count": 114,
-                          "percentage": 20.6
+                          "percentage": 45.4
                         },
                         "afterFirstYear": {
                           "count": 35,
-                          "percentage": 6.3
+                          "percentage": 13.9
                         }
                       }
                     }
@@ -3651,10 +4047,22 @@
               "employmentRate": 44.0,
               "averageSalary": 4883,
               "timeToEmployment": {
-                "overall": 108,
-                "beforeGraduation": 0,
-                "withinFirstYear": 82,
-                "afterFirstYear": 242
+                "overall": {
+                  "days": 108,
+                  "percentage": 44.0
+                },
+                "beforeGraduation": {
+                  "days": 0,
+                  "percentage": 8.37
+                },
+                "withinFirstYear": {
+                  "days": 82,
+                  "percentage": 71.2
+                },
+                "afterFirstYear": {
+                  "days": 242,
+                  "percentage": 20.44
+                }
               },
               "educationLevelInsights": [
                 {
@@ -3708,15 +4116,15 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 648,
-                    "percentage": 3.4
+                    "percentage": 7.7
                   },
                   "withinFirstYear": {
                     "count": 6009,
-                    "percentage": 31.7
+                    "percentage": 71.7
                   },
                   "afterFirstYear": {
                     "count": 1727,
-                    "percentage": 9.1
+                    "percentage": 20.6
                   }
                 }
               },
@@ -3726,15 +4134,15 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 527,
-                    "percentage": 4.3
+                    "percentage": 10.3
                   },
                   "withinFirstYear": {
                     "count": 3556,
-                    "percentage": 29.3
+                    "percentage": 69.6
                   },
                   "afterFirstYear": {
                     "count": 1029,
-                    "percentage": 8.5
+                    "percentage": 20.1
                   }
                 }
               },
@@ -3744,15 +4152,15 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 302,
-                    "percentage": 3.2
+                    "percentage": 7.1
                   },
                   "withinFirstYear": {
                     "count": 3075,
-                    "percentage": 32.7
+                    "percentage": 72.1
                   },
                   "afterFirstYear": {
                     "count": 888,
-                    "percentage": 9.4
+                    "percentage": 20.8
                   }
                 }
               },
@@ -3762,15 +4170,15 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 25,
-                    "percentage": 6.6
+                    "percentage": 12.6
                   },
                   "withinFirstYear": {
                     "count": 148,
-                    "percentage": 39.2
+                    "percentage": 74.4
                   },
                   "afterFirstYear": {
                     "count": 26,
-                    "percentage": 6.9
+                    "percentage": 13.1
                   }
                 }
               },
@@ -3780,11 +4188,11 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 1,
-                    "percentage": 12.5
+                    "percentage": 20.0
                   },
                   "withinFirstYear": {
                     "count": 4,
-                    "percentage": 50.0
+                    "percentage": 80.0
                   },
                   "afterFirstYear": {
                     "count": 0,
@@ -3841,10 +4249,22 @@
                     "employmentRate": 52.6,
                     "averageSalary": 7509,
                     "timeToEmployment": {
-                      "overall": 109,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 104,
-                      "afterFirstYear": 236
+                      "overall": {
+                        "days": 109,
+                        "percentage": 52.6
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 12.56
+                      },
+                      "withinFirstYear": {
+                        "days": 104,
+                        "percentage": 74.37
+                      },
+                      "afterFirstYear": {
+                        "days": 236,
+                        "percentage": 13.07
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -3874,15 +4294,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 24,
-                          "percentage": 7.3
+                          "percentage": 14.4
                         },
                         "withinFirstYear": {
                           "count": 125,
-                          "percentage": 38.2
+                          "percentage": 74.9
                         },
                         "afterFirstYear": {
                           "count": 18,
-                          "percentage": 5.5
+                          "percentage": 10.8
                         }
                       }
                     },
@@ -3896,11 +4316,11 @@
                         },
                         "withinFirstYear": {
                           "count": 15,
-                          "percentage": 46.9
+                          "percentage": 71.4
                         },
                         "afterFirstYear": {
                           "count": 6,
-                          "percentage": 18.8
+                          "percentage": 28.6
                         }
                       }
                     },
@@ -3910,15 +4330,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 1,
-                          "percentage": 5.3
+                          "percentage": 9.1
                         },
                         "withinFirstYear": {
                           "count": 8,
-                          "percentage": 42.1
+                          "percentage": 72.7
                         },
                         "afterFirstYear": {
                           "count": 2,
-                          "percentage": 10.5
+                          "percentage": 18.2
                         }
                       }
                     }
@@ -3970,10 +4390,22 @@
                     "employmentRate": 45.4,
                     "averageSalary": 4948,
                     "timeToEmployment": {
-                      "overall": 107,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 79,
-                      "afterFirstYear": 241
+                      "overall": {
+                        "days": 107,
+                        "percentage": 45.4
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 7.08
+                      },
+                      "withinFirstYear": {
+                        "days": 79,
+                        "percentage": 72.1
+                      },
+                      "afterFirstYear": {
+                        "days": 241,
+                        "percentage": 20.82
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -4009,15 +4441,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 255,
-                          "percentage": 3.0
+                          "percentage": 6.9
                         },
                         "withinFirstYear": {
                           "count": 2647,
-                          "percentage": 31.6
+                          "percentage": 71.5
                         },
                         "afterFirstYear": {
                           "count": 798,
-                          "percentage": 9.5
+                          "percentage": 21.6
                         }
                       }
                     },
@@ -4027,15 +4459,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 27,
-                          "percentage": 4.2
+                          "percentage": 8.2
                         },
                         "withinFirstYear": {
                           "count": 230,
-                          "percentage": 35.4
+                          "percentage": 69.9
                         },
                         "afterFirstYear": {
                           "count": 72,
-                          "percentage": 11.1
+                          "percentage": 21.9
                         }
                       }
                     },
@@ -4045,15 +4477,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 14,
-                          "percentage": 4.4
+                          "percentage": 7.1
                         },
                         "withinFirstYear": {
                           "count": 174,
-                          "percentage": 54.7
+                          "percentage": 87.9
                         },
                         "afterFirstYear": {
                           "count": 10,
-                          "percentage": 3.1
+                          "percentage": 5.1
                         }
                       }
                     },
@@ -4063,15 +4495,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 6,
-                          "percentage": 9.1
+                          "percentage": 15.8
                         },
                         "withinFirstYear": {
                           "count": 24,
-                          "percentage": 36.4
+                          "percentage": 63.2
                         },
                         "afterFirstYear": {
                           "count": 8,
-                          "percentage": 12.1
+                          "percentage": 21.1
                         }
                       }
                     }
@@ -4123,10 +4555,22 @@
                     "employmentRate": 42.1,
                     "averageSalary": 4816,
                     "timeToEmployment": {
-                      "overall": 105,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 82,
-                      "afterFirstYear": 241
+                      "overall": {
+                        "days": 105,
+                        "percentage": 42.1
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 10.31
+                      },
+                      "withinFirstYear": {
+                        "days": 82,
+                        "percentage": 69.56
+                      },
+                      "afterFirstYear": {
+                        "days": 241,
+                        "percentage": 20.13
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -4168,15 +4612,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 234,
-                          "percentage": 2.9
+                          "percentage": 6.9
                         },
                         "withinFirstYear": {
                           "count": 2480,
-                          "percentage": 30.5
+                          "percentage": 73.2
                         },
                         "afterFirstYear": {
                           "count": 675,
-                          "percentage": 8.3
+                          "percentage": 19.9
                         }
                       }
                     },
@@ -4186,15 +4630,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 89,
-                          "percentage": 6.2
+                          "percentage": 14.5
                         },
                         "withinFirstYear": {
                           "count": 375,
-                          "percentage": 26.3
+                          "percentage": 61.1
                         },
                         "afterFirstYear": {
                           "count": 150,
-                          "percentage": 10.5
+                          "percentage": 24.4
                         }
                       }
                     },
@@ -4204,15 +4648,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 55,
-                          "percentage": 5.5
+                          "percentage": 13.4
                         },
                         "withinFirstYear": {
                           "count": 308,
-                          "percentage": 30.6
+                          "percentage": 75.1
                         },
                         "afterFirstYear": {
                           "count": 47,
-                          "percentage": 4.7
+                          "percentage": 11.5
                         }
                       }
                     },
@@ -4222,15 +4666,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 10,
-                          "percentage": 2.6
+                          "percentage": 6.2
                         },
                         "withinFirstYear": {
                           "count": 122,
-                          "percentage": 31.7
+                          "percentage": 75.3
                         },
                         "afterFirstYear": {
                           "count": 30,
-                          "percentage": 7.8
+                          "percentage": 18.5
                         }
                       }
                     },
@@ -4240,15 +4684,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 37,
-                          "percentage": 12.8
+                          "percentage": 25.7
                         },
                         "withinFirstYear": {
                           "count": 71,
-                          "percentage": 24.7
+                          "percentage": 49.3
                         },
                         "afterFirstYear": {
                           "count": 36,
-                          "percentage": 12.5
+                          "percentage": 25.0
                         }
                       }
                     }
@@ -4300,10 +4744,22 @@
                     "employmentRate": 44.3,
                     "averageSalary": 4829,
                     "timeToEmployment": {
-                      "overall": 110,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 84,
-                      "afterFirstYear": 243
+                      "overall": {
+                        "days": 110,
+                        "percentage": 44.3
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 7.73
+                      },
+                      "withinFirstYear": {
+                        "days": 84,
+                        "percentage": 71.67
+                      },
+                      "afterFirstYear": {
+                        "days": 243,
+                        "percentage": 20.6
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -4345,15 +4801,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 201,
-                          "percentage": 2.7
+                          "percentage": 6.4
                         },
                         "withinFirstYear": {
                           "count": 2232,
-                          "percentage": 29.8
+                          "percentage": 71.0
                         },
                         "afterFirstYear": {
                           "count": 712,
-                          "percentage": 9.5
+                          "percentage": 22.6
                         }
                       }
                     },
@@ -4363,15 +4819,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 148,
-                          "percentage": 2.8
+                          "percentage": 7.0
                         },
                         "withinFirstYear": {
                           "count": 1510,
-                          "percentage": 29.0
+                          "percentage": 71.4
                         },
                         "afterFirstYear": {
                           "count": 456,
-                          "percentage": 8.8
+                          "percentage": 21.6
                         }
                       }
                     },
@@ -4381,15 +4837,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 175,
-                          "percentage": 4.7
+                          "percentage": 10.1
                         },
                         "withinFirstYear": {
                           "count": 1225,
-                          "percentage": 32.7
+                          "percentage": 70.5
                         },
                         "afterFirstYear": {
                           "count": 338,
-                          "percentage": 9.0
+                          "percentage": 19.4
                         }
                       }
                     },
@@ -4399,15 +4855,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 49,
-                          "percentage": 4.4
+                          "percentage": 8.0
                         },
                         "withinFirstYear": {
                           "count": 459,
-                          "percentage": 40.8
+                          "percentage": 74.5
                         },
                         "afterFirstYear": {
                           "count": 108,
-                          "percentage": 9.6
+                          "percentage": 17.5
                         }
                       }
                     },
@@ -4417,15 +4873,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 41,
-                          "percentage": 8.3
+                          "percentage": 16.5
                         },
                         "withinFirstYear": {
                           "count": 154,
-                          "percentage": 31.1
+                          "percentage": 61.8
                         },
                         "afterFirstYear": {
                           "count": 54,
-                          "percentage": 10.9
+                          "percentage": 21.7
                         }
                       }
                     }
@@ -4477,10 +4933,22 @@
                     "employmentRate": 50.0,
                     "averageSalary": 6000,
                     "timeToEmployment": {
-                      "overall": 282,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 0,
-                      "afterFirstYear": 282
+                      "overall": {
+                        "days": 282,
+                        "percentage": 50.0
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 0.0
+                      },
+                      "withinFirstYear": {
+                        "days": 0,
+                        "percentage": 0.0
+                      },
+                      "afterFirstYear": {
+                        "days": 282,
+                        "percentage": 100.0
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -4506,7 +4974,7 @@
                         },
                         "afterFirstYear": {
                           "count": 2,
-                          "percentage": 50.0
+                          "percentage": 100.0
                         }
                       }
                     }
@@ -4538,10 +5006,22 @@
                     "employmentRate": 62.5,
                     "averageSalary": 7658,
                     "timeToEmployment": {
-                      "overall": 26,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 32,
-                      "afterFirstYear": 0
+                      "overall": {
+                        "days": 26,
+                        "percentage": 62.5
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 20.0
+                      },
+                      "withinFirstYear": {
+                        "days": 32,
+                        "percentage": 80.0
+                      },
+                      "afterFirstYear": {
+                        "days": 0,
+                        "percentage": 0.0
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -4559,11 +5039,11 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 1,
-                          "percentage": 12.5
+                          "percentage": 20.0
                         },
                         "withinFirstYear": {
                           "count": 4,
-                          "percentage": 50.0
+                          "percentage": 80.0
                         },
                         "afterFirstYear": {
                           "count": 0,
@@ -4602,10 +5082,22 @@
               "employmentRate": 45.4,
               "averageSalary": 4919,
               "timeToEmployment": {
-                "overall": 104,
-                "beforeGraduation": 0,
-                "withinFirstYear": 82,
-                "afterFirstYear": 245
+                "overall": {
+                  "days": 104,
+                  "percentage": 45.4
+                },
+                "beforeGraduation": {
+                  "days": 0,
+                  "percentage": 12.16
+                },
+                "withinFirstYear": {
+                  "days": 82,
+                  "percentage": 68.35
+                },
+                "afterFirstYear": {
+                  "days": 245,
+                  "percentage": 19.49
+                }
               },
               "educationLevelInsights": [
                 {
@@ -4653,15 +5145,15 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 1585,
-                    "percentage": 4.0
+                    "percentage": 8.8
                   },
                   "withinFirstYear": {
                     "count": 12960,
-                    "percentage": 32.6
+                    "percentage": 71.6
                   },
                   "afterFirstYear": {
                     "count": 3567,
-                    "percentage": 9.0
+                    "percentage": 19.7
                   }
                 }
               },
@@ -4671,15 +5163,15 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 2841,
-                    "percentage": 7.4
+                    "percentage": 16.7
                   },
                   "withinFirstYear": {
                     "count": 10896,
-                    "percentage": 28.3
+                    "percentage": 64.0
                   },
                   "afterFirstYear": {
                     "count": 3282,
-                    "percentage": 8.5
+                    "percentage": 19.3
                   }
                 }
               },
@@ -4689,15 +5181,15 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 233,
-                    "percentage": 3.8
+                    "percentage": 7.4
                   },
                   "withinFirstYear": {
                     "count": 2321,
-                    "percentage": 37.7
+                    "percentage": 73.2
                   },
                   "afterFirstYear": {
                     "count": 615,
-                    "percentage": 10.0
+                    "percentage": 19.4
                   }
                 }
               }
@@ -4750,10 +5242,22 @@
                     "employmentRate": 44.3,
                     "averageSalary": 4711,
                     "timeToEmployment": {
-                      "overall": 100,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 82,
-                      "afterFirstYear": 245
+                      "overall": {
+                        "days": 100,
+                        "percentage": 44.3
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 16.69
+                      },
+                      "withinFirstYear": {
+                        "days": 82,
+                        "percentage": 64.02
+                      },
+                      "afterFirstYear": {
+                        "days": 245,
+                        "percentage": 19.28
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -4795,15 +5299,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 707,
-                          "percentage": 4.8
+                          "percentage": 11.7
                         },
                         "withinFirstYear": {
                           "count": 4137,
-                          "percentage": 28.1
+                          "percentage": 68.6
                         },
                         "afterFirstYear": {
                           "count": 1189,
-                          "percentage": 8.1
+                          "percentage": 19.7
                         }
                       }
                     },
@@ -4813,15 +5317,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 863,
-                          "percentage": 13.3
+                          "percentage": 29.9
                         },
                         "withinFirstYear": {
                           "count": 1445,
-                          "percentage": 22.3
+                          "percentage": 50.1
                         },
                         "afterFirstYear": {
                           "count": 577,
-                          "percentage": 8.9
+                          "percentage": 20.0
                         }
                       }
                     },
@@ -4831,15 +5335,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 523,
-                          "percentage": 9.0
+                          "percentage": 20.5
                         },
                         "withinFirstYear": {
                           "count": 1559,
-                          "percentage": 26.8
+                          "percentage": 61.2
                         },
                         "afterFirstYear": {
                           "count": 464,
-                          "percentage": 8.0
+                          "percentage": 18.2
                         }
                       }
                     },
@@ -4849,15 +5353,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 196,
-                          "percentage": 4.7
+                          "percentage": 9.7
                         },
                         "withinFirstYear": {
                           "count": 1428,
-                          "percentage": 34.1
+                          "percentage": 70.8
                         },
                         "afterFirstYear": {
                           "count": 394,
-                          "percentage": 9.4
+                          "percentage": 19.5
                         }
                       }
                     },
@@ -4867,15 +5371,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 154,
-                          "percentage": 6.1
+                          "percentage": 11.9
                         },
                         "withinFirstYear": {
                           "count": 966,
-                          "percentage": 38.5
+                          "percentage": 74.5
                         },
                         "afterFirstYear": {
                           "count": 176,
-                          "percentage": 7.0
+                          "percentage": 13.6
                         }
                       }
                     }
@@ -4927,10 +5431,22 @@
                     "employmentRate": 51.5,
                     "averageSalary": 5494,
                     "timeToEmployment": {
-                      "overall": 107,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 82,
-                      "afterFirstYear": 240
+                      "overall": {
+                        "days": 107,
+                        "percentage": 51.5
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 7.35
+                      },
+                      "withinFirstYear": {
+                        "days": 82,
+                        "percentage": 73.24
+                      },
+                      "afterFirstYear": {
+                        "days": 240,
+                        "percentage": 19.41
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -4978,15 +5494,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 45,
-                          "percentage": 2.4
+                          "percentage": 4.5
                         },
                         "withinFirstYear": {
                           "count": 777,
-                          "percentage": 40.6
+                          "percentage": 77.4
                         },
                         "afterFirstYear": {
                           "count": 182,
-                          "percentage": 9.5
+                          "percentage": 18.1
                         }
                       }
                     },
@@ -4996,15 +5512,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 47,
-                          "percentage": 3.2
+                          "percentage": 5.8
                         },
                         "withinFirstYear": {
                           "count": 605,
-                          "percentage": 40.6
+                          "percentage": 75.1
                         },
                         "afterFirstYear": {
                           "count": 154,
-                          "percentage": 10.3
+                          "percentage": 19.1
                         }
                       }
                     },
@@ -5014,15 +5530,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 29,
-                          "percentage": 3.4
+                          "percentage": 7.4
                         },
                         "withinFirstYear": {
                           "count": 287,
-                          "percentage": 33.4
+                          "percentage": 73.2
                         },
                         "afterFirstYear": {
                           "count": 76,
-                          "percentage": 8.9
+                          "percentage": 19.4
                         }
                       }
                     },
@@ -5032,15 +5548,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 68,
-                          "percentage": 8.4
+                          "percentage": 14.8
                         },
                         "withinFirstYear": {
                           "count": 313,
-                          "percentage": 38.5
+                          "percentage": 68.2
                         },
                         "afterFirstYear": {
                           "count": 78,
-                          "percentage": 9.6
+                          "percentage": 17.0
                         }
                       }
                     },
@@ -5050,15 +5566,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 33,
-                          "percentage": 4.1
+                          "percentage": 9.7
                         },
                         "withinFirstYear": {
                           "count": 209,
-                          "percentage": 26.2
+                          "percentage": 61.3
                         },
                         "afterFirstYear": {
                           "count": 99,
-                          "percentage": 12.4
+                          "percentage": 29.0
                         }
                       }
                     }
@@ -5110,10 +5626,22 @@
                     "employmentRate": 45.6,
                     "averageSalary": 4995,
                     "timeToEmployment": {
-                      "overall": 107,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 83,
-                      "afterFirstYear": 245
+                      "overall": {
+                        "days": 107,
+                        "percentage": 45.6
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 8.75
+                      },
+                      "withinFirstYear": {
+                        "days": 83,
+                        "percentage": 71.55
+                      },
+                      "afterFirstYear": {
+                        "days": 245,
+                        "percentage": 19.69
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -5161,15 +5689,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 610,
-                          "percentage": 4.0
+                          "percentage": 9.8
                         },
                         "withinFirstYear": {
                           "count": 4328,
-                          "percentage": 28.4
+                          "percentage": 69.8
                         },
                         "afterFirstYear": {
                           "count": 1259,
-                          "percentage": 8.3
+                          "percentage": 20.3
                         }
                       }
                     },
@@ -5179,15 +5707,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 375,
-                          "percentage": 4.4
+                          "percentage": 8.7
                         },
                         "withinFirstYear": {
                           "count": 3126,
-                          "percentage": 36.8
+                          "percentage": 72.9
                         },
                         "afterFirstYear": {
                           "count": 785,
-                          "percentage": 9.2
+                          "percentage": 18.3
                         }
                       }
                     },
@@ -5197,15 +5725,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 186,
-                          "percentage": 3.6
+                          "percentage": 8.1
                         },
                         "withinFirstYear": {
                           "count": 1690,
-                          "percentage": 32.3
+                          "percentage": 73.7
                         },
                         "afterFirstYear": {
                           "count": 418,
-                          "percentage": 8.0
+                          "percentage": 18.2
                         }
                       }
                     },
@@ -5215,15 +5743,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 119,
-                          "percentage": 2.6
+                          "percentage": 5.2
                         },
                         "withinFirstYear": {
                           "count": 1690,
-                          "percentage": 36.9
+                          "percentage": 73.9
                         },
                         "afterFirstYear": {
                           "count": 477,
-                          "percentage": 10.4
+                          "percentage": 20.9
                         }
                       }
                     },
@@ -5233,15 +5761,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 94,
-                          "percentage": 5.1
+                          "percentage": 11.8
                         },
                         "withinFirstYear": {
                           "count": 543,
-                          "percentage": 29.3
+                          "percentage": 68.3
                         },
                         "afterFirstYear": {
                           "count": 158,
-                          "percentage": 8.5
+                          "percentage": 19.9
                         }
                       }
                     }
@@ -5296,10 +5824,22 @@
               "employmentRate": 61.1,
               "averageSalary": 7820,
               "timeToEmployment": {
-                "overall": 88,
-                "beforeGraduation": 0,
-                "withinFirstYear": 74,
-                "afterFirstYear": 234
+                "overall": {
+                  "days": 88,
+                  "percentage": 61.1
+                },
+                "beforeGraduation": {
+                  "days": 0,
+                  "percentage": 4.46
+                },
+                "withinFirstYear": {
+                  "days": 74,
+                  "percentage": 84.8
+                },
+                "afterFirstYear": {
+                  "days": 234,
+                  "percentage": 10.74
+                }
               },
               "educationLevelInsights": [
                 {
@@ -5341,15 +5881,15 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 561,
-                    "percentage": 2.5
+                    "percentage": 4.1
                   },
                   "withinFirstYear": {
                     "count": 11790,
-                    "percentage": 53.3
+                    "percentage": 85.7
                   },
                   "afterFirstYear": {
                     "count": 1407,
-                    "percentage": 6.4
+                    "percentage": 10.2
                   }
                 }
               },
@@ -5359,15 +5899,15 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 160,
-                    "percentage": 2.7
+                    "percentage": 4.3
                   },
                   "withinFirstYear": {
                     "count": 3198,
-                    "percentage": 54.4
+                    "percentage": 86.1
                   },
                   "afterFirstYear": {
                     "count": 358,
-                    "percentage": 6.1
+                    "percentage": 9.6
                   }
                 }
               },
@@ -5377,15 +5917,15 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 69,
-                    "percentage": 3.1
+                    "percentage": 6.9
                   },
                   "withinFirstYear": {
                     "count": 704,
-                    "percentage": 31.6
+                    "percentage": 70.8
                   },
                   "afterFirstYear": {
                     "count": 221,
-                    "percentage": 9.9
+                    "percentage": 22.2
                   }
                 }
               },
@@ -5395,15 +5935,15 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 45,
-                    "percentage": 11.3
+                    "percentage": 18.3
                   },
                   "withinFirstYear": {
                     "count": 177,
-                    "percentage": 44.6
+                    "percentage": 72.0
                   },
                   "afterFirstYear": {
                     "count": 24,
-                    "percentage": 6.0
+                    "percentage": 9.8
                   }
                 }
               }
@@ -5456,10 +5996,22 @@
                     "employmentRate": 44.6,
                     "averageSalary": 4875,
                     "timeToEmployment": {
-                      "overall": 117,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 90,
-                      "afterFirstYear": 242
+                      "overall": {
+                        "days": 117,
+                        "percentage": 44.6
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 6.94
+                      },
+                      "withinFirstYear": {
+                        "days": 90,
+                        "percentage": 70.82
+                      },
+                      "afterFirstYear": {
+                        "days": 242,
+                        "percentage": 22.23
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -5495,15 +6047,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 57,
-                          "percentage": 3.3
+                          "percentage": 7.3
                         },
                         "withinFirstYear": {
                           "count": 530,
-                          "percentage": 30.5
+                          "percentage": 68.2
                         },
                         "afterFirstYear": {
                           "count": 190,
-                          "percentage": 10.9
+                          "percentage": 24.5
                         }
                       }
                     },
@@ -5513,15 +6065,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 8,
-                          "percentage": 2.1
+                          "percentage": 5.2
                         },
                         "withinFirstYear": {
                           "count": 118,
-                          "percentage": 30.8
+                          "percentage": 77.1
                         },
                         "afterFirstYear": {
                           "count": 27,
-                          "percentage": 7.0
+                          "percentage": 17.6
                         }
                       }
                     },
@@ -5531,15 +6083,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 2,
-                          "percentage": 4.2
+                          "percentage": 7.1
                         },
                         "withinFirstYear": {
                           "count": 24,
-                          "percentage": 50.0
+                          "percentage": 85.7
                         },
                         "afterFirstYear": {
                           "count": 2,
-                          "percentage": 4.2
+                          "percentage": 7.1
                         }
                       }
                     },
@@ -5553,11 +6105,11 @@
                         },
                         "withinFirstYear": {
                           "count": 24,
-                          "percentage": 60.0
+                          "percentage": 92.3
                         },
                         "afterFirstYear": {
                           "count": 2,
-                          "percentage": 5.0
+                          "percentage": 7.7
                         }
                       }
                     },
@@ -5571,7 +6123,7 @@
                         },
                         "withinFirstYear": {
                           "count": 8,
-                          "percentage": 53.3
+                          "percentage": 100.0
                         },
                         "afterFirstYear": {
                           "count": 0,
@@ -5627,10 +6179,22 @@
                     "employmentRate": 63.2,
                     "averageSalary": 7836,
                     "timeToEmployment": {
-                      "overall": 82,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 69,
-                      "afterFirstYear": 237
+                      "overall": {
+                        "days": 82,
+                        "percentage": 63.2
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 4.31
+                      },
+                      "withinFirstYear": {
+                        "days": 69,
+                        "percentage": 86.06
+                      },
+                      "afterFirstYear": {
+                        "days": 237,
+                        "percentage": 9.63
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -5660,15 +6224,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 70,
-                          "percentage": 2.3
+                          "percentage": 3.6
                         },
                         "withinFirstYear": {
                           "count": 1706,
-                          "percentage": 55.7
+                          "percentage": 87.7
                         },
                         "afterFirstYear": {
                           "count": 169,
-                          "percentage": 5.5
+                          "percentage": 8.7
                         }
                       }
                     },
@@ -5678,15 +6242,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 45,
-                          "percentage": 2.2
+                          "percentage": 3.6
                         },
                         "withinFirstYear": {
                           "count": 1098,
-                          "percentage": 54.5
+                          "percentage": 87.0
                         },
                         "afterFirstYear": {
                           "count": 119,
-                          "percentage": 5.9
+                          "percentage": 9.4
                         }
                       }
                     },
@@ -5696,15 +6260,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 15,
-                          "percentage": 5.0
+                          "percentage": 7.9
                         },
                         "withinFirstYear": {
                           "count": 150,
-                          "percentage": 50.3
+                          "percentage": 78.5
                         },
                         "afterFirstYear": {
                           "count": 26,
-                          "percentage": 8.7
+                          "percentage": 13.6
                         }
                       }
                     },
@@ -5714,15 +6278,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 2,
-                          "percentage": 1.5
+                          "percentage": 2.4
                         },
                         "withinFirstYear": {
                           "count": 73,
-                          "percentage": 54.9
+                          "percentage": 86.9
                         },
                         "afterFirstYear": {
                           "count": 9,
-                          "percentage": 6.8
+                          "percentage": 10.7
                         }
                       }
                     },
@@ -5736,11 +6300,11 @@
                         },
                         "withinFirstYear": {
                           "count": 63,
-                          "percentage": 59.4
+                          "percentage": 91.3
                         },
                         "afterFirstYear": {
                           "count": 6,
-                          "percentage": 5.7
+                          "percentage": 8.7
                         }
                       }
                     }
@@ -5792,10 +6356,22 @@
                     "employmentRate": 62.1,
                     "averageSalary": 7985,
                     "timeToEmployment": {
-                      "overall": 87,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 74,
-                      "afterFirstYear": 233
+                      "overall": {
+                        "days": 87,
+                        "percentage": 62.1
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 4.08
+                      },
+                      "withinFirstYear": {
+                        "days": 74,
+                        "percentage": 85.7
+                      },
+                      "afterFirstYear": {
+                        "days": 233,
+                        "percentage": 10.23
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -5837,15 +6413,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 87,
-                          "percentage": 1.6
+                          "percentage": 2.6
                         },
                         "withinFirstYear": {
                           "count": 2911,
-                          "percentage": 55.2
+                          "percentage": 86.5
                         },
                         "afterFirstYear": {
                           "count": 366,
-                          "percentage": 6.9
+                          "percentage": 10.9
                         }
                       }
                     },
@@ -5855,15 +6431,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 73,
-                          "percentage": 2.1
+                          "percentage": 3.3
                         },
                         "withinFirstYear": {
                           "count": 1980,
-                          "percentage": 55.9
+                          "percentage": 88.7
                         },
                         "afterFirstYear": {
                           "count": 178,
-                          "percentage": 5.0
+                          "percentage": 8.0
                         }
                       }
                     },
@@ -5873,15 +6449,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 33,
-                          "percentage": 1.3
+                          "percentage": 2.0
                         },
                         "withinFirstYear": {
                           "count": 1442,
-                          "percentage": 55.6
+                          "percentage": 87.4
                         },
                         "afterFirstYear": {
                           "count": 175,
-                          "percentage": 6.7
+                          "percentage": 10.6
                         }
                       }
                     },
@@ -5891,15 +6467,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 62,
-                          "percentage": 3.2
+                          "percentage": 5.6
                         },
                         "withinFirstYear": {
                           "count": 863,
-                          "percentage": 44.7
+                          "percentage": 78.3
                         },
                         "afterFirstYear": {
                           "count": 177,
-                          "percentage": 9.2
+                          "percentage": 16.1
                         }
                       }
                     },
@@ -5909,15 +6485,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 62,
-                          "percentage": 3.5
+                          "percentage": 5.6
                         },
                         "withinFirstYear": {
                           "count": 979,
-                          "percentage": 55.9
+                          "percentage": 88.9
                         },
                         "afterFirstYear": {
                           "count": 60,
-                          "percentage": 3.4
+                          "percentage": 5.4
                         }
                       }
                     }
@@ -5969,10 +6545,22 @@
                     "employmentRate": 62.0,
                     "averageSalary": 10176,
                     "timeToEmployment": {
-                      "overall": 75,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 76,
-                      "afterFirstYear": 210
+                      "overall": {
+                        "days": 75,
+                        "percentage": 62.0
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 18.29
+                      },
+                      "withinFirstYear": {
+                        "days": 76,
+                        "percentage": 71.95
+                      },
+                      "afterFirstYear": {
+                        "days": 210,
+                        "percentage": 9.76
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -6002,15 +6590,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 42,
-                          "percentage": 14.2
+                          "percentage": 23.5
                         },
                         "withinFirstYear": {
                           "count": 115,
-                          "percentage": 39.0
+                          "percentage": 64.2
                         },
                         "afterFirstYear": {
                           "count": 22,
-                          "percentage": 7.5
+                          "percentage": 12.3
                         }
                       }
                     },
@@ -6020,15 +6608,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 3,
-                          "percentage": 3.0
+                          "percentage": 4.6
                         },
                         "withinFirstYear": {
                           "count": 60,
-                          "percentage": 60.6
+                          "percentage": 92.3
                         },
                         "afterFirstYear": {
                           "count": 2,
-                          "percentage": 2.0
+                          "percentage": 3.1
                         }
                       }
                     },
@@ -6042,7 +6630,7 @@
                         },
                         "withinFirstYear": {
                           "count": 2,
-                          "percentage": 66.7
+                          "percentage": 100.0
                         },
                         "afterFirstYear": {
                           "count": 0,
@@ -6101,10 +6689,22 @@
               "employmentRate": 49.9,
               "averageSalary": 6676,
               "timeToEmployment": {
-                "overall": 105,
-                "beforeGraduation": 0,
-                "withinFirstYear": 80,
-                "afterFirstYear": 239
+                "overall": {
+                  "days": 105,
+                  "percentage": 49.9
+                },
+                "beforeGraduation": {
+                  "days": 0,
+                  "percentage": 7.81
+                },
+                "withinFirstYear": {
+                  "days": 80,
+                  "percentage": 72.81
+                },
+                "afterFirstYear": {
+                  "days": 239,
+                  "percentage": 19.37
+                }
               },
               "educationLevelInsights": [
                 {
@@ -6152,15 +6752,15 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 1249,
-                    "percentage": 3.8
+                    "percentage": 7.7
                   },
                   "withinFirstYear": {
                     "count": 11925,
-                    "percentage": 36.6
+                    "percentage": 73.1
                   },
                   "afterFirstYear": {
                     "count": 3136,
-                    "percentage": 9.6
+                    "percentage": 19.2
                   }
                 }
               },
@@ -6170,15 +6770,15 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 52,
-                    "percentage": 7.2
+                    "percentage": 15.2
                   },
                   "withinFirstYear": {
                     "count": 200,
-                    "percentage": 27.7
+                    "percentage": 58.5
                   },
                   "afterFirstYear": {
                     "count": 90,
-                    "percentage": 12.4
+                    "percentage": 26.3
                   }
                 }
               }
@@ -6231,10 +6831,22 @@
                     "employmentRate": 47.3,
                     "averageSalary": 5164,
                     "timeToEmployment": {
-                      "overall": 109,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 78,
-                      "afterFirstYear": 243
+                      "overall": {
+                        "days": 109,
+                        "percentage": 47.3
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 15.2
+                      },
+                      "withinFirstYear": {
+                        "days": 78,
+                        "percentage": 58.48
+                      },
+                      "afterFirstYear": {
+                        "days": 243,
+                        "percentage": 26.32
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -6258,15 +6870,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 52,
-                          "percentage": 7.2
+                          "percentage": 15.2
                         },
                         "withinFirstYear": {
                           "count": 200,
-                          "percentage": 27.7
+                          "percentage": 58.5
                         },
                         "afterFirstYear": {
                           "count": 90,
-                          "percentage": 12.4
+                          "percentage": 26.3
                         }
                       }
                     }
@@ -6318,10 +6930,22 @@
                     "employmentRate": 50.0,
                     "averageSalary": 6705,
                     "timeToEmployment": {
-                      "overall": 105,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 80,
-                      "afterFirstYear": 239
+                      "overall": {
+                        "days": 105,
+                        "percentage": 50.0
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 7.66
+                      },
+                      "withinFirstYear": {
+                        "days": 80,
+                        "percentage": 73.11
+                      },
+                      "afterFirstYear": {
+                        "days": 239,
+                        "percentage": 19.23
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -6369,15 +6993,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 579,
-                          "percentage": 3.6
+                          "percentage": 7.6
                         },
                         "withinFirstYear": {
                           "count": 5448,
-                          "percentage": 34.0
+                          "percentage": 71.9
                         },
                         "afterFirstYear": {
                           "count": 1550,
-                          "percentage": 9.7
+                          "percentage": 20.5
                         }
                       }
                     },
@@ -6387,15 +7011,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 194,
-                          "percentage": 3.1
+                          "percentage": 6.3
                         },
                         "withinFirstYear": {
                           "count": 2300,
-                          "percentage": 37.2
+                          "percentage": 74.4
                         },
                         "afterFirstYear": {
                           "count": 597,
-                          "percentage": 9.7
+                          "percentage": 19.3
                         }
                       }
                     },
@@ -6405,15 +7029,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 182,
-                          "percentage": 4.4
+                          "percentage": 7.9
                         },
                         "withinFirstYear": {
                           "count": 1687,
-                          "percentage": 40.7
+                          "percentage": 73.5
                         },
                         "afterFirstYear": {
                           "count": 425,
-                          "percentage": 10.3
+                          "percentage": 18.5
                         }
                       }
                     },
@@ -6423,15 +7047,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 110,
-                          "percentage": 5.8
+                          "percentage": 10.7
                         },
                         "withinFirstYear": {
                           "count": 700,
-                          "percentage": 37.2
+                          "percentage": 68.0
                         },
                         "afterFirstYear": {
                           "count": 219,
-                          "percentage": 11.6
+                          "percentage": 21.3
                         }
                       }
                     },
@@ -6441,15 +7065,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 72,
-                          "percentage": 4.7
+                          "percentage": 9.5
                         },
                         "withinFirstYear": {
                           "count": 545,
-                          "percentage": 35.3
+                          "percentage": 71.9
                         },
                         "afterFirstYear": {
                           "count": 141,
-                          "percentage": 9.1
+                          "percentage": 18.6
                         }
                       }
                     }
@@ -6504,10 +7128,22 @@
               "employmentRate": 60.3,
               "averageSalary": 6131,
               "timeToEmployment": {
-                "overall": 95,
-                "beforeGraduation": 0,
-                "withinFirstYear": 76,
-                "afterFirstYear": 240
+                "overall": {
+                  "days": 95,
+                  "percentage": 60.3
+                },
+                "beforeGraduation": {
+                  "days": 0,
+                  "percentage": 6.12
+                },
+                "withinFirstYear": {
+                  "days": 76,
+                  "percentage": 79.59
+                },
+                "afterFirstYear": {
+                  "days": 240,
+                  "percentage": 14.29
+                }
               },
               "educationLevelInsights": [
                 {
@@ -6543,15 +7179,15 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 12,
-                    "percentage": 4.4
+                    "percentage": 7.3
                   },
                   "withinFirstYear": {
                     "count": 129,
-                    "percentage": 47.3
+                    "percentage": 78.7
                   },
                   "afterFirstYear": {
                     "count": 23,
-                    "percentage": 8.4
+                    "percentage": 14.0
                   }
                 }
               },
@@ -6561,15 +7197,15 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 2,
-                    "percentage": 1.7
+                    "percentage": 2.8
                   },
                   "withinFirstYear": {
                     "count": 58,
-                    "percentage": 50.4
+                    "percentage": 80.6
                   },
                   "afterFirstYear": {
                     "count": 12,
-                    "percentage": 10.4
+                    "percentage": 16.7
                   }
                 }
               },
@@ -6579,11 +7215,11 @@
                 "employmentTiming": {
                   "beforeGraduation": {
                     "count": 1,
-                    "percentage": 5.6
+                    "percentage": 11.1
                   },
                   "withinFirstYear": {
                     "count": 8,
-                    "percentage": 44.4
+                    "percentage": 88.9
                   },
                   "afterFirstYear": {
                     "count": 0,
@@ -6640,10 +7276,22 @@
                     "employmentRate": 50.0,
                     "averageSalary": 9631,
                     "timeToEmployment": {
-                      "overall": 101,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 114,
-                      "afterFirstYear": 0
+                      "overall": {
+                        "days": 101,
+                        "percentage": 50.0
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 11.11
+                      },
+                      "withinFirstYear": {
+                        "days": 114,
+                        "percentage": 88.89
+                      },
+                      "afterFirstYear": {
+                        "days": 0,
+                        "percentage": 0.0
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -6673,11 +7321,11 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 1,
-                          "percentage": 5.6
+                          "percentage": 11.1
                         },
                         "withinFirstYear": {
                           "count": 8,
-                          "percentage": 44.4
+                          "percentage": 88.9
                         },
                         "afterFirstYear": {
                           "count": 0,
@@ -6718,10 +7366,22 @@
                     "employmentRate": 62.6,
                     "averageSalary": 4421,
                     "timeToEmployment": {
-                      "overall": 103,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 81,
-                      "afterFirstYear": 230
+                      "overall": {
+                        "days": 103,
+                        "percentage": 62.6
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 2.78
+                      },
+                      "withinFirstYear": {
+                        "days": 81,
+                        "percentage": 80.56
+                      },
+                      "afterFirstYear": {
+                        "days": 230,
+                        "percentage": 16.67
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -6745,15 +7405,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 2,
-                          "percentage": 1.7
+                          "percentage": 2.8
                         },
                         "withinFirstYear": {
                           "count": 58,
-                          "percentage": 50.4
+                          "percentage": 80.6
                         },
                         "afterFirstYear": {
                           "count": 12,
-                          "percentage": 10.4
+                          "percentage": 16.7
                         }
                       }
                     }
@@ -6805,10 +7465,22 @@
                     "employmentRate": 60.1,
                     "averageSalary": 6742,
                     "timeToEmployment": {
-                      "overall": 91,
-                      "beforeGraduation": 0,
-                      "withinFirstYear": 71,
-                      "afterFirstYear": 246
+                      "overall": {
+                        "days": 91,
+                        "percentage": 60.1
+                      },
+                      "beforeGraduation": {
+                        "days": 0,
+                        "percentage": 7.32
+                      },
+                      "withinFirstYear": {
+                        "days": 71,
+                        "percentage": 78.66
+                      },
+                      "afterFirstYear": {
+                        "days": 246,
+                        "percentage": 14.02
+                      }
                     },
                     "educationLevelInsights": [
                       {
@@ -6838,15 +7510,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 4,
-                          "percentage": 3.0
+                          "percentage": 5.2
                         },
                         "withinFirstYear": {
                           "count": 64,
-                          "percentage": 48.5
+                          "percentage": 83.1
                         },
                         "afterFirstYear": {
                           "count": 9,
-                          "percentage": 6.8
+                          "percentage": 11.7
                         }
                       }
                     },
@@ -6856,15 +7528,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 3,
-                          "percentage": 4.8
+                          "percentage": 7.5
                         },
                         "withinFirstYear": {
                           "count": 33,
-                          "percentage": 52.4
+                          "percentage": 82.5
                         },
                         "afterFirstYear": {
                           "count": 4,
-                          "percentage": 6.3
+                          "percentage": 10.0
                         }
                       }
                     },
@@ -6874,15 +7546,15 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 4,
-                          "percentage": 6.6
+                          "percentage": 11.1
                         },
                         "withinFirstYear": {
                           "count": 28,
-                          "percentage": 45.9
+                          "percentage": 77.8
                         },
                         "afterFirstYear": {
                           "count": 4,
-                          "percentage": 6.6
+                          "percentage": 11.1
                         }
                       }
                     },
@@ -6896,11 +7568,11 @@
                         },
                         "withinFirstYear": {
                           "count": 2,
-                          "percentage": 22.2
+                          "percentage": 33.3
                         },
                         "afterFirstYear": {
                           "count": 4,
-                          "percentage": 44.4
+                          "percentage": 66.7
                         }
                       }
                     },
@@ -6910,7 +7582,7 @@
                       "employmentTiming": {
                         "beforeGraduation": {
                           "count": 1,
-                          "percentage": 20.0
+                          "percentage": 33.3
                         },
                         "withinFirstYear": {
                           "count": 0,
@@ -6918,7 +7590,7 @@
                         },
                         "afterFirstYear": {
                           "count": 2,
-                          "percentage": 40.0
+                          "percentage": 66.7
                         }
                       }
                     }

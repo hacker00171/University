@@ -131,17 +131,19 @@ export default function HomePage() {
   const currentData = getSelectedMajorData();
 
   return (
-    <div className="flex-1 p-6 bg-transparent backdrop-blur-sm flex items-center justify-center sm:flex-col relative min-h-screen">
+    <div className="flex-1 p-6 bg-transparent backdrop-blur-sm flex items-center justify-center sm:flex-col">
       {/* Add a blur overlay at the bottom */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#24285E]/80 to-transparent backdrop-blur-sm"></div>
       {/* Left Side Education Stats */}
-      <div className="absolute left-20 top-1/2 -translate-y-1/2 w-[300px] flex flex-col gap-4 p-0 2xl:w-3/12 3xl:w-3/12 ">
+      <div className="absolute left-20 top-1/2 -translate-y-1/2 w-[270px] flex flex-col gap-4 p-0 2xl:w-3/12 3xl:w-3/12">
         {/* Education Title */}
-        <div className="flex items-center justify-center gap-2 mb-0">
-          <currentData.icon className="h-8 w-8 text-[#2cd7c4]" />
-          <span className="text-white text-xl font-['Neo_Sans_Bold']">
-            {currentData.title}
-          </span>
+        <div className="flex flex-col items-center gap-2 w-[300px] h-[48px] justify-center">
+          <div className="flex items-center gap-2">
+            <currentData.icon className="h-8 w-8 text-[#2cd7c4] flex-shrink-0 transform transition-transform duration-300 hover:scale-110" />
+            <span className="text-white text-xl font-['Neo_Sans_Bold'] leading-tight tracking-wide text-center flex-1">
+              {currentData.title}
+            </span>
+          </div>
         </div>
 
         {/* Stats Cards */}
@@ -158,14 +160,18 @@ export default function HomePage() {
                 />
               </div>
               <div className="flex-1">
-                <span className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]">
+                <span className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">
                   Total Graduates
                 </span>
-                <div className="text-white text-3xl font-['Neo_Sans_Bold']">
+                <div className="text-white text-4xl font-['Neo_Sans_Bold'] font-bold">
                   {currentData.graduates.totalGraduates.toLocaleString()}
                 </div>
+                
                 <div className="flex gap-4 mt-2">
-                  <span className="text-[#2cd7c4] flex items-center gap-1 text-lg">
+                <div className="bg-[#1d3862]/80 rounded-[7px] flex items-center gap-0 px-1 py-0.5">
+                    <span className="flex items-center gap-0 text-[#ffff] text-sm font-['Roboto_regular']">
+                      <BiMale style={{ color: "#2CCAD3" }} size={18} />
+                  {/* <span className="text-[#ffff] flex items-center gap-1 text-lg">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="w-5 h-5 text-[#2a6dee]"
@@ -176,10 +182,14 @@ export default function HomePage() {
                       <circle cx="12" cy="7" r="4" strokeWidth="2" />
                       <path strokeWidth="2" d="M15 14h-6l-2 8h10z" />
                       <line x1="12" y1="14" x2="12" y2="22" strokeWidth="2" />
-                    </svg>
+                    </svg> */}
                     <span>{currentData.graduates.male.percentage}%</span>
                   </span>
-                  <span className="text-[#2cd7c4] flex items-center gap-1 text-lg">
+                </div>
+                <div className="bg-[#1d3862]/90 rounded-[7px] flex items-center gap-0 px-1 py-0.5">
+                    <span className="flex items-center gap-0 text-[#ffff] text-sm font-['Roboto_regular']">
+                      <BiFemale style={{ color: "#fe1684 " }} size={18} />
+                  {/* <span className="text-[#ffff] flex items-center gap-1 text-lg">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="w-5 h-5 text-[#ff69b4]"
@@ -190,9 +200,10 @@ export default function HomePage() {
                       <circle cx="12" cy="7" r="4" strokeWidth="2" />
                       <path strokeWidth="2" d="M8 14h8l2 4h-12z" />
                       <path strokeWidth="2" d="M15 18l-3 4l-3-4" />
-                    </svg>
+                    </svg> */}
                     <span>{currentData.graduates.female.percentage}%</span>
                   </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -210,10 +221,10 @@ export default function HomePage() {
                 />
               </div>
               <div className="flex-1">
-                <span className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]">
+                <span className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">
                   Employment Rate
                 </span>
-                <div className="text-white text-3xl font-['Neo_Sans_Bold']">
+                <div className="text-white text-4xl font-['Neo_Sans_Bold'] font-bold">
                   {currentData.employmentRate}%
                 </div>
               </div>
@@ -229,9 +240,9 @@ export default function HomePage() {
                 />
               </div>
               <div className="flex-1">
-                <span className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]">Average Salary</span>
-                <div className="text-white text-3xl font-['Neo_Sans_Bold']">
-                  {currentData.averageSalary.toLocaleString()} SAR
+                <span className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">Average Salary</span>
+                <div className="text-white text-4xl font-['Neo_Sans_Bold'] font-bold">
+                  {currentData.averageSalary.toLocaleString()} <span style={{ fontFamily: "Roboto regular", fontSize: "1.4rem", fontWeight: 300 }}>SAR</span>
                 </div>
               </div>
             </div>
@@ -246,9 +257,9 @@ export default function HomePage() {
                 />
               </div>
               <div className="flex-1">
-                <span className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]">Time to Employment</span>
-                <div className="text-white text-3xl font-['Neo_Sans_Bold']">
-                  {currentData.timeToEmployment.overall} days
+                <span className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">Time to Employment</span>
+                <div className="text-white text-4xl font-['Neo_Sans_Bold'] font-bold">
+                  {currentData.timeToEmployment.overall} <span style={{ fontFamily: "Roboto regular", fontSize: "1.5rem", fontWeight: 400 }}>days</span>
                 </div>
               </div>
             </div>
@@ -290,11 +301,11 @@ export default function HomePage() {
       </div>
 
       {/* Stats Cards */}
-      <div className="absolute right-20 top-1/2 -translate-y-1/2 w-[450px] flex flex-col gap-2 2xl:w-4/12">
-        <div className="grid grid-cols-2 gap-4">
-          <div className="p-4 rounded-[12px] shadow-lg border border-[#ffff] bg-gradient-to-r from-[#24285E]/20 via-[#24285E]/10 to-[#244975]/90">
+      <div className="absolute right-32 top-1/2 -translate-y-1/2 w-[500px] flex flex-col gap-3 translate-x-[80px]">
+        <div className="grid grid-cols-2 gap-3">
+          <div className="p-4 rounded-[20px] shadow-lg border border-[#ffff] bg-gradient-to-r from-[#24285E]/20 via-[#24285E]/10 to-[#244975]/90 w-[245px]">
             <div className="flex items-start gap-8">
-              <div className="mt-5">
+              <div className="mt-7">
                 <Image
                   src="/icons/employmentrateicon.svg"
                   alt="Employment"
@@ -303,16 +314,16 @@ export default function HomePage() {
                 />
               </div>
               <div className="flex-1">
-                <span className="text-white text-sm font-['Neo_Sans_Medium']">Employment Rate</span>
-                <div className="text-white text-3xl font-['Neo_Sans_Bold'] mt-1">
+                <span className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">Employment Rate</span>
+                <div className="text-white text-4xl font-['Neo_Sans_Bold'] mt-1 font-bold">
                   {totalMetrics.employmentRate}%
                 </div>
               </div>
             </div>
           </div>
-          <div className="p-4 rounded-[12px] shadow-lg border border-[#ffff] bg-gradient-to-r from-[#24285E]/20 via-[#24285E]/10 to-[#244975]/90">
+          <div className="p-4 rounded-[20px] shadow-lg border border-[#ffff] bg-gradient-to-r from-[#24285E]/20 via-[#24285E]/10 to-[#244975]/90 w-[245px]">
             <div className="flex items-start gap-8">
-              <div className="mt-5">
+              <div className="mt-7">
                 <Image
                   src="/icons/graduateicon.svg"
                   alt="Employment"
@@ -321,51 +332,55 @@ export default function HomePage() {
                 />
               </div>
               <div className="flex-1">
-                <span className="text-white text-sm font-['Neo_Sans_Medium']">Total Graduates</span>
-                <div className="text-white text-3xl font-['Neo_Sans_Bold'] mt-1">
+                <span className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">Total Graduates</span>
+                <div className="text-white text-4xl font-['Neo_Sans_Bold'] font-bold mt-1">
                   {totalMetrics.graduates.totalGraduates.toLocaleString()}
                   <div className="flex gap-2 mt-1 text-sm font-['Roboto_Regular']">
+                  <div className="bg-[#1a1f4d]/90 rounded-[7px] flex items-center gap-0 px-1 py-0.5">
                     <span className="flex items-center gap-1">
                       <BiMale style={{ color: "#2CCAD3" }} size={20} />
                       {totalMetrics.graduates.male.percentage}%
                     </span>
+                  </div>
+                  <div className="bg-[#1a1f4d]/90 rounded-[7px] flex items-center gap-0 px-1 py-0.5">
                     <span className="flex items-center gap-1">
                       <BiFemale style={{ color: "#fe1684 " }} size={20} />
                       {totalMetrics.graduates.female.percentage}%
                     </span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-2">
-          <div className="p-4 rounded-[12px] shadow-lg border border-[#ffff] bg-gradient-to-r from-[#24285E]/20 via-[#24285E]/10 to-[#244975]/90">
-            <div className="flex items-start gap-6">
-              <div className="mt-5">
+        <div className="grid grid-cols-2 gap-3">
+          <div className="p-4 rounded-[20px] shadow-lg border border-[#ffff] bg-gradient-to-r from-[#24285E]/20 via-[#24285E]/10 to-[#244975]/90 w-[245px]">
+            <div className="flex items-start gap-8">
+              <div className="mt-7">
                 <PiMoneyFill
                   style={{ color: "#2CCAD3", width: 32, height: 32 }}
                 />
               </div>
               <div className="flex-1">
-                <span className="text-white text-sm font-['Neo_Sans_Medium']">Average Salary</span>
-                <div className="text-white text-2xl font-['Neo_Sans_Bold'] mt-1">
-                  {totalMetrics.averageSalary.toLocaleString()} SAR
+                <span className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">Average Salary</span>
+                <div className="text-white text-4xl font-['Neo_Sans_Bold'] mt-1 font-bold">
+                  {totalMetrics.averageSalary.toLocaleString()} <span style={{ fontFamily: "Roboto regular", fontSize: "1.2rem", fontWeight: 200 }}>SAR</span>
                 </div>
               </div>
             </div>
           </div>
-          <div className="p-4 rounded-[12px] shadow-lg border border-[#ffff] bg-gradient-to-r from-[#24285E]/20 via-[#24285E]/10 to-[#244975]/90">
-            <div className="flex items-start gap-6">
-              <div className="mt-5">
+          <div className="p-4 rounded-[20px] shadow-lg border border-[#ffff] bg-gradient-to-r from-[#24285E]/20 via-[#24285E]/10 to-[#244975]/90 w-[245px]">
+            <div className="flex items-start gap-8">
+              <div className="mt-6">
                 <FaBusinessTime
                   style={{ color: "#2CCAD3", width: 32, height: 32 }}
                 />
               </div>
               <div className="flex-1">
-                <span className="text-white text-sm font-['Neo_Sans_Medium']">Time to Employment</span>
-                <div className="text-white text-2xl font-['Neo_Sans_Bold'] mt-1">
-                  {totalMetrics.timeToEmployment.overall} days
+                <span className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">Time to Employment</span>
+                <div className="text-white text-4xl font-['Neo_Sans_Bold'] mt-1 font-bold">
+                  {totalMetrics.timeToEmployment.overall} <span style={{ fontFamily: "Roboto regular", fontSize: "1.2rem", fontWeight: 200 }}>days</span>
                 </div>
               </div>
             </div>
@@ -373,8 +388,8 @@ export default function HomePage() {
         </div>
 
         {/* Education Degree Overview Card */}
-        <div className="p-4 rounded-[12px] shadow-lg border border-[#ffff] bg-gradient-to-r from-[#24285E]/20 via-[#24285E]/10 to-[#244975]/90">
-          <div className="grid grid-cols-[80px_1fr] gap-10">
+        <div className="p-4 rounded-[20px] shadow-lg border border-[#ffff] bg-gradient-to-r from-[#24285E]/20 via-[#24285E]/10 to-[#244975]/90 w-[500px]">
+          <div className="grid grid-cols-[120px_1fr] gap-10">
             {/* <div className="flex flex-col gap-1 justify-center h-full">
               <div className="flex flex-col items-start gap-1"> */}
             <div className="flex items-center h-full">
@@ -396,82 +411,83 @@ export default function HomePage() {
                     d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
                   />
                 </svg> */}
-                <div className="flex flex-col gap-1">
-                  <h3 className="text-white text-sm font-['Neo_Sans_Medium']">
+                <div className="flex flex-col gap-0.1">
+                  <p className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">
                     Education
-                  </h3>
-                  <p className="text-white/80 text-[11px] font-['Roboto_Regular']">Degree Overview</p>
+                  </p>
+                  <p className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">Degree</p>
+                  <p className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">Overview</p>
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-y-1.5 gap-x-2">
+            <div className="grid grid-cols-2 gap-y-1.5 gap-x-10">
               {/* <div className="grid grid-cols-2 gap-3"> */}
               <div className="flex items-center gap-1.5">
                 {/* <div className="text-[#2cd7c4] text-base font-bold">378</div> */}
-                <div className="text-white text-[12px] bg-[#1a1f4d]/90 px-1.5 py-0.5 rounded-full whitespace-nowrap">
-                  <span className="text-[#2cd7c4] text-[20px] text-base font-['Neo_Sans_Bold']">
+                <div className="text-white/60 text-[12px] bg-[#1a1f4d]/90 px-1.5 py-0.5 rounded-[10px] whitespace-nowrap flex items-center">
+                  <span className="text-[#2cd7c4] text-[23px] text-base font-['Roboto regular'] font-bold">
                     378
                   </span>
-                  &nbsp; Bachelor's
+                  <span className="ml-1 flex-1 text-center">&nbsp; Bachelor's</span>
                 </div>
               </div>
               <div className="flex items-center gap-1.5">
                 {/* <div className="text-[#2cd7c4] text-base font-bold">314</div> */}
-                <div className="text-white text-[12px] bg-[#1a1f4d]/90 px-1.5 py-0.5 rounded-full whitespace-nowrap">
-                  <span className="text-[#2cd7c4] text-[20px] text-base font-['Neo_Sans_Bold']">
+                <div className="text-white/60 text-[12px] bg-[#1a1f4d]/90 px-1.5 py-0.5 rounded-[10px] whitespace-nowrap flex items-center">
+                  <span className="text-[#2cd7c4] text-[23px] text-base font-['Roboto regular'] font-bold">
                     314
                   </span>
-                  &nbsp; Higher Diploma
+                  <span className="ml-1 flex-1 text-center">&nbsp; Higher Diploma</span>
                 </div>
               </div>
 
               <div className="flex items-center gap-1.5">
                 {/* <div className="text-[#2cd7c4] text-base font-bold">358</div> */}
-                <div className="text-white text-[12px] bg-[#1a1f4d]/90 px-1.5 py-0.5 rounded-full whitespace-nowrap">
-                  <span className="text-[#2cd7c4] text-[20px] text-base font-['Neo_Sans_Bold']">
+                <div className="text-white/60 text-[12px] bg-[#1a1f4d]/90 px-1.5 py-0.5 rounded-[10px] whitespace-nowrap flex items-center">
+                  <span className="text-[#2cd7c4] text-[23px] text-base font-['Roboto regular'] font-bold">
                     358
                   </span>
-                  &nbsp; Associate Diploma
+                  <span className="ml-1 flex-1 text-center">&nbsp; Associate Diploma</span>
                 </div>
               </div>
 
               <div className="flex items-center gap-1.5">
                 {/* <div className="text-[#2cd7c4] text-base font-bold">88</div> */}
-                <div className="text-white text-[12px] bg-[#1a1f4d]/90 px-1.5 py-0.5 rounded-full whitespace-nowrap">
-                  <span className="text-[#2cd7c4] text-[20px] text-base font-['Neo_Sans_Bold']">
+                <div className="text-white/60 text-[12px] bg-[#1a1f4d]/90 px-1.5 py-0.5 rounded-[10px] whitespace-nowrap flex items-center">
+                  <span className="text-[#2cd7c4] text-[23px] text-base font-['Roboto regular'] font-bold">
                     88
                   </span>
-                  &nbsp;PhD (Doctoral)
+                  <span className="ml-1 flex-1 text-center">&nbsp; PhD (Doctoral)</span>
                 </div>
               </div>
 
               <div className="flex items-center gap-1.5">
                 {/* <div className="text-[#2cd7c4] text-base font-bold">295</div> */}
-                <div className="text-white text-[12px] bg-[#1a1f4d]/90 px-1.5 py-0.5 rounded-full whitespace-nowrap">
-                  <span className="text-[#2cd7c4] text-[20px] text-base font-['Neo_Sans_Bold']">
+                <div className="text-white/60 text-[12px] bg-[#1a1f4d]/90 px-1.5 py-0.5 rounded-[10px] whitespace-nowrap flex items-center">
+                  <span className="text-[#2cd7c4] text-[23px] text-base font-['Roboto regular'] font-bold">
                     295
                   </span>
-                  &nbsp; Master's
+                  <span className="ml-1 flex-1 text-center">&nbsp; Master's</span>
                 </div>
               </div>
 
               <div className="flex items-center gap-1.5">
                 {/* <div className="text-[#2cd7c4] text-base font-bold">478</div> */}
-                <div className="text-white text-[12px] bg-[#1a1f4d]/90 px-1.5 py-0.5 rounded-full whitespace-nowrap">
-                  <span className="text-[#2cd7c4] text-[20px] text-base font-['Neo_Sans_Bold']">
+                <div className="text-white/60 text-[12px] bg-[#1a1f4d]/90 px-1.5 py-0.5 rounded-[10px] whitespace-nowrap flex items-center">
+                  <span className="text-[#2cd7c4] text-[23px] text-base font-['Roboto regular'] font-bold">
                     478
                   </span>
-                  &nbsp; Fellowship
+                  <span className="ml-1 flex-1 text-center">&nbsp; Fellowship</span>
                 </div>
               </div>
 
-              <div className="flex items-center gap-1.5 col-span-2">
+              <div className="flex items-center  gap-1.5 col-span-2">
                 {/*  <div className="text-[#2cd7c4] text-base font-bold">358</div> */}
-                <div className="text-white text-[12px] bg-[#1a1f4d]/90 px-1.5 py-0.5 rounded-full whitespace-nowrap">
-                  <span className="text-[#2cd7c4] text-[20px] text-base font-['Neo_Sans_Bold']">
+                <div className="text-white/60 text-[12px] bg-[#1a1f4d]/90 px-1.5 py-0.5 rounded-[10px] whitespace-nowrap flex items-center">
+                  <span className="text-[#2cd7c4] text-[23px] text-base font-['Roboto regular'] font-bold">
                     358
                   </span>
-                  &nbsp; Intermediate Diploma
+                  <span className="ml-1 flex-1 text-center">&nbsp; Intermediate Diploma</span>
                 </div>
               </div>
             </div>
