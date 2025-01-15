@@ -516,8 +516,8 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col">
-              <div className="flex items-end justify-between px-5 gap-0 p-4 bg-[#1d2655] rounded-[15px]">
+            <div className="flex flex-col p-1 bg-[#1d2655] rounded-[15px]">
+              <div className="flex items-end justify-between px-5 gap-0">
                 <div className="flex flex-col items-center">
                   <div className="h-24 w-5 bg-gradient-to-b from-[#1a1f4d]/90 to-[#1a1f4d]/40 rounded-t-xl flex items-end overflow-hidden relative">
                     <div

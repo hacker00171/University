@@ -17,6 +17,18 @@ interface SankeyCustomNodeData {
   nodeColor: string;
 }
 
+
+// source: color: "#7c3aed";
+// depth: 0;
+// formattedValue: "99.99999999999999";
+// height: 211.984375;
+// id: "education";
+// index: 0;
+// label: "education";
+// layer: 0;
+// nodeColor: "#7c3aed";
+
+
 interface SankeyCustomLinkData {
   source: string;
   target: string;
@@ -698,9 +710,9 @@ export default function SecondPage() {
                       SankeyCustomNodeData,
                       SankeyCustomLinkData
                     >
-                    // node: SankeyNodeDatum<SankeyCustomNodeData, never>
                   ) => {
                     // Only navigate if clicking on a major node (not timing nodes)
+                    console.log(node);
                     if (
                       node.id !== "Before Graduation" &&
                       node.id !== "Within First Year" &&
@@ -708,7 +720,7 @@ export default function SecondPage() {
                     ) {
                       router.push(
                         `/narrow_major?major=${encodeURIComponent(
-                          node.id
+                          node.id || node.source.id
                         )}&generalMajor=${encodeURIComponent(selectedMajor)}`
                       );
                     }
