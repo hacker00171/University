@@ -498,7 +498,7 @@ export default function SecondPage() {
                   />
                 </div>
               </div>
-              <span className="text-white">Top Majors by Gender</span>
+              <span className="text-white">Top Narrow Majors by Gender</span>
             </h2>
             <div className="space-y-4">
               {majorData?.overall?.topNarrowMajorsInsights?.topByGender

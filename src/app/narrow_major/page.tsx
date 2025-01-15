@@ -369,7 +369,7 @@ export default function ThirdPage() {
                                 "linear-gradient(90deg, #377eab 0%, #1A1B4B 100%)",
                             }}
                           >
-                            <div className="absolute  top-1/2 -translate-y-1/2 flex items-center gap-1">
+                            <div className="absolute top-1/2 -translate-y-1/2 flex items-center gap-1">
                               <span className="text-base font-['Neo_Sans_Bold'] font-bold text-white">
                                 {occupation.averageSalary.toLocaleString()}
                               </span>
@@ -518,7 +518,7 @@ export default function ThirdPage() {
                     style={{ color: "#2CCAD3", width: 12, height: 12 }}
                   />
                 </div>
-                <span className="text-white">Top Narrow Majors by Gender</span>
+                <span className="text-white">Top Majors by Gender</span>
               </h2>
               <div className="space-y-4">
                 <div className="flex items-center group">
