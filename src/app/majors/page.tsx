@@ -535,7 +535,7 @@ export default function SecondPage() {
                         }}
                         onClick={() => {
                           router.push(
-                            `/third-page?major=${encodeURIComponent(
+                            `/narrow_major?major=${encodeURIComponent(
                               major.narrowMajor
                             )}&generalMajor=${encodeURIComponent(
                               selectedMajor
@@ -698,6 +698,7 @@ export default function SecondPage() {
                       SankeyCustomNodeData,
                       SankeyCustomLinkData
                     >
+                    // node: SankeyNodeDatum<SankeyCustomNodeData, never>
                   ) => {
                     // Only navigate if clicking on a major node (not timing nodes)
                     if (
@@ -706,7 +707,7 @@ export default function SecondPage() {
                       node.id !== "After First Year"
                     ) {
                       router.push(
-                        `/third-page?major=${encodeURIComponent(
+                        `/narrow_major?major=${encodeURIComponent(
                           node.id
                         )}&generalMajor=${encodeURIComponent(selectedMajor)}`
                       );
@@ -801,7 +802,7 @@ export default function SecondPage() {
                         className="w-[200px] relative cursor-pointer"
                         onClick={() => {
                           router.push(
-                            `/third-page?major=${encodeURIComponent(
+                            `/narrow_major?major=${encodeURIComponent(
                               major.narrowMajor
                             )}&generalMajor=${encodeURIComponent(
                               selectedMajor
@@ -825,7 +826,7 @@ export default function SecondPage() {
                           }}
                           onClick={() => {
                             router.push(
-                              `/third-page?major=${encodeURIComponent(
+                              `/narrow_major?major=${encodeURIComponent(
                                 major.narrowMajor
                               )}&generalMajor=${encodeURIComponent(
                                 selectedMajor
@@ -853,7 +854,6 @@ export default function SecondPage() {
           </div>
         </Col>
       </Row>
-
     </div>
   );
 }

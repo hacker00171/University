@@ -591,7 +591,7 @@ export default function ThirdPage() {
                     height={24}
                   />
                 </div>
-                <span className="text-white">Employment Rate by Major</span>
+                <span className="text-white">Employment Rate by Narrow Major</span>
               </h2>
               <div className="space-y-4 relative">
                 {/* Vertical line */}

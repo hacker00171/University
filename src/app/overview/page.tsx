@@ -2,10 +2,13 @@
 
 import Image from "next/image";
 import nloSymbol from "../../../public/logo/nlo_logo_symbol.png";
-import mockData from "./overview_insights 3 (1).json";
+import mockData from "./final_data_version4.json";
 import { useEffect, useState } from "react";
 import SmallCircles from "@/app/overview/component/Small";
 import { PiMoneyFill } from "react-icons/pi";
+import { PiStudentFill } from "react-icons/pi";
+import { PiGraduationCapFill } from "react-icons/pi";
+import { FaUniversity } from "react-icons/fa";
 import { FaBusinessTime } from "react-icons/fa6";
 import { BiFemale } from "react-icons/bi";
 import { BiMale } from "react-icons/bi";
@@ -136,6 +139,9 @@ export default function HomePage() {
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#24285E]/80 to-transparent backdrop-blur-sm"></div>
       {/* Left Side Education Stats */}
       <div className="absolute left-20 top-1/2 -translate-y-1/2 w-[270px] flex flex-col gap-4 p-0 2xl:w-3/12 3xl:w-3/12">
+        <p className="text-white/70 text-center mb-2">
+          A statistical study of university and institute graduates in one year
+        </p>
         {/* Education Title */}
         <div className="flex flex-col items-center gap-2 w-[300px] h-[48px] justify-center">
           <div className="flex items-center gap-2">
@@ -272,7 +278,7 @@ export default function HomePage() {
                   Time to Employment
                 </span>
                 <div className="text-white text-4xl font-['Neo_Sans_Bold'] font-bold">
-                  {currentData.timeToEmployment.overall}{" "}
+                  {currentData.timeToEmployment.overall.days}{" "}
                   <span
                     style={{
                       fontFamily: "Roboto regular",
@@ -302,7 +308,7 @@ export default function HomePage() {
           {/* Centered Logo */}
           <div
             className="absolute inset-0 m-auto w-[100px] h-[100px] rounded-full flex flex-col items-center justify-center z-20 logo-container"
-            style={{ marginTop: "30px" }}
+            style={{ marginTop: "70px" }}
           >
             <Image
               src={nloSymbol}
@@ -311,13 +317,13 @@ export default function HomePage() {
               className="object-contain brightness-0 invert logo-glow"
               priority
             />
-            <p
-              className="text-white text-center text-xs mt-[180px] max-w-[120px] leading-tight"
-              // style={{ marginTop: "150px" }}
-            >
+            {/* <p
+              className="text-white text-center text-xs mt-[180px] max-w-[120px] leading-tight" */}
+            {/* // style={{ marginTop: "150px" }} */}
+            {/* >
               A statistical study of university and institute graduates in one
               year
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
@@ -325,6 +331,64 @@ export default function HomePage() {
       {/* Stats Cards */}
       <div className="absolute right-32 top-1/2 -translate-y-1/2 w-[500px] flex flex-col gap-3 translate-x-[80px]">
         <div className="grid grid-cols-2 gap-3">
+          <div className="p-4 rounded-[20px] shadow-lg border border-[#ffff] bg-gradient-to-r from-[#24285E]/20 via-[#24285E]/10 to-[#244975]/90 w-[245px]">
+            <div className="flex items-start gap-8">
+              <div className="mt-7">
+                <PiGraduationCapFill
+                  style={{ color: "#2CCAD3", width: 38, height: 38 }}
+                />
+              </div>
+              <div className="flex-1">
+                <span className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">
+                  Total Student Enrollment
+                </span>
+                <div className="text-white text-4xl font-['Neo_Sans_Bold'] mt-1 font-bold">
+                  {totalMetrics.totalStudentsEnrolled.toLocaleString()}{" "}
+                  <span
+                    style={{
+                      fontFamily: "Roboto regular",
+                      fontSize: "1.2rem",
+                      fontWeight: 200,
+                    }}
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="p-3 rounded-[20px] shadow-lg border border-[#ffff] bg-gradient-to-r from-[#24285E]/20 via-[#24285E]/10 to-[#244975]/90 w-[245px]">
+            <div className="grid grid-cols-[auto_1fr] gap-4">
+              <div className="mt-7">
+                <FaUniversity
+                  style={{ color: "#2CCAD3", width: 38, height: 38 }}
+                />
+              </div>
+              <div className="flex flex-col gap-0">
+                <span className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">
+                  Number of Universities and Educational Institutions
+                </span>
+                <div className="flex flex-col gap-1">
+                  <div className="flex h-7 items-center bg-[#1a1f4d]/100 rounded-sm">
+                    <span className="text-white text-sm pl-1 font-['Neo_Sans_Medium'] font-bold">
+                      Public Universities
+                    </span>
+                    <span className="text-white text-3xl font-['Neo_Sans_Bold'] ml-auto pr-3 font-bold">
+                      27
+                    </span>
+                  </div>
+                  <div className="flex h-7 items-center bg-[#1a1f4d]/100 rounded-sm">
+                    <span className="text-white text-sm pl-1 font-['Neo_Sans_Medium'] font-bold">
+                      Private Universities
+                    </span>
+                    <span className="text-white text-3xl font-['Neo_Sans_Bold'] ml-auto pr-3 font-bold">
+                      24
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="p-4 rounded-[20px] shadow-lg border border-[#ffff] bg-gradient-to-r from-[#24285E]/20 via-[#24285E]/10 to-[#244975]/90 w-[245px]">
             <div className="flex items-start gap-8">
               <div className="mt-7">
@@ -383,9 +447,9 @@ export default function HomePage() {
         <div className="grid grid-cols-2 gap-3">
           <div className="p-4 rounded-[20px] shadow-lg border border-[#ffff] bg-gradient-to-r from-[#24285E]/20 via-[#24285E]/10 to-[#244975]/90 w-[245px]">
             <div className="flex items-start gap-8">
-              <div className="mt-7">
+              <div className="mt-6">
                 <PiMoneyFill
-                  style={{ color: "#2CCAD3", width: 32, height: 32 }}
+                  style={{ color: "#2CCAD3", width: 38, height: 38 }}
                 />
               </div>
               <div className="flex-1">
@@ -411,7 +475,7 @@ export default function HomePage() {
             <div className="flex items-start gap-8">
               <div className="mt-6">
                 <FaBusinessTime
-                  style={{ color: "#2CCAD3", width: 32, height: 32 }}
+                  style={{ color: "#2CCAD3", width: 38, height: 38 }}
                 />
               </div>
               <div className="flex-1">
@@ -419,7 +483,7 @@ export default function HomePage() {
                   Time to Employment
                 </span>
                 <div className="text-white text-4xl font-['Neo_Sans_Bold'] mt-1 font-bold">
-                  {totalMetrics.timeToEmployment.overall}{" "}
+                  {totalMetrics.timeToEmployment.overall.days}{" "}
                   <span
                     style={{
                       fontFamily: "Roboto regular",
@@ -437,123 +501,118 @@ export default function HomePage() {
 
         {/* Education Degree Overview Card */}
         <div className="p-4 rounded-[20px] shadow-lg border border-[#ffff] bg-gradient-to-r from-[#24285E]/20 via-[#24285E]/10 to-[#244975]/90 w-[500px]">
-          <div className="grid grid-cols-[120px_1fr] gap-10">
-            {/* <div className="flex flex-col gap-1 justify-center h-full">
-              <div className="flex flex-col items-start gap-1"> */}
-            <div className="flex items-center h-full">
-              {/* Icon Column */}
-              <div className="flex items-center gap-1">
-                <div className="certificate-icon"></div>
-
-                {/* <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8 text-[#2cd7c4]"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
-                  />
-                </svg> */}
-                <div className="flex flex-col gap-0.1">
-                  <p className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">
-                    Education
-                  </p>
-                  <p className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">
-                    Degree
-                  </p>
-                  <p className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">
-                    Overview
-                  </p>
-                </div>
+          <div className="grid grid-cols-[120px_1fr]">
+            <div className="flex items-center gap-0">
+              <div className="certificate-icon"></div>
+              <div className="flex flex-col gap-0">
+                <p className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">
+                  Education
+                </p>
+                <p className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">
+                  Degree
+                </p>
+                <p className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">
+                  Overview
+                </p>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-y-1.5 gap-x-10">
-              {/* <div className="grid grid-cols-2 gap-3"> */}
-              <div className="flex items-center gap-1.5">
-                {/* <div className="text-[#2cd7c4] text-base font-bold">378</div> */}
-                <div className="text-white/60 text-[12px] bg-[#1a1f4d]/90 px-1.5 py-0.5 rounded-[10px] whitespace-nowrap flex items-center">
-                  <span className="text-[#2cd7c4] text-[23px] text-base font-['Roboto regular'] font-bold">
-                    378
-                  </span>
-                  <span className="ml-1 flex-1 text-center">
-                    &nbsp; Bachelor's
-                  </span>
+            <div className="flex flex-col">
+              <div className="flex items-end justify-between px-5 gap-0">
+                <div className="flex flex-col items-center">
+                  <div className="h-24 w-5 bg-gradient-to-b from-[#1a1f4d]/90 to-[#1a1f4d]/40 rounded-t-xl flex items-end overflow-hidden relative">
+                    <div
+                      className="w-full bg-gradient-to-t from-[#2cd7c4] via-[#2cd7c4]/80 to-[#2cd7c4]/40 rounded-t-lg shadow-[0_0_10px_rgba(44,215,196,0.5)]"
+                      style={{ height: "72%" }}
+                    ></div>
+                    <span className="absolute top-1 left-1/2 -translate-x-1/2 text-white text-[11px] font-bold">
+                      378
+                    </span>
+                  </div>
+                </div>
+                <div className="flex flex-col items-center">
+                  <div className="h-24 w-5 bg-gradient-to-b from-[#1a1f4d]/90 to-[#1a1f4d]/40 rounded-t-xl flex items-end overflow-hidden relative">
+                    <div
+                      className="w-full bg-gradient-to-t from-[#2cd7c4] via-[#2cd7c4]/80 to-[#2cd7c4]/40 rounded-t-lg shadow-[0_0_10px_rgba(44,215,196,0.5)]"
+                      style={{ height: "62%" }}
+                    ></div>
+                    <span className="absolute top-1 left-1/2 -translate-x-1/2 text-white text-[11px]  font-bold">
+                      295
+                    </span>
+                  </div>
+                </div>
+                <div className="flex flex-col items-center">
+                  <div className="h-24 w-5 bg-gradient-to-b from-[#1a1f4d]/90 to-[#1a1f4d]/40 rounded-t-xl flex items-end overflow-hidden relative">
+                    <div
+                      className="w-full bg-gradient-to-t from-[#2cd7c4] via-[#2cd7c4]/80 to-[#2cd7c4]/40 rounded-t-lg shadow-[0_0_10px_rgba(44,215,196,0.5)]"
+                      style={{ height: "75%" }}
+                    ></div>
+                    <span className="absolute top-1 left-1/2 -translate-x-1/2 text-white text-[11px]  font-bold">
+                      358
+                    </span>
+                  </div>
+                </div>
+                <div className="flex flex-col items-center">
+                  <div className="h-24 w-5 bg-gradient-to-b from-[#1a1f4d]/90 to-[#1a1f4d]/40 rounded-t-xl flex items-end overflow-hidden relative">
+                    <div
+                      className="w-full bg-gradient-to-t from-[#2cd7c4] via-[#2cd7c4]/80 to-[#2cd7c4]/40 rounded-t-lg shadow-[0_0_10px_rgba(44,215,196,0.5)]"
+                      style={{ height: "75%" }}
+                    ></div>
+                    <span className="absolute top-1 left-1/2 -translate-x-1/2 text-white text-[11px]  font-bold">
+                      358
+                    </span>
+                  </div>
+                </div>
+                <div className="flex flex-col items-center">
+                  <div className="h-24 w-5 bg-gradient-to-b from-[#1a1f4d]/90 to-[#1a1f4d]/40 rounded-t-xl flex items-end overflow-hidden relative">
+                    <div
+                      className="w-full bg-gradient-to-t from-[#2cd7c4] via-[#2cd7c4]/80 to-[#2cd7c4]/40 rounded-t-lg shadow-[0_0_10px_rgba(44,215,196,0.5)]"
+                      style={{ height: "66%" }}
+                    ></div>
+                    <span className="absolute top-1 left-1/2 -translate-x-1/2 text-white text-[11px] font-bold">
+                      314
+                    </span>
+                  </div>
+                </div>
+                <div className="flex flex-col items-center">
+                  <div className="h-24 w-5 bg-gradient-to-b from-[#1a1f4d]/90 to-[#1a1f4d]/40 rounded-t-xl flex items-end overflow-hidden relative">
+                    <div
+                      className="w-full bg-gradient-to-t from-[#2cd7c4] via-[#2cd7c4]/80 to-[#2cd7c4]/40 rounded-t-lg shadow-[0_0_10px_rgba(44,215,196,0.5)]"
+                      style={{ height: "18%" }}
+                    ></div>
+                    <span className="absolute top-1 left-1/2 -translate-x-1/2 text-white text-[11px] font-bold">
+                      88
+                    </span>
+                  </div>
+                </div>
+                <div className="flex flex-col items-center">
+                  <div className="h-24 w-5 bg-gradient-to-b from-[#1a1f4d]/90 to-[#1a1f4d]/40 rounded-t-xl flex items-end overflow-hidden relative">
+                    <div
+                      className="w-full bg-gradient-to-t from-[#2cd7c4] via-[#2cd7c4]/80 to-[#2cd7c4]/40 rounded-t-lg shadow-[0_0_10px_rgba(44,215,196,0.5)]"
+                      style={{ height: "100%" }}
+                    ></div>
+                    <span className="absolute top-1 left-1/2 -translate-x-1/2 text-white text-[11px] font-bold">
+                      478
+                    </span>
+                  </div>
                 </div>
               </div>
-              <div className="flex items-center gap-1.5">
-                {/* <div className="text-[#2cd7c4] text-base font-bold">314</div> */}
-                <div className="text-white/60 text-[12px] bg-[#1a1f4d]/90 px-1.5 py-0.5 rounded-[10px] whitespace-nowrap flex items-center">
-                  <span className="text-[#2cd7c4] text-[23px] text-base font-['Roboto regular'] font-bold">
-                    314
-                  </span>
-                  <span className="ml-1 flex-1 text-center">
-                    &nbsp; Higher Diploma
-                  </span>
+              <div className="flex justify-between px-0 mt-2 text-[10px]">
+                <div className="text-white/60 text-center w-5">Bachelor's</div>
+                <div className="text-white/60 text-center w-5">Master's</div>
+                <div className="text-white/60 text-center w-5 -translate-x-2">
+                  Associate Diploma
                 </div>
-              </div>
-
-              <div className="flex items-center gap-1.5">
-                {/* <div className="text-[#2cd7c4] text-base font-bold">358</div> */}
-                <div className="text-white/60 text-[12px] bg-[#1a1f4d]/90 px-1.5 py-0.5 rounded-[10px] whitespace-nowrap flex items-center">
-                  <span className="text-[#2cd7c4] text-[23px] text-base font-['Roboto regular'] font-bold">
-                    358
-                  </span>
-                  <span className="ml-1 flex-1 text-center">
-                    &nbsp; Associate Diploma
-                  </span>
+                <div className="text-white/60 text-center w-5 -translate-x-2">
+                  Intermediate Diploma
                 </div>
-              </div>
-
-              <div className="flex items-center gap-1.5">
-                {/* <div className="text-[#2cd7c4] text-base font-bold">88</div> */}
-                <div className="text-white/60 text-[12px] bg-[#1a1f4d]/90 px-1.5 py-0.5 rounded-[10px] whitespace-nowrap flex items-center">
-                  <span className="text-[#2cd7c4] text-[23px] text-base font-['Roboto regular'] font-bold">
-                    88
-                  </span>
-                  <span className="ml-1 flex-1 text-center">
-                    &nbsp; PhD (Doctoral)
-                  </span>
+                <div className="text-white/60 text-center w-5">
+                  Higher Diploma
                 </div>
-              </div>
-
-              <div className="flex items-center gap-1.5">
-                {/* <div className="text-[#2cd7c4] text-base font-bold">295</div> */}
-                <div className="text-white/60 text-[12px] bg-[#1a1f4d]/90 px-1.5 py-0.5 rounded-[10px] whitespace-nowrap flex items-center">
-                  <span className="text-[#2cd7c4] text-[23px] text-base font-['Roboto regular'] font-bold">
-                    295
-                  </span>
-                  <span className="ml-1 flex-1 text-center">
-                    &nbsp; Master's
-                  </span>
+                <div className="text-white/60 text-center w-5 -translate-x-3">
+                  PhD (Doctoral)
                 </div>
-              </div>
-
-              <div className="flex items-center gap-1.5">
-                {/* <div className="text-[#2cd7c4] text-base font-bold">478</div> */}
-                <div className="text-white/60 text-[12px] bg-[#1a1f4d]/90 px-1.5 py-0.5 rounded-[10px] whitespace-nowrap flex items-center">
-                  <span className="text-[#2cd7c4] text-[23px] text-base font-['Roboto regular'] font-bold">
-                    478
-                  </span>
-                  <span className="ml-1 flex-1 text-center">
-                    &nbsp; Fellowship
-                  </span>
-                </div>
-              </div>
-
-              <div className="flex items-center  gap-1.5 col-span-2">
-                {/*  <div className="text-[#2cd7c4] text-base font-bold">358</div> */}
-                <div className="text-white/60 text-[12px] bg-[#1a1f4d]/90 px-1.5 py-0.5 rounded-[10px] whitespace-nowrap flex items-center">
-                  <span className="text-[#2cd7c4] text-[24px] text-base font-['Roboto regular'] font-bold">
-                    358
-                  </span>
-                  <span className="ml-1 flex-1 text-center">
-                    &nbsp; Intermediate Diploma
-                  </span>
+                <div className="text-white/60 text-center w-5 -translate-x-7">
+                  Fellowship
                 </div>
               </div>
             </div>
