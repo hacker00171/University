@@ -166,12 +166,12 @@ export default function HomePage() {
                 <div className="text-white text-4xl font-['Neo_Sans_Bold'] font-bold">
                   {currentData.graduates.totalGraduates.toLocaleString()}
                 </div>
-                
+
                 <div className="flex gap-4 mt-2">
-                <div className="bg-[#1d3862]/80 rounded-[7px] flex items-center gap-0 px-1 py-0.5">
+                  <div className="bg-[#1d3862]/80 rounded-[7px] flex items-center gap-0 px-1 py-0.5">
                     <span className="flex items-center gap-0 text-[#ffff] text-sm font-['Roboto_regular']">
                       <BiMale style={{ color: "#2CCAD3" }} size={18} />
-                  {/* <span className="text-[#ffff] flex items-center gap-1 text-lg">
+                      {/* <span className="text-[#ffff] flex items-center gap-1 text-lg">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="w-5 h-5 text-[#2a6dee]"
@@ -183,13 +183,13 @@ export default function HomePage() {
                       <path strokeWidth="2" d="M15 14h-6l-2 8h10z" />
                       <line x1="12" y1="14" x2="12" y2="22" strokeWidth="2" />
                     </svg> */}
-                    <span>{currentData.graduates.male.percentage}%</span>
-                  </span>
-                </div>
-                <div className="bg-[#1d3862]/90 rounded-[7px] flex items-center gap-0 px-1 py-0.5">
+                      <span>{currentData.graduates.male.percentage}%</span>
+                    </span>
+                  </div>
+                  <div className="bg-[#1d3862]/90 rounded-[7px] flex items-center gap-0 px-1 py-0.5">
                     <span className="flex items-center gap-0 text-[#ffff] text-sm font-['Roboto_regular']">
                       <BiFemale style={{ color: "#fe1684 " }} size={18} />
-                  {/* <span className="text-[#ffff] flex items-center gap-1 text-lg">
+                      {/* <span className="text-[#ffff] flex items-center gap-1 text-lg">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="w-5 h-5 text-[#ff69b4]"
@@ -201,8 +201,8 @@ export default function HomePage() {
                       <path strokeWidth="2" d="M8 14h8l2 4h-12z" />
                       <path strokeWidth="2" d="M15 18l-3 4l-3-4" />
                     </svg> */}
-                    <span>{currentData.graduates.female.percentage}%</span>
-                  </span>
+                      <span>{currentData.graduates.female.percentage}%</span>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -240,9 +240,20 @@ export default function HomePage() {
                 />
               </div>
               <div className="flex-1">
-                <span className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">Average Salary</span>
+                <span className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">
+                  Average Salary
+                </span>
                 <div className="text-white text-4xl font-['Neo_Sans_Bold'] font-bold">
-                  {currentData.averageSalary.toLocaleString()} <span style={{ fontFamily: "Roboto regular", fontSize: "1.4rem", fontWeight: 300 }}>SAR</span>
+                  {currentData.averageSalary.toLocaleString()}{" "}
+                  <span
+                    style={{
+                      fontFamily: "Roboto regular",
+                      fontSize: "1.4rem",
+                      fontWeight: 300,
+                    }}
+                  >
+                    SAR
+                  </span>
                 </div>
               </div>
             </div>
@@ -257,9 +268,20 @@ export default function HomePage() {
                 />
               </div>
               <div className="flex-1">
-                <span className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">Time to Employment</span>
+                <span className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">
+                  Time to Employment
+                </span>
                 <div className="text-white text-4xl font-['Neo_Sans_Bold'] font-bold">
-                  {currentData.timeToEmployment.overall} <span style={{ fontFamily: "Roboto regular", fontSize: "1.5rem", fontWeight: 400 }}>days</span>
+                  {currentData.timeToEmployment.overall}{" "}
+                  <span
+                    style={{
+                      fontFamily: "Roboto regular",
+                      fontSize: "1.5rem",
+                      fontWeight: 400,
+                    }}
+                  >
+                    days
+                  </span>
                 </div>
               </div>
             </div>
@@ -314,7 +336,9 @@ export default function HomePage() {
                 />
               </div>
               <div className="flex-1">
-                <span className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">Employment Rate</span>
+                <span className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">
+                  Employment Rate
+                </span>
                 <div className="text-white text-4xl font-['Neo_Sans_Bold'] mt-1 font-bold">
                   {totalMetrics.employmentRate}%
                 </div>
@@ -332,21 +356,23 @@ export default function HomePage() {
                 />
               </div>
               <div className="flex-1">
-                <span className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">Total Graduates</span>
+                <span className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">
+                  Total Graduates
+                </span>
                 <div className="text-white text-4xl font-['Neo_Sans_Bold'] font-bold mt-1">
                   {totalMetrics.graduates.totalGraduates.toLocaleString()}
                   <div className="flex gap-2 mt-1 text-sm font-['Roboto_Regular']">
-                  <div className="bg-[#1a1f4d]/90 rounded-[7px] flex items-center gap-0 px-1 py-0.5">
-                    <span className="flex items-center gap-1">
-                      <BiMale style={{ color: "#2CCAD3" }} size={20} />
-                      {totalMetrics.graduates.male.percentage}%
-                    </span>
-                  </div>
-                  <div className="bg-[#1a1f4d]/90 rounded-[7px] flex items-center gap-0 px-1 py-0.5">
-                    <span className="flex items-center gap-1">
-                      <BiFemale style={{ color: "#fe1684 " }} size={20} />
-                      {totalMetrics.graduates.female.percentage}%
-                    </span>
+                    <div className="bg-[#1a1f4d]/90 rounded-[7px] flex items-center gap-0 px-1 py-0.5">
+                      <span className="flex items-center gap-1">
+                        <BiMale style={{ color: "#2CCAD3" }} size={20} />
+                        {totalMetrics.graduates.male.percentage}%
+                      </span>
+                    </div>
+                    <div className="bg-[#1a1f4d]/90 rounded-[7px] flex items-center gap-0 px-1 py-0.5">
+                      <span className="flex items-center gap-1">
+                        <BiFemale style={{ color: "#fe1684 " }} size={20} />
+                        {totalMetrics.graduates.female.percentage}%
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -363,9 +389,20 @@ export default function HomePage() {
                 />
               </div>
               <div className="flex-1">
-                <span className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">Average Salary</span>
+                <span className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">
+                  Average Salary
+                </span>
                 <div className="text-white text-4xl font-['Neo_Sans_Bold'] mt-1 font-bold">
-                  {totalMetrics.averageSalary.toLocaleString()} <span style={{ fontFamily: "Roboto regular", fontSize: "1.2rem", fontWeight: 200 }}>SAR</span>
+                  {totalMetrics.averageSalary.toLocaleString()}{" "}
+                  <span
+                    style={{
+                      fontFamily: "Roboto regular",
+                      fontSize: "1.2rem",
+                      fontWeight: 200,
+                    }}
+                  >
+                    SAR
+                  </span>
                 </div>
               </div>
             </div>
@@ -378,9 +415,20 @@ export default function HomePage() {
                 />
               </div>
               <div className="flex-1">
-                <span className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">Time to Employment</span>
+                <span className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">
+                  Time to Employment
+                </span>
                 <div className="text-white text-4xl font-['Neo_Sans_Bold'] mt-1 font-bold">
-                  {totalMetrics.timeToEmployment.overall} <span style={{ fontFamily: "Roboto regular", fontSize: "1.2rem", fontWeight: 200 }}>days</span>
+                  {totalMetrics.timeToEmployment.overall}{" "}
+                  <span
+                    style={{
+                      fontFamily: "Roboto regular",
+                      fontSize: "1.2rem",
+                      fontWeight: 200,
+                    }}
+                  >
+                    days
+                  </span>
                 </div>
               </div>
             </div>
@@ -415,8 +463,12 @@ export default function HomePage() {
                   <p className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">
                     Education
                   </p>
-                  <p className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">Degree</p>
-                  <p className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">Overview</p>
+                  <p className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">
+                    Degree
+                  </p>
+                  <p className="text-sm font-['Neo_Sans_Medium'] text-[#ffff]/70">
+                    Overview
+                  </p>
                 </div>
               </div>
             </div>
@@ -428,7 +480,9 @@ export default function HomePage() {
                   <span className="text-[#2cd7c4] text-[23px] text-base font-['Roboto regular'] font-bold">
                     378
                   </span>
-                  <span className="ml-1 flex-1 text-center">&nbsp; Bachelor's</span>
+                  <span className="ml-1 flex-1 text-center">
+                    &nbsp; Bachelor's
+                  </span>
                 </div>
               </div>
               <div className="flex items-center gap-1.5">
@@ -437,7 +491,9 @@ export default function HomePage() {
                   <span className="text-[#2cd7c4] text-[23px] text-base font-['Roboto regular'] font-bold">
                     314
                   </span>
-                  <span className="ml-1 flex-1 text-center">&nbsp; Higher Diploma</span>
+                  <span className="ml-1 flex-1 text-center">
+                    &nbsp; Higher Diploma
+                  </span>
                 </div>
               </div>
 
@@ -447,7 +503,9 @@ export default function HomePage() {
                   <span className="text-[#2cd7c4] text-[23px] text-base font-['Roboto regular'] font-bold">
                     358
                   </span>
-                  <span className="ml-1 flex-1 text-center">&nbsp; Associate Diploma</span>
+                  <span className="ml-1 flex-1 text-center">
+                    &nbsp; Associate Diploma
+                  </span>
                 </div>
               </div>
 
@@ -457,7 +515,9 @@ export default function HomePage() {
                   <span className="text-[#2cd7c4] text-[23px] text-base font-['Roboto regular'] font-bold">
                     88
                   </span>
-                  <span className="ml-1 flex-1 text-center">&nbsp; PhD (Doctoral)</span>
+                  <span className="ml-1 flex-1 text-center">
+                    &nbsp; PhD (Doctoral)
+                  </span>
                 </div>
               </div>
 
@@ -467,7 +527,9 @@ export default function HomePage() {
                   <span className="text-[#2cd7c4] text-[23px] text-base font-['Roboto regular'] font-bold">
                     295
                   </span>
-                  <span className="ml-1 flex-1 text-center">&nbsp; Master's</span>
+                  <span className="ml-1 flex-1 text-center">
+                    &nbsp; Master's
+                  </span>
                 </div>
               </div>
 
@@ -477,17 +539,21 @@ export default function HomePage() {
                   <span className="text-[#2cd7c4] text-[23px] text-base font-['Roboto regular'] font-bold">
                     478
                   </span>
-                  <span className="ml-1 flex-1 text-center">&nbsp; Fellowship</span>
+                  <span className="ml-1 flex-1 text-center">
+                    &nbsp; Fellowship
+                  </span>
                 </div>
               </div>
 
               <div className="flex items-center  gap-1.5 col-span-2">
                 {/*  <div className="text-[#2cd7c4] text-base font-bold">358</div> */}
                 <div className="text-white/60 text-[12px] bg-[#1a1f4d]/90 px-1.5 py-0.5 rounded-[10px] whitespace-nowrap flex items-center">
-                  <span className="text-[#2cd7c4] text-[23px] text-base font-['Roboto regular'] font-bold">
+                  <span className="text-[#2cd7c4] text-[24px] text-base font-['Roboto regular'] font-bold">
                     358
                   </span>
-                  <span className="ml-1 flex-1 text-center">&nbsp; Intermediate Diploma</span>
+                  <span className="ml-1 flex-1 text-center">
+                    &nbsp; Intermediate Diploma
+                  </span>
                 </div>
               </div>
             </div>
