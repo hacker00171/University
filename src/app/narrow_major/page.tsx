@@ -369,7 +369,7 @@ export default function ThirdPage() {
                                 "linear-gradient(90deg, #377eab 0%, #1A1B4B 100%)",
                             }}
                           >
-                            <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-1">
+                            <div className="absolute  top-1/2 -translate-y-1/2 flex items-center gap-1">
                               <span className="text-base font-['Neo_Sans_Bold'] font-bold text-white">
                                 {occupation.averageSalary.toLocaleString()}
                               </span>
@@ -591,7 +591,9 @@ export default function ThirdPage() {
                     height={24}
                   />
                 </div>
-                <span className="text-white">Employment Rate by Narrow Major</span>
+                <span className="text-white">
+                  Employment Rate by Narrow Major
+                </span>
               </h2>
               <div className="space-y-4 relative">
                 {/* Vertical line */}
